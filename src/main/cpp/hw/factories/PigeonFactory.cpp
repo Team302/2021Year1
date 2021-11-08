@@ -1,6 +1,6 @@
 
 //====================================================================================================================================================
-// Copyright 2020 Lake Orion Robotics FIRST Team 302 
+// Copyright 2019 Lake Orion Robotics FIRST Team 302
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 // to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -62,13 +62,12 @@ PigeonFactory::PigeonFactory()
 ///         exist and cannot be created.
 DragonPigeon* PigeonFactory::CreatePigeon
 (
-    int 	canID,
-    double  rotation
+    int 	canID
 )
 {
     if ( m_pigeon == nullptr )
     {
-        m_pigeon = new DragonPigeon( canID, rotation );
+        m_pigeon = new DragonPigeon( canID );
     }
     return m_pigeon;
 }

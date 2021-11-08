@@ -10,7 +10,7 @@
 #include <memory>
 #include <vector>
 
-#include <frc/SpeedController.h>
+#include <frc/motorcontrol/MotorController.h>
 
 #include <controllers/ControlModes.h>
 #include <hw/interfaces/IDragonMotorController.h>
@@ -44,7 +44,7 @@ class DragonTalon : public IDragonMotorController
         double GetRPS() const override;
         MotorControllerUsage::MOTOR_CONTROLLER_USAGE GetType() const override;
         int GetID() const override;
-        std::shared_ptr<frc::SpeedController> GetSpeedController() const override;
+        std::shared_ptr<frc::MotorController> GetSpeedController() const override;
         double GetCurrent() const override;
 
         // Setters (override)

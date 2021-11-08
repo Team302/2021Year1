@@ -23,7 +23,7 @@
 #include <vector>
 
 // FRC includes
-#include <frc/SpeedController.h>
+#include <frc/motorcontrol/MotorController.h>
 
 // Team 302 includes
 #include <hw/DragonFalcon.h>
@@ -61,7 +61,7 @@ class DragonFalcon : public IDragonMotorController
         double GetRPS() const override;
         MotorControllerUsage::MOTOR_CONTROLLER_USAGE GetType() const override;
         int GetID() const override;
-        std::shared_ptr<frc::SpeedController> GetSpeedController() const override;
+        std::shared_ptr<frc::MotorController> GetSpeedController() const override;
         double GetCurrent() const override;
 
         // Setters (override)

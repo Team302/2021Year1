@@ -40,8 +40,13 @@ class MotorControllerUsage
         enum MOTOR_CONTROLLER_USAGE
         {
             UNKNOWN_MOTOR_CONTROLLER_USAGE = -1,
-            DRIVE,
-            TURN,
+
+            SWERVE_DRIVE,
+            SWERVE_TURN,
+            DIFFERENTIAL_LEFT_MAIN,
+            DIFFERENTIAL_LEFT_FOLLOWER,
+            DIFFERENTIAL_RIGHT_MAIN,
+            DIFFERENTIAL_RIGHT_FOLLOWER,
             INTAKE,
             INTAKE2,
             BALL_TRANSFER,

@@ -21,7 +21,7 @@
 #include <memory>
 
 // FRC includes
-#include <frc/SpeedController.h>
+#include <frc/motorcontrol/MotorController.h>
 #include <networktables/NetworkTable.h>
 
 // Team 302 includes
@@ -70,7 +70,7 @@ class IDragonMotorController
 
         /// @brief  Return the speedcontroller 
         /// @return std::shared_ptr<frc::SpeedControll> - pointer to the speed controller object
-        virtual std::shared_ptr<frc::SpeedController> GetSpeedController() const = 0;
+        virtual std::shared_ptr<frc::MotorController> GetSpeedController() const = 0;
 
         // Setters
         virtual void SetControlMode(ControlModes::CONTROL_TYPE mode) = 0;

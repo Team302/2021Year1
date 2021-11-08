@@ -1,18 +1,9 @@
-
-//====================================================================================================================================================
-// Copyright 2020 Lake Orion Robotics FIRST Team 302 
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
-// to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
-// and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
-// OR OTHER DEALINGS IN THE SOFTWARE.
-//====================================================================================================================================================
+/*----------------------------------------------------------------------------*/
+/* Copyright (c) 2018 FIRST. All Rights Reserved.                             */
+/* Open Source Software - may be modified and shared by FRC teams. The code   */
+/* must be accompanied by the FIRST BSD license file in the root directory of */
+/* the project.                                                               */
+/*----------------------------------------------------------------------------*/
 
 #include <map>
 
@@ -37,15 +28,16 @@ LimelightFactory* LimelightFactory::GetLimelightFactory()
 LimelightFactory::LimelightFactory() : m_limelight( nullptr )
 {
 }
+
 DragonLimelight* LimelightFactory::CreateLimelight
 (
-    string                          tableName, 
-    units::length::inch_t           mountingHeight, 
-    units::length::inch_t           mountingHorizontalOffset, 
-    units::angle::degree_t          rotation, 
-    units::angle::degree_t          mountingAngle, 
-    units::length::inch_t           targetHeight, 
-    units::length::inch_t           targetHeight2,
+    string                      tableName, 
+    units::length::inch_t       mountingHeight,             /// <I> - mounting height of the limelight
+    units::length::inch_t       mountingHorizontalOffset,   /// <I> - mounting horizontal offset from the middle of the robot
+    units::angle::degree_t      rotation,                   /// <I> - clockwise rotation of limelight
+    units::angle::degree_t      mountingAngle,              /// <I> - mounting angle of the camera
+    units::length::inch_t       targetHeight,               /// <I> - height the target
+    units::length::inch_t       targetHeight2,               /// <I> - height of second target
     DragonLimelight::LED_MODE       ledMode,
     DragonLimelight::CAM_MODE       camMode,
     DragonLimelight::STREAM_MODE    streamMode,
@@ -58,22 +50,33 @@ DragonLimelight* LimelightFactory::CreateLimelight
 {
     if ( m_limelight == nullptr )
     {
-        m_limelight = new DragonLimelight(tableName, mountingHeight, mountingHorizontalOffset, rotation, mountingAngle, targetHeight, targetHeight2);
+        m_limelight = new DragonLimelight(tableName, 
+                                          mountingHeight, 
+                                          mountingHorizontalOffset, 
+                                          rotation, 
+                                          mountingAngle, 
+                                          targetHeight, 
+                                          targetHeight2);
+        /**
         m_limelight->SetLEDMode( ledMode );
         m_limelight->SetCamMode( camMode );
         m_limelight->SetStreamMode( streamMode );
         m_limelight->ToggleSnapshot( snapMode );
         if ( defaultXHairX > -1.5 && defaultXHairY > -1.5 )
         {
-            m_limelight->SetCrosshairPos( defaultXHairX, defaultXHairY);
+            // m_limelight->  todo add method
         }        
         if ( secXHairX > -1.5 && secXHairY > -1.5 )
         {
-            m_limelight->SetSecondaryCrosshairPos( secXHairX, secXHairY);
+            // m_limelight->  todo add method
         }
-
+        **/
     }
     return m_limelight;
 }
 
+DragonLimelight* LimelightFactory::GetLimelight(IDragonSensor::SENSOR_USAGE usage)
+{
+    return m_limelight;
+}
 

@@ -23,7 +23,7 @@
 #include <networktables/NetworkTable.h>
 #include <networktables/NetworkTableEntry.h>
 #include <frc/PowerDistribution.h>
-#include <frc/SpeedController.h>
+#include <frc/motorcontrol/MotorController.h>
 
 // Team 302 includes
 #include <hw/interfaces/IDragonMotorController.h>
@@ -289,7 +289,7 @@ void DragonTalon::SetControlMode(ControlModes::CONTROL_TYPE mode)
 	m_controlMode = mode;
 }
 
-shared_ptr<SpeedController> DragonTalon::GetSpeedController() const
+shared_ptr<MotorController> DragonTalon::GetSpeedController() const
 {
 	return m_talon;
 }

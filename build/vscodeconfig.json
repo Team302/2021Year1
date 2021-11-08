@@ -35,8 +35,8 @@
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\3700c3a832cc1a922d7079cdf7329316\\transformed\\cameraserver-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\32f04bf9b87314d86b7b6957d617db5b\\transformed\\cscore-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\732b8c3210fba25acb8be8d62e610dc5\\transformed\\opencv-cpp-4.5.2-1-headers\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\",
+      "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+      "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\9b3400e1b5c01850f9211989edf17358\\transformed\\wpilibNewCommands-cpp-2022.1.1-beta-1-sources\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\08b2644a243d7b7c8bb591e151ea8738\\transformed\\wpilibc-cpp-2022.1.1-beta-1-sources\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\a904ea52d232ba4187b492ea9709b49f\\transformed\\ntcore-cpp-2022.1.1-beta-1-sources\\",
@@ -80,8 +80,8 @@
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\3700c3a832cc1a922d7079cdf7329316\\transformed\\cameraserver-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\32f04bf9b87314d86b7b6957d617db5b\\transformed\\cscore-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\732b8c3210fba25acb8be8d62e610dc5\\transformed\\opencv-cpp-4.5.2-1-headers\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+      "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+      "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
     ],
     "binaries": [
       {
@@ -90,8 +90,8 @@
           {
             "source": {
               "srcDirs": [
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+                "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+                "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -103,8 +103,8 @@
             },
             "exportedHeaders": {
               "srcDirs": [
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+                "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+                "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -155,8 +155,8 @@
           "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\3700c3a832cc1a922d7079cdf7329316\\transformed\\cameraserver-cpp-2022.1.1-beta-1-headers\\",
           "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\32f04bf9b87314d86b7b6957d617db5b\\transformed\\cscore-cpp-2022.1.1-beta-1-headers\\",
           "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\732b8c3210fba25acb8be8d62e610dc5\\transformed\\opencv-cpp-4.5.2-1-headers\\",
-          "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-          "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+          "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+          "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
         ],
         "sharedLibrary": false,
         "executable": true
@@ -166,8 +166,8 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-            "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+            "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+            "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
           ],
           "includes": [
             "**/*.cpp",
@@ -239,8 +239,8 @@
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\3700c3a832cc1a922d7079cdf7329316\\transformed\\cameraserver-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\32f04bf9b87314d86b7b6957d617db5b\\transformed\\cscore-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\732b8c3210fba25acb8be8d62e610dc5\\transformed\\opencv-cpp-4.5.2-1-headers\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\",
+      "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+      "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\9b3400e1b5c01850f9211989edf17358\\transformed\\wpilibNewCommands-cpp-2022.1.1-beta-1-sources\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\08b2644a243d7b7c8bb591e151ea8738\\transformed\\wpilibc-cpp-2022.1.1-beta-1-sources\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\a904ea52d232ba4187b492ea9709b49f\\transformed\\ntcore-cpp-2022.1.1-beta-1-sources\\",
@@ -284,8 +284,8 @@
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\3700c3a832cc1a922d7079cdf7329316\\transformed\\cameraserver-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\32f04bf9b87314d86b7b6957d617db5b\\transformed\\cscore-cpp-2022.1.1-beta-1-headers\\",
       "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\732b8c3210fba25acb8be8d62e610dc5\\transformed\\opencv-cpp-4.5.2-1-headers\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-      "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+      "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+      "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
     ],
     "binaries": [
       {
@@ -294,8 +294,8 @@
           {
             "source": {
               "srcDirs": [
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+                "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+                "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -307,8 +307,8 @@
             },
             "exportedHeaders": {
               "srcDirs": [
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-                "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+                "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+                "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -358,8 +358,8 @@
           "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\3700c3a832cc1a922d7079cdf7329316\\transformed\\cameraserver-cpp-2022.1.1-beta-1-headers\\",
           "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\32f04bf9b87314d86b7b6957d617db5b\\transformed\\cscore-cpp-2022.1.1-beta-1-headers\\",
           "C:\\Users\\joewi\\.gradle\\caches\\transforms-3\\732b8c3210fba25acb8be8d62e610dc5\\transformed\\opencv-cpp-4.5.2-1-headers\\",
-          "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-          "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+          "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+          "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
         ],
         "sharedLibrary": false,
         "executable": true
@@ -369,8 +369,8 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\GitRepos\\2021Year1Training\\src\\main\\cpp\\",
-            "C:\\GitRepos\\2021Year1Training\\src\\main\\thirdparty\\"
+            "C:\\GitRepos\\2021Year1\\src\\main\\cpp\\",
+            "C:\\GitRepos\\2021Year1\\src\\main\\thirdparty\\"
           ],
           "includes": [
             "**/*.cpp",
