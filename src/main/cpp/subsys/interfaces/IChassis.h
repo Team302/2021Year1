@@ -26,6 +26,7 @@
 #include <controllers/ControlModes.h>
 #include <controllers/ControlData.h>
 // Third Party Includes
+#include <units/length.h>
 
 namespace frc
 {
@@ -54,7 +55,7 @@ class IChassis
         ) = 0;
 
         virtual void UpdatePose() = 0;
-        virtual double GetWheelDiameter() const = 0;
+        virtual units::length::inch_t GetWheelDiameter() const = 0;
 
         virtual bool IsMoving() const = 0;
 

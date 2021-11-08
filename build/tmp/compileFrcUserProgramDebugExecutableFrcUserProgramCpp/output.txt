@@ -1,6 +1,10 @@
 See file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
 compiling DragonVision.cpp successful.
 
-compiling MechanismTargetDefn.cpp successful.
+compiling ChassisFactory.cpp successful.
+
+compiling ChassisDefn.cpp successful.
+
+compiling RobotDefn.cpp successful.
 
 Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
