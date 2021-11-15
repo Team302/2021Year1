@@ -1,0 +1,56 @@
+#include <subsys/DifferentialChassis.h>
+#include <frc/kinematics/ChassisSpeeds.h>
+#include <frc/kinematics/DifferentialDriveKinematics.h>
+#include <frc/drive/DifferentialDrive.h>
+
+DifferentialChassis::DifferentialChassis(IDragonMotorController& leftMotor, 
+                        IDragonMotorController& rightMotor,
+                        units::meter_t trackWidth,
+                        units::velocity::meters_per_second_t maxSpeed,
+                        units::angular_velocity::degrees_per_second_t maxAngSpeed,
+                        units::length::inch_t wheelDiameter) : m_leftMotor(leftMotor),
+                                                    m_rightMotor(rightMotor),
+                                                    m_maxSpeed(maxSpeed),
+                                                    m_maxAngSpeed(maxAngSpeed),
+                                                    m_wheelDiameter(wheelDiameter),
+                                                    m_kinematics(new frc::DifferentialDriveKinematics(trackWidth)),
+                                                    m_differentialDrive(new frc::DifferentialDrive(*leftMotor.GetSpeedController().get(), 
+                                                                                                   *rightMotor.GetSpeedController().get())),
+                                                    m_differentialOdometry(new frc::DifferentialDriveOdometry(frc::Rotation2d(), frc::Pose2d()))
+{
+    
+}
+    //Moves the robot
+    void DifferentialChassis::Drive(frc::ChassisSpeeds chassisSpeeds)
+    {
+        double xPercent = chassisSpeeds.vx / m_maxSpeed; //calculates forward velocity as a factor
+        double omegaPercent = chassisSpeeds.omega / m_maxAngSpeed;
+
+        //Drive the motors
+        m_differentialDrive->ArcadeDrive(xPercent, omegaPercent, false);
+    }
+
+    frc::Pose2d DifferentialChassis::GetPose() const
+    {
+        return frc::Pose2d();
+    }
+
+    void DifferentialChassis::ResetPose(const frc::Pose2d& pose)
+    {
+
+    }
+
+    void DifferentialChassis::UpdatePose()
+    {
+        
+    }
+
+    units::length::inch_t DifferentialChassis::GetWheelDiameter() const
+    {
+        return units::length::inch_t(4);
+    }
+
+    bool DifferentialChassis::IsMoving() const
+    {
+        return false;
+    }

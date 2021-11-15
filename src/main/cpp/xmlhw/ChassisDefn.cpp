@@ -27,6 +27,12 @@
 
 
 // FRC includes
+#include <units/acceleration.h>
+#include <units/angular_acceleration.h>
+#include <units/angular_velocity.h>
+#include <units/length.h>
+#include <units/velocity.h>
+
 
 // Team302 includes
 #include <hw/interfaces/IDragonMotorController.h>
@@ -60,14 +66,19 @@ shared_ptr<IChassis> ChassisDefn::ParseXML
     shared_ptr<IChassis> chassis;
     // initialize the attributes to the default values
     ChassisFactory::CHASSIS_TYPE type = ChassisFactory::CHASSIS_TYPE::TANK_CHASSIS;
-    double wheelDiameter	= 0.0;
-    double wheelBase 	    = 0.0;
-    double track 		    = 0.0;
+    units::length::inch_t wheelDiameter(0.0);
+    units::length::inch_t wheelBase(0.0);
+    units::length::inch_t track(0.0);
+    units::velocity::meters_per_second_t maxVelocity(0.0);
+    units::radians_per_second_t maxAngularSpeed(0.0);
+    units::acceleration::meters_per_second_squared_t maxAcceleration(0.0);
+    units::angular_acceleration::radians_per_second_squared_t maxAngularAcceleration(0.0);
     bool hasError 		    = false;
 
     // process attributes
     for (xml_attribute attr = chassisNode.first_attribute(); attr && !hasError; attr = attr.next_attribute())
     {
+        string attrName (attr.name());
         if ( strcmp( attr.name(), "type" ) == 0 )
         {
             auto val = string( attr.value() );
@@ -79,6 +90,10 @@ shared_ptr<IChassis> ChassisDefn::ParseXML
             {
                 type = ChassisFactory::CHASSIS_TYPE::TANK_CHASSIS;
             }
+            else if (val.compare("SWERVE") == 0)
+            {
+                type = ChassisFactory::CHASSIS_TYPE::SWERVE_CHASSIS;
+            }
             else
             {
                 string msg = "Unknown Chassis Type";
@@ -86,17 +101,35 @@ shared_ptr<IChassis> ChassisDefn::ParseXML
                 Logger::GetLogger()->LogError( string( "ChassisDefn::ParseXML" ), msg );
             }
         }
-        else if ( strcmp( attr.name(), "wheelDiameter" ) == 0 )
+        else if (  attrName.compare("wheelBase") == 0 )
         {
-        	wheelDiameter = attr.as_double();
+        	wheelBase = units::length::inch_t(attr.as_double());
         }
-        else if ( strcmp( attr.name(), "wheelBase" ) == 0 )
+        else if (  attrName.compare("track") == 0 )
         {
-        	wheelBase = attr.as_double();
+        	track = units::length::inch_t(attr.as_double());
         }
-        else if ( strcmp( attr.name(), "track" ) == 0 )
+        else if (  attrName.compare("maxVelocity") == 0 )
         {
-        	track = attr.as_double();
+            units::velocity::feet_per_second_t fps(attr.as_double()/12.0);
+        	maxVelocity = units::velocity::meters_per_second_t(fps);
+        }
+        else if (  attrName.compare("maxAngularVelocity") == 0 )
+        {
+            units::degrees_per_second_t degreesPerSec(attr.as_double());
+        	maxAngularSpeed = units::radians_per_second_t(degreesPerSec);
+        }
+        else if (  attrName.compare("maxAcceleration") == 0 )
+        {
+            maxAcceleration = units::feet_per_second_t(attr.as_double()/12.0) / 1_s;
+        }
+        else if (  attrName.compare("maxAngularAcceleration") == 0 )
+        {
+            maxAngularAcceleration = units::degrees_per_second_t(attr.as_double()) / 1_s;
+        }
+        else if (  attrName.compare("wheelDiameter") == 0 )
+        {
+        	wheelDiameter = units::length::inch_t(attr.as_double());
         }
         else   // log errors
         {
@@ -137,7 +170,15 @@ shared_ptr<IChassis> ChassisDefn::ParseXML
         auto factory = ChassisFactory::GetChassisFactory();
         if ( factory != nullptr )
         {
-            chassis = factory->CreateChassis( type, wheelDiameter, wheelBase, track, motors );
+            chassis = factory->CreateChassis( type, 
+                                              wheelDiameter, 
+                                              wheelBase, 
+                                              track, 
+                                              maxVelocity,
+                                              maxAngularSpeed,
+                                              maxAcceleration,
+                                              maxAngularAcceleration,
+                                              motors );
         }
         else  // log errors
         {

@@ -1,5 +1,11 @@
 #pragma once
 
+#include <units/acceleration.h>
+#include <units/angular_acceleration.h>
+#include <units/angular_velocity.h>
+#include <units/length.h>
+#include <units/velocity.h>
+
 
 #include <memory>
 
@@ -30,14 +36,16 @@ class ChassisFactory
 			//=======================================================================================
 			std::shared_ptr<IChassis> CreateChassis
 			(
-				CHASSIS_TYPE     			        type,				// <I> - Chassis Type
-				double 						        wheelDiameter,		// <I> - Diameter of the wheel
-			    double 						        wheelBase,			// <I> - Front-Back distance between wheel centers
-				double 						        track,				// <I> - Left-Right distance between wheels (same axle)
-				const IDragonMotorControllerMap&    motors 		        // <I> - Motor Controllers
+				CHASSIS_TYPE     			        						type,				// <I> - Chassis Type
+				units::length::inch_t										wheelDiameter,		// <I> - Diameter of the wheel
+			    units::length::inch_t		        						wheelBase,			// <I> - Front-Back distance between wheel centers
+				units::length::inch_t		        						track,				// <I> - Left-Right distance between wheels (same axle)
+				units::velocity::meters_per_second_t 						maxVelocity,
+				units::radians_per_second_t 								maxAngularSpeed,
+				units::acceleration::meters_per_second_squared_t 			maxAcceleration,
+				units::angular_acceleration::radians_per_second_squared_t 	maxAngularAcceleration,
+				const IDragonMotorControllerMap&    						motors 		        // <I> - Motor Controllers
 			);
-
-
 
 		private:
 			std::shared_ptr<IDragonMotorController> GetMotorController
