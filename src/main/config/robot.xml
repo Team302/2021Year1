@@ -1,0 +1,65 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<!DOCTYPE robot SYSTEM "robot.dtd">
+<robot>
+
+    <chassis type="TANK"
+             wheelDiameter="4.0"
+             wheelBase="13.75"
+             track="15.0"
+             maxVelocity="36.0"
+             maxAngularVelocity="12.0"
+             maxAcceleration="12.0"
+             maxAngularAcceleration="6.0">
+
+        <motor usage="DIFFERENTIAL_LEFT_MAIN"
+               canId="12"
+               pdpID="12"
+               type="TALONSRX"
+               inverted="false"
+               sensorInverted="false"
+               feedbackDevice="QUADENCODER"
+               countsPerRev="4096"
+               gearRatio="1.0"
+               brakeMode="true"/>
+
+        <motor usage="DIFFERENTIAL_LEFT_FOLLOWER"
+               canId="13"
+               pdpID="13"
+               slaveTo="12"
+               type="TALONSRX"
+               inverted="false"
+               sensorInverted="false"
+               feedbackDevice="QUADENCODER"
+               countsPerRev="4096"
+               gearRatio="1.0"
+               brakeMode="true"/>
+
+        <motor usage="DIFFERENTIAL_RIGHT_MAIN"
+               canId="14"
+               pdpID="14"
+               type="TALONSRX"
+               inverted="false"
+               sensorInverted="false"
+               feedbackDevice="QUADENCODER"
+               countsPerRev="4096"
+               gearRatio="1.0"
+               brakeMode="true"/>
+
+        <motor usage="DIFFERENTIAL_RIGHT_FOLLOWER"
+               canId="15"
+               pdpID="15"
+               slaveTo="14"
+               type="TALONSRX"
+               inverted="false"
+               sensorInverted="false"
+               feedbackDevice="QUADENCODER"
+               countsPerRev="4096"
+               gearRatio="1.0"
+               brakeMode="true"/>
+
+        </motor>
+    </chassis>
+
+    <pigeon canId="60"/>
+    
+</robot>
