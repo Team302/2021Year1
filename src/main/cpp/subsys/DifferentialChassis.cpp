@@ -45,11 +45,20 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController& leftMotor,
         
     }
 
+    units::velocity::meters_per_second_t DifferentialChassis::GetMaxSpeed() const
+    {
+        return m_maxSpeed;
+    }
+
+    units::angular_velocity::degrees_per_second_t DifferentialChassis::GetMaxAngularSpeed() const
+    {
+        return m_maxAngSpeed;
+    }
+
     units::length::inch_t DifferentialChassis::GetWheelDiameter() const
     {
         return units::length::inch_t(4);
-    }
-
+    }    
     bool DifferentialChassis::IsMoving() const
     {
         return false;
