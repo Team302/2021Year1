@@ -1,5 +1,8 @@
 #pragma once
 
+#include <units/velocity.h>
+#include <units/angular_velocity.h>
+
 #include <subsys/interfaces/IChassis.h>
 #include <hw/interfaces/IDragonMotorController.h>
 #include <frc/kinematics/DifferentialDriveKinematics.h>
@@ -24,6 +27,8 @@ class DifferentialChassis : public IChassis {
         frc::Pose2d GetPose() const override;
         void ResetPose(const frc::Pose2d& pose) override;
         void UpdatePose() override;
+        units::velocity::meters_per_second_t GetMaxSpeed() const override;
+        units::angular_velocity::degrees_per_second_t GetMaxAngularSpeed() const override;
 
         units::length::inch_t GetWheelDiameter() const override ;
 

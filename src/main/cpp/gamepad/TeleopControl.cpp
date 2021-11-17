@@ -60,16 +60,15 @@ TeleopControl::TeleopControl() : m_axisIDs(),
 								 m_controllers(),
 								 m_count( 0 )
 {
-	DriverStation* ds = &DriverStation::GetInstance();
 	for ( int inx=0; inx<DriverStation::kJoystickPorts; ++inx )
 	{
 		m_controllers[inx] = nullptr;
-		if ( ds->GetJoystickIsXbox( inx ) )
+		if ( DriverStation::GetJoystickIsXbox( inx ) )
 		{
             auto xbox = new DragonXBox( inx );
 			m_controllers[inx] = xbox;
 		}
-		else if ( ds->GetJoystickType( inx ) == GenericHID::kHID1stPerson )
+		else if ( DriverStation::GetJoystickType( inx ) == GenericHID::kHID1stPerson )
 		{
             auto gamepad = new DragonGamepad( inx );
 			m_controllers[inx] = gamepad;
@@ -89,7 +88,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     }
 
     auto ctrlNo = 0;
-    if ( m_controllers[ctrlNo] != nullptr && ds->GetJoystickIsXbox(ctrlNo) )
+    if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
 		m_controllerIndex[ SWERVE_DRIVE_DRIVE]			= ctrlNo;
 		m_axisIDs[ SWERVE_DRIVE_DRIVE]					= IDragonGamePad::LEFT_JOYSTICK_Y;
@@ -128,7 +127,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     }
 
     ctrlNo = 1;
-    if ( m_controllers[ctrlNo] != nullptr && ds->GetJoystickIsXbox(ctrlNo) )
+    if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
 		m_controllerIndex[ SHOOTER_PREPARE_TO_SHOOT_GREEN ] = ctrlNo;
 		m_buttonIDs[ SHOOTER_PREPARE_TO_SHOOT_GREEN ] = IDragonGamePad::A_BUTTON;
@@ -157,7 +156,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     }
 
 	ctrlNo = 2;
-    if ( m_controllers[ctrlNo] != nullptr && ds->GetJoystickIsXbox(ctrlNo) )
+    if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
 	}
     else if ( m_controllers[ctrlNo] != nullptr )
@@ -169,7 +168,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     }
 
     ctrlNo = 3;
-    if ( m_controllers[ctrlNo] != nullptr && ds->GetJoystickIsXbox(ctrlNo) )
+    if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
 	}
     else if ( m_controllers[ctrlNo] != nullptr )
@@ -182,7 +181,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
 	}
 
     ctrlNo = 4;
-    if ( m_controllers[ctrlNo] != nullptr && ds->GetJoystickIsXbox(ctrlNo) )
+    if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
 	}
     else if ( m_controllers[ctrlNo] != nullptr )
@@ -194,7 +193,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     }
 
     ctrlNo = 5;
-    if ( m_controllers[ctrlNo] != nullptr && ds->GetJoystickIsXbox(ctrlNo) )
+    if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
 	}
     else if ( m_controllers[ctrlNo] != nullptr )
