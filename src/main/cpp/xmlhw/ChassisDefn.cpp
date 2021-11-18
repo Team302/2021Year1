@@ -58,12 +58,12 @@ using namespace std;
 /// @param [in]  pugi::xml_node the chassis element in the XML document
 /// @return void
 
-shared_ptr<IChassis> ChassisDefn::ParseXML
+IChassis* ChassisDefn::ParseXML
 (
 	xml_node      chassisNode
 )
 {
-    shared_ptr<IChassis> chassis;
+    IChassis* chassis;
     // initialize the attributes to the default values
     ChassisFactory::CHASSIS_TYPE type = ChassisFactory::CHASSIS_TYPE::TANK_CHASSIS;
     units::length::inch_t wheelDiameter(0.0);

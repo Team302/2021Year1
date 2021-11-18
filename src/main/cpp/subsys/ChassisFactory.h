@@ -27,14 +27,14 @@ class ChassisFactory
 			};
 			static ChassisFactory* GetChassisFactory();
 
-			std::shared_ptr<IChassis> GetIChassis();
+			IChassis* GetIChassis();
 
 			//=======================================================================================
 			// Method:  		CreateChassis
 			// Description:		Create a chassis from the inputs
 			// Returns:         Void
 			//=======================================================================================
-			std::shared_ptr<IChassis> CreateChassis
+			IChassis* CreateChassis
 			(
 				CHASSIS_TYPE     			        						type,				// <I> - Chassis Type
 				units::length::inch_t										wheelDiameter,		// <I> - Diameter of the wheel
@@ -55,7 +55,7 @@ class ChassisFactory
 			);
 			ChassisFactory() = default;
 			~ChassisFactory() = default;
-			std::shared_ptr<IChassis>        m_chassis;
+			IChassis*        m_chassis;
 
 			static ChassisFactory*	m_chassisFactory;
 
