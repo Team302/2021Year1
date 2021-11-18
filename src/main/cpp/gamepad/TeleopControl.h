@@ -38,28 +38,8 @@ class TeleopControl
         enum FUNCTION_IDENTIFIER
         {
             UNKNOWN_FUNCTION,
-            SWERVE_DRIVE_DRIVE,
-            SWERVE_DRIVE_ROTATE,
-            SWERVE_DRIVE_STEER,
-            DRIVE_FULL,
-            DRIVE_75PERCENT,
-            DRIVE_50PERCENT,
-            DRIVE_25PERCENT,
-            DRIVE_SHIFT_UP,
-            DRIVE_SHIFT_DOWN,
-            DRIVE_TURBO,
-            DRIVE_BRAKE,
-            BALL_TRANSFER_OFF,
-            BALL_TRANSFER_TO_SHOOTER,
-            SHOOTER_PREPARE_TO_SHOOT_GREEN,
-            SHOOTER_PREPARE_TO_SHOOT_YELLOW,
-            SHOOTER_PREPARE_TO_SHOOT_BLUE,
-            SHOOTER_PREPARE_TO_SHOOT_RED,
-            SHOOTER_SHOOT,
-            TURRET_LIMELIGHT_AIM,
-            REZERO_PIGEON,
-            AUTO_DRIVE_TO_YELLOW,
-            AUTO_DRIVE_TO_LOADING_ZONE,
+            ARCADE_THROTTLE,
+            ARCADE_STEER,
             MAX_FUNCTIONS
         };
 

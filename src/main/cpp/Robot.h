@@ -8,6 +8,8 @@
 
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
+#include <gamepad/TeleopControl.h>
+#include <subsys/interfaces/IChassis.h>
 
 class Robot : public frc::TimedRobot {
  public:
@@ -23,6 +25,10 @@ class Robot : public frc::TimedRobot {
   void TestPeriodic() override;
 
  private:
+TeleopControl* m_controller;
+IChassis* m_chassis;
+
+
   frc::SendableChooser<std::string> m_chooser;
   const std::string kAutoNameDefault = "Default";
   const std::string kAutoNameCustom = "My Auto";

@@ -6,12 +6,23 @@
 
 #include <fmt/core.h>
 
-#include <frc/smartdashboard/SmartDashboard.h>
+#include <xmlhw/RobotDefn.h>
+#include <subsys/ChassisFactory.h>
+#include <gamepad/TeleopControl.h>
+#include <subsys/interfaces/IChassis.h>
 
-void Robot::RobotInit() {
-  m_chooser.SetDefaultOption(kAutoNameDefault, kAutoNameDefault);
-  m_chooser.AddOption(kAutoNameCustom, kAutoNameCustom);
-  frc::SmartDashboard::PutData("Auto Modes", &m_chooser);
+void Robot::RobotInit() 
+{
+  //read the xml file to build the robot
+  auto defn = new RobotDefn();
+  defn->ParseXML();
+
+  //Get local copies of the teleop controller and thee chassis
+  m_controller = TeleopControl::GetInstance();
+  auto factory = ChassisFactory::GetChassisFactory();
+  m_chassis = factory->GetIChassis();
+
+ 
 }
 
 /**
@@ -22,7 +33,13 @@ void Robot::RobotInit() {
  * <p> This runs after the mode specific periodic functions, but before
  * LiveWindow and SmartDashboard integrated updating.
  */
-void Robot::RobotPeriodic() {}
+void Robot::RobotPeriodic() 
+{
+  if (m_chassis != nullptr)
+  {
+    m_chassis->UpdatePose();
+  }
+}
 
 /**
  * This autonomous (along with the chooser code above) shows how to select
@@ -35,30 +52,31 @@ void Robot::RobotPeriodic() {}
  * if-else structure below with additional strings. If using the SendableChooser
  * make sure to add them to the chooser code above as well.
  */
-void Robot::AutonomousInit() {
-  m_autoSelected = m_chooser.GetSelected();
-  // m_autoSelected = SmartDashboard::GetString("Auto Selector",
-  //     kAutoNameDefault);
-  fmt::print("Auto selected: {}\n", m_autoSelected);
-
-  if (m_autoSelected == kAutoNameCustom) {
-    // Custom Auto goes here
-  } else {
-    // Default Auto goes here
-  }
+void Robot::AutonomousInit() 
+{
+ 
 }
 
-void Robot::AutonomousPeriodic() {
-  if (m_autoSelected == kAutoNameCustom) {
-    // Custom Auto goes here
-  } else {
-    // Default Auto goes here
-  }
+void Robot::AutonomousPeriodic() 
+{
+
 }
 
-void Robot::TeleopInit() {}
+void Robot::TeleopInit() 
+{
 
-void Robot::TeleopPeriodic() {}
+}
+
+void Robot::TeleopPeriodic() 
+{
+  if (m_chassis != nullptr && m_controller != nullptr)
+  {
+    auto throttle = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE);
+    auto steer = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER);
+
+
+  }
+}
 
 void Robot::DisabledInit() {}
 
