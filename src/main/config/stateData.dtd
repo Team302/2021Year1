@@ -17,15 +17,10 @@
 
 <!ELEMENT mechanismTarget EMPTY>
 <!ATTLIST mechanismTarget 
-          stateIdentifier               ( INTAKEOFF | INTAKEON | INTAKEHUMANPLAYER |
-                                          IMPELLEROFF | IMPELLERHOLD | IMPELLERAGITATE | IMPELLERTOSHOOTER |
-                                          BALLTRANSFEROFF | BALLTRANSPORTTOIMPELLER | BALLTRANSFERTOSHOOTER | BALLTRANSFEREJECT |
-                                          SHOOTERHOODHOLD | SHOOTERHOODUP | SHOOTERHOODDOWN | SHOOTERHOODMANUAL |
-                                          TURRETHOLD | TURRETAUTOAIM | TURRETMANUALAIM | TURRETTURNANGLE | TURRETTURN |
-                                          SHOOTEROFF | SHOOTERGETREADY | SHOOTERSHOOT |
-                                          CONTROLPANELRAISE | CONTROLPANELMANUAL | CONTROLPANELSTOW | CONTROLPANELTURN | CONTROLPANELCOLOR | 
-                                          HOOKDELIVERYOFF | HOOKDELIVERYUP | HOOKDELIVERYDOWN |
-                                          CLIMBEROFF | CLIMBERWINCHUP |
+          stateIdentifier               ( INTAKEOFF | INTAKEON | INTAKEEXPEL |
+                                          BALLTRANSFEROFF | BALLTRANSFERINTAKE | BALLTRANSFEREXPEL |
+                                          ARMUP | ARMDOWN | ARMHOLDUP | ARMHOLDDOWN |
+                                          BALLRELEASEHOLD | BALLRELEASEOPEN |
                                           UNKNOWN ) "UNKNOWN"
           controlDataIdentifier         CDATA #REQUIRED
           value                         CDATA #REQUIRED
