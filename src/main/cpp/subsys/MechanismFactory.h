@@ -74,23 +74,10 @@ class MechanismFactory
 
 
 		//=====================================================================================
-		/// Method:         GetIMechanism
-		/// Description:    Find or create the requested mechanism
-		/// Returns:        IMechanism*     pointer to the mechanism or nullptr if mechanism 
-		///                                 doesn't exist and cannot be created.
-		//=====================================================================================
-		IMech* GetIMechanism
-		(
-			MechanismTypes::MECHANISM_TYPE			type		// <I> - manipulator type
-		);
-
-		//=====================================================================================
 		/// Method:         CreateIMechanism
 		/// Description:    Find or create the requested mechanism
-		/// Returns:        IMechanism*     pointer to the mechanism or nullptr if mechanism 
-		///                                 doesn't exist and cannot be created.
 		//=====================================================================================
-		IMech*  CreateIMechanism
+		void  CreateIMechanism
 		(
 			MechanismTypes::MECHANISM_TYPE							type,
 			const IDragonMotorControllerMap&        				motorControllers,   // <I> - Motor Controllers
@@ -99,10 +86,10 @@ class MechanismFactory
 			const DigitalInputMap&									digitalInputs,
 			std::shared_ptr<ctre::phoenix::sensors::CANCoder>		canCoder
 		);
-		inline std::shared_ptr<Intake> GetIntake() const { return m_intake;};
-		inline std::shared_ptr<BallTransfer> GetBallTransfer() const { return m_ballTransfer;};
-		inline std::shared_ptr<Arm> GetArm() const { return m_arm;};
-		inline std::shared_ptr<BallRelease> GetBallRelease() const { return m_ballRelease;};
+		inline Intake* GetIntake() const { return m_intake;};
+		inline BallTransfer* GetBallTransfer() const { return m_ballTransfer;};
+		inline Arm* GetArm() const { return m_arm;};
+		inline BallRelease* GetBallRelease() const { return m_ballRelease;};
 
 	private:
 		std::shared_ptr<IDragonMotorController> GetMotorController
@@ -138,9 +125,8 @@ class MechanismFactory
 
 		static MechanismFactory*	m_mechanismFactory;
 
-		std::vector<IMech*> m_mechanisms;
-		std::shared_ptr<Intake> 		m_intake;
-		std::shared_ptr<BallTransfer> 	m_ballTransfer;
-		std::shared_ptr<Arm> 			m_arm;
-		std::shared_ptr<BallRelease>	m_ballRelease;
+		Intake* 		m_intake;
+		BallTransfer* 	m_ballTransfer;
+		Arm* 			m_arm;
+		BallRelease*	m_ballRelease;
 };

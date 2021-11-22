@@ -129,7 +129,7 @@ void BallTransferStateMgr::RunCurrentState()
 {
     auto nt = nt::NetworkTableInstance::GetDefault().GetTable(string("Ball Transfer State Manager"));
 
-    if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer().get() != nullptr )
+    if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer() != nullptr )
     {
         // process teleop/manual interrupts
         
@@ -173,7 +173,7 @@ void BallTransferStateMgr::SetCurrentState
     bool                    run
 )
 {
-    if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer().get() != nullptr )
+    if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer() != nullptr )
     {
         auto state = m_stateVector[stateEnum];
         if ( state != nullptr && state != m_currentState)

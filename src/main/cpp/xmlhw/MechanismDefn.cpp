@@ -63,14 +63,11 @@ using namespace std;
 
 /// @brief  Parse a Mechanism XML element and create an IMechanism from its definition.
 /// @return IMechanism*   pointer to the mechanism
-IMech* MechanismDefn::ParseXML
+void MechanismDefn::ParseXML
 (
     xml_node      mechanismNode
 )
 {
-    // initialize outputs
-    IMech* mech = nullptr;
-
     // initialize attributes
     MechanismTypes::MECHANISM_TYPE type = MechanismTypes::UNKNOWN_MECHANISM;
 
@@ -184,8 +181,7 @@ IMech* MechanismDefn::ParseXML
     if ( !hasError )
     {
         MechanismFactory* factory =  MechanismFactory::GetMechanismFactory();
-        mech = factory->CreateIMechanism( type, motors, solenoids, servos, digitalInputs, canCoder );
+        factory->CreateIMechanism( type, motors, solenoids, servos, digitalInputs, canCoder );
     }
 
-    return mech;
 }

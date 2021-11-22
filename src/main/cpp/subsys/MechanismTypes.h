@@ -33,10 +33,8 @@ class MechanismTypes
             UNKNOWN_MECHANISM = -1,
             INTAKE,
             BALL_TRANSFER,
-            TURRET,
-            SHOOTER,
-            BALL_HOPPER,
-            
+            ARM,
+            BALL_RELEASE,           
             MAX_MECHANISM_TYPES
         };
 };

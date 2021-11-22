@@ -31,6 +31,6 @@ BallTransferState::BallTransferState
 (
     ControlData*                    control,
     double                          target
-) : Mech1MotorState( MechanismFactory::GetMechanismFactory()->GetBallTransfer().get(), control, target )
+) : Mech1MotorState( MechanismFactory::GetMechanismFactory()->GetBallTransfer(), control, target )
 {
 }
