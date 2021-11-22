@@ -7,6 +7,7 @@
 #include <string>
 
 #include <frc/TimedRobot.h>
+#include <frc/Timer.h>
 #include <frc/smartdashboard/SendableChooser.h>
 #include <gamepad/TeleopControl.h>
 #include <subsys/interfaces/IChassis.h>
@@ -27,6 +28,7 @@ class Robot : public frc::TimedRobot {
  private:
   TeleopControl*        m_controller;
   IChassis*             m_chassis;
+  frc::Timer*           m_timer;
 
 
   frc::SendableChooser<std::string> m_chooser;

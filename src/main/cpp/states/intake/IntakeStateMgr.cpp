@@ -173,21 +173,21 @@ void IntakeStateMgr::SetCurrentState
     bool                    run
 )
 {
-    auto state = m_stateVector[stateEnum];
-    if ( state != nullptr && state != m_currentState)
-    {    
-        m_currentState = state;
-        m_currentStateEnum = stateEnum;       
-        m_currentState->Init();
-        
-        if ( run )
-        {
-            if ( MechanismFactory::GetMechanismFactory()->GetIntake().get() != nullptr )
+    if ( MechanismFactory::GetMechanismFactory()->GetIntake().get() != nullptr )
+    {
+        auto state = m_stateVector[stateEnum];
+        if ( state != nullptr && state != m_currentState)
+        {    
+            m_currentState = state;
+            m_currentStateEnum = stateEnum;       
+            m_currentState->Init();
+            
+            if ( run )
             {
                 m_currentState->Run();
             }
+            
         }
-        
     }
 }
 

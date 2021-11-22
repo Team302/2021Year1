@@ -3,4 +3,6 @@ compiling DragonVision.cpp successful.
 
 compiling IntakeStateMgr.cpp successful.
 
+compiling BallTransferStateMgr.cpp successful.
+
 Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

@@ -6,6 +6,11 @@
 
 #include <fmt/core.h>
 #include <frc/smartdashboard/SmartDashboard.h>
+#include <frc/Timer.h>
+#include <frc/kinematics/ChassisSpeeds.h>
+
+#include <units/velocity.h>
+#include <units/angular_velocity.h>
 
 #include <xmlhw/RobotDefn.h>
 #include <subsys/ChassisFactory.h>
@@ -22,6 +27,8 @@ void Robot::RobotInit()
   m_controller = TeleopControl::GetInstance();
   auto factory = ChassisFactory::GetChassisFactory();
   m_chassis = factory->GetIChassis();
+
+  m_timer = new frc::Timer();
 }
 
 /**
@@ -53,12 +60,23 @@ void Robot::RobotPeriodic()
  */
 void Robot::AutonomousInit() 
 {
-  
+  m_timer->Reset();
 }
 
 void Robot::AutonomousPeriodic() 
 {
-
+  if (m_chassis != nullptr)
+  {
+    frc::ChassisSpeeds speeds;
+    speeds.vx = 0_mps;
+    speeds.vy = 0_mps;
+    speeds.omega = 0_rad_per_s;
+    if (m_timer->Get() < 3_s)
+    {
+      speeds.vx = 1_mps;
+    }
+    m_chassis->Drive(speeds);
+  }
 }
 
 void Robot::TeleopInit() 
