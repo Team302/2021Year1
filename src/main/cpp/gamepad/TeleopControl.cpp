@@ -1,6 +1,6 @@
 
 //====================================================================================================================================================
-// Copyright 2020 Lake Orion Robotics FIRST Team 302 
+// Copyright 2021 Lake Orion Robotics FIRST Team 302 
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 // to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -90,10 +90,17 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     auto ctrlNo = 0;
     if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
+<<<<<<< HEAD
 		m_controllerIndex[ ARCADE_THROTTLE]			= ctrlNo;
 		m_axisIDs[ ARCADE_THROTTLE]					= IDragonGamePad::LEFT_JOYSTICK_Y;
 		m_controllerIndex[ ARCADE_STEER]			= ctrlNo;
 		m_axisIDs[ ARCADE_STEER]					= IDragonGamePad::RIGHT_JOYSTICK_X;
+=======
+		m_controllerIndex[ARCADE_THROTTLE]			= ctrlNo;
+		m_axisIDs[ ARCADE_THROTTLE]					= IDragonGamePad::LEFT_JOYSTICK_Y;
+		m_controllerIndex[ARCADE_STEER]				= ctrlNo;
+		m_axisIDs[ARCADE_STEER]						= IDragonGamePad::RIGHT_JOYSTICK_X;
+>>>>>>> main
     }
     else
     {
@@ -103,7 +110,11 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     ctrlNo = 1;
     if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> main
 	}
     else if ( m_controllers[ctrlNo] != nullptr )
     {

@@ -1,6 +1,6 @@
 
 //====================================================================================================================================================
-// Copyright 2020 Lake Orion Robotics FIRST Team 302 
+// Copyright 2021 Lake Orion Robotics FIRST Team 302 
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 // to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -35,14 +35,48 @@ using namespace std;
 /// @param [in] std::shared_ptr<DragonServo> servo used by this mechanism
 Mech1Servo::Mech1Servo
 (
+    MechanismTypes::MECHANISM_TYPE              type,
+    std::string                                 controlFileName,
+    std::string                                 networkTableName,
     std::shared_ptr<DragonServo>                servo
 ) : IMech1Servo(),
-    m_servo(servo) 
+    m_servo(servo),
+    m_type(type),
+    m_controlFile(controlFileName),
+    m_ntName(networkTableName),
+    m_logging(false) 
 {
     if (m_servo.get() == nullptr )
     {
         Logger::GetLogger()->LogError( Logger::LOGGER_LEVEL::ERROR_ONCE, string( "Mech1Servo constructor" ), string( "servo is nullptr" ) );
     }
+}
+
+/// @brief          Indicates the type of mechanism this is
+/// @return         MechanismTypes::MECHANISM_TYPE
+MechanismTypes::MECHANISM_TYPE Mech1Servo::GetType() const 
+{
+    return m_type;
+}
+
+/// @brief indicate the file used to get the control parameters from
+/// @return std::string the name of the file 
+std::string Mech1Servo::GetControlFileName() const 
+{
+    return m_controlFile;
+}
+
+
+/// @brief indicate the network table name used to for logging parameters
+/// @return std::string the name of the network table 
+std::string Mech1Servo::GetNetworkTableName() const 
+{
+    return m_ntName;
+}
+
+/// @brief log data to the network table if it is activated and time period has past
+void Mech1Servo::LogData()
+{
 }
 
 /// @brief      Move servo to the desired angle

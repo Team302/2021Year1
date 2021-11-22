@@ -5,11 +5,21 @@
 #include "Robot.h"
 
 #include <fmt/core.h>
+<<<<<<< HEAD
+=======
+#include <frc/smartdashboard/SmartDashboard.h>
+#include <frc/Timer.h>
+#include <frc/kinematics/ChassisSpeeds.h>
+
+#include <units/velocity.h>
+#include <units/angular_velocity.h>
+>>>>>>> main
 
 #include <xmlhw/RobotDefn.h>
 #include <subsys/ChassisFactory.h>
 #include <gamepad/TeleopControl.h>
 #include <subsys/interfaces/IChassis.h>
+<<<<<<< HEAD
 
 void Robot::RobotInit() 
 {
@@ -18,11 +28,25 @@ void Robot::RobotInit()
   defn->ParseXML();
 
   //Get local copies of the teleop controller and thee chassis
+=======
+
+void Robot::RobotInit() 
+{
+  // Read the XML file to build the robot 
+  auto defn = new RobotDefn();
+  defn->ParseXML();
+
+  // Get local copies of the teleop controller and the chassis
+>>>>>>> main
   m_controller = TeleopControl::GetInstance();
   auto factory = ChassisFactory::GetChassisFactory();
   m_chassis = factory->GetIChassis();
 
+<<<<<<< HEAD
  
+=======
+  m_timer = new frc::Timer();
+>>>>>>> main
 }
 
 /**
@@ -54,16 +78,36 @@ void Robot::RobotPeriodic()
  */
 void Robot::AutonomousInit() 
 {
+<<<<<<< HEAD
  
+=======
+  m_timer->Reset();
+>>>>>>> main
 }
 
 void Robot::AutonomousPeriodic() 
 {
+<<<<<<< HEAD
 
+=======
+  if (m_chassis != nullptr)
+  {
+    frc::ChassisSpeeds speeds;
+    speeds.vx = 0_mps;
+    speeds.vy = 0_mps;
+    speeds.omega = 0_rad_per_s;
+    if (m_timer->Get() < 3_s)
+    {
+      speeds.vx = 1_mps;
+    }
+    m_chassis->Drive(speeds);
+  }
+>>>>>>> main
 }
 
 void Robot::TeleopInit() 
 {
+<<<<<<< HEAD
 
 }
 
@@ -75,6 +119,19 @@ void Robot::TeleopPeriodic()
     auto steer = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER);
 
 
+=======
+
+}
+
+void Robot::TeleopPeriodic() 
+{
+  if (m_chassis != nullptr && m_controller != nullptr)
+  {
+    auto throttle = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE);
+    auto steer = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER);
+
+    
+>>>>>>> main
   }
 }
 

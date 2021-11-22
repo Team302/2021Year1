@@ -1,6 +1,6 @@
 
 //====================================================================================================================================================
-// Copyright 2020 Lake Orion Robotics FIRST Team 302
+// Copyright 2021 Lake Orion Robotics FIRST Team 302
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 // to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -38,6 +38,11 @@
 #include <hw/usages/DigitalInputMap.h>
 #include <hw/usages/ServoMap.h>
 #include <hw/usages/DragonSolenoidMap.h>
+#include <subsys/interfaces/IMech.h>
+#include <subsys/Intake.h>
+#include <subsys/BallTransfer.h>
+#include <subsys/Arm.h>
+#include <subsys/BallRelease.h>
 
 // Third Party Includes
 
@@ -69,32 +74,22 @@ class MechanismFactory
 
 
 		//=====================================================================================
-		/// Method:         GetIMechanism
-		/// Description:    Find or create the requested mechanism
-		/// Returns:        IMechanism*     pointer to the mechanism or nullptr if mechanism 
-		///                                 doesn't exist and cannot be created.
-		//=====================================================================================
-		IMech* GetIMechanism
-		(
-			MechanismTypes::MECHANISM_TYPE			type		// <I> - manipulator type
-		);
-
-		//=====================================================================================
 		/// Method:         CreateIMechanism
 		/// Description:    Find or create the requested mechanism
-		/// Returns:        IMechanism*     pointer to the mechanism or nullptr if mechanism 
-		///                                 doesn't exist and cannot be created.
 		//=====================================================================================
-		IMech*  CreateIMechanism
+		void  CreateIMechanism
 		(
 			MechanismTypes::MECHANISM_TYPE							type,
 			const IDragonMotorControllerMap&        				motorControllers,   // <I> - Motor Controllers
 			const DragonSolenoidMap&                				solenoids,
 			const ServoMap&						    				servos,
 			const DigitalInputMap&									digitalInputs,
-			//const AnalogInputMap&                   				analogInputs,
 			std::shared_ptr<ctre::phoenix::sensors::CANCoder>		canCoder
 		);
+		inline Intake* GetIntake() const { return m_intake;};
+		inline BallTransfer* GetBallTransfer() const { return m_ballTransfer;};
+		inline Arm* GetArm() const { return m_arm;};
+		inline BallRelease* GetBallRelease() const { return m_ballRelease;};
 
 	private:
 		std::shared_ptr<IDragonMotorController> GetMotorController
@@ -130,6 +125,8 @@ class MechanismFactory
 
 		static MechanismFactory*	m_mechanismFactory;
 
-		std::vector<IMech*> m_mechanisms;
-
+		Intake* 		m_intake;
+		BallTransfer* 	m_ballTransfer;
+		Arm* 			m_arm;
+		BallRelease*	m_ballRelease;
 };
