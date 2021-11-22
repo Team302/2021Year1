@@ -1,6 +1,13 @@
 See file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
 compiling DragonVision.cpp successful.
 
-compiling TeleopControl.cpp successful.
+compiling Robot.cpp successful.
+C:\GitRepos\2021Year1\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+C:\GitRepos\2021Year1\src\main\cpp\Robot.cpp:73:10: warning: unused variable 'throttle' [-Wunused-variable]
+     auto throttle = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE);
+          ^~~~~~~~
+C:\GitRepos\2021Year1\src\main\cpp\Robot.cpp:74:10: warning: unused variable 'steer' [-Wunused-variable]
+     auto steer = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER);
+          ^~~~~
 
 Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

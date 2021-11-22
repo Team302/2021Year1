@@ -44,7 +44,7 @@ class ChassisDefn
 		///		   It can be retrieved from the factory.
 		/// @param [in]  pugi::xml_node the chassis element in the XML document
     	/// @return std::shared_ptr<IChassis> 
-		std::shared_ptr<IChassis>  ParseXML
+		IChassis*  ParseXML
 		(
 			pugi::xml_node      chassisNode
 		);

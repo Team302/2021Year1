@@ -90,36 +90,10 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     auto ctrlNo = 0;
     if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
-		m_controllerIndex[ SWERVE_DRIVE_DRIVE]			= ctrlNo;
-		m_axisIDs[ SWERVE_DRIVE_DRIVE]					= IDragonGamePad::LEFT_JOYSTICK_Y;
-		m_controllerIndex[ SWERVE_DRIVE_STEER]			= ctrlNo;
-		m_axisIDs[ SWERVE_DRIVE_STEER]					= IDragonGamePad::LEFT_JOYSTICK_X;
-		m_controllerIndex[ SWERVE_DRIVE_ROTATE]			= ctrlNo;
-		m_axisIDs[ SWERVE_DRIVE_ROTATE]					= IDragonGamePad::RIGHT_JOYSTICK_X;
-		m_controllerIndex[ REZERO_PIGEON ]				= ctrlNo;
-		m_buttonIDs[ REZERO_PIGEON ]					= IDragonGamePad::X_BUTTON;
-
-		m_controllerIndex[ AUTO_DRIVE_TO_YELLOW ]		= ctrlNo;
-		m_buttonIDs[ AUTO_DRIVE_TO_YELLOW ]				= IDragonGamePad::Y_BUTTON;
-		m_controllerIndex[ AUTO_DRIVE_TO_LOADING_ZONE ]	= ctrlNo;
-		m_buttonIDs[ AUTO_DRIVE_TO_LOADING_ZONE ]		= IDragonGamePad::B_BUTTON;
-
-		m_controllerIndex[DRIVE_FULL] 		= ctrlNo;
-		m_buttonIDs[DRIVE_FULL] 			= IDragonGamePad::POV_0;	
-		m_controllerIndex[DRIVE_75PERCENT] 	= ctrlNo;
-		m_buttonIDs[DRIVE_75PERCENT] 		= IDragonGamePad::POV_90;	
-		m_controllerIndex[DRIVE_50PERCENT] 	= ctrlNo;
-		m_buttonIDs[DRIVE_50PERCENT] 		= IDragonGamePad::POV_270;	
-		m_controllerIndex[DRIVE_25PERCENT] 	= ctrlNo;
-		m_buttonIDs[DRIVE_25PERCENT] 		= IDragonGamePad::POV_180;	
-		m_controllerIndex[DRIVE_SHIFT_UP] 	= ctrlNo;
-		m_buttonIDs[DRIVE_SHIFT_UP] 		= IDragonGamePad::RIGHT_BUMPER;	
-		m_controllerIndex[DRIVE_SHIFT_DOWN] = ctrlNo;
-		m_buttonIDs[DRIVE_SHIFT_DOWN] 		= IDragonGamePad::LEFT_BUMPER;	
-		m_controllerIndex[DRIVE_TURBO] 		= ctrlNo;
-		m_axisIDs[ DRIVE_TURBO]	     		= IDragonGamePad::RIGHT_TRIGGER;
-		m_controllerIndex[DRIVE_BRAKE] 		= ctrlNo;
-		m_axisIDs[ DRIVE_BRAKE]	     		= IDragonGamePad::LEFT_TRIGGER;
+		m_controllerIndex[ARCADE_THROTTLE]			= ctrlNo;
+		m_axisIDs[ ARCADE_THROTTLE]					= IDragonGamePad::LEFT_JOYSTICK_Y;
+		m_controllerIndex[ARCADE_STEER]				= ctrlNo;
+		m_axisIDs[ARCADE_STEER]						= IDragonGamePad::RIGHT_JOYSTICK_X;
     }
     else
     {
@@ -129,23 +103,7 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     ctrlNo = 1;
     if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
-		m_controllerIndex[ SHOOTER_PREPARE_TO_SHOOT_GREEN ] = ctrlNo;
-		m_buttonIDs[ SHOOTER_PREPARE_TO_SHOOT_GREEN ] = IDragonGamePad::A_BUTTON;
 
-		m_controllerIndex[ SHOOTER_PREPARE_TO_SHOOT_RED] = ctrlNo;
-		m_buttonIDs[ SHOOTER_PREPARE_TO_SHOOT_RED ] = IDragonGamePad::B_BUTTON;
-
-		m_controllerIndex[ SHOOTER_PREPARE_TO_SHOOT_BLUE ] = ctrlNo;
-		m_buttonIDs[ SHOOTER_PREPARE_TO_SHOOT_BLUE ] = IDragonGamePad::X_BUTTON;
-		
-		m_controllerIndex[ SHOOTER_PREPARE_TO_SHOOT_YELLOW] = ctrlNo;
-		m_buttonIDs[ SHOOTER_PREPARE_TO_SHOOT_YELLOW ] = IDragonGamePad::Y_BUTTON;
-	
-		m_controllerIndex[SHOOTER_SHOOT] = ctrlNo;
-		m_buttonIDs[SHOOTER_SHOOT] = IDragonGamePad::RIGHT_BUMPER;	
-	
-		m_controllerIndex[TURRET_LIMELIGHT_AIM] = ctrlNo;
-		m_buttonIDs[TURRET_LIMELIGHT_AIM] = IDragonGamePad::LEFT_BUMPER;
 	}
     else if ( m_controllers[ctrlNo] != nullptr )
     {

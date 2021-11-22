@@ -8,6 +8,7 @@
 #include <units/velocity.h>
 
 #include <subsys/interfaces/IChassis.h>
+#include <subsys/DifferentialChassis.h>
 #include <subsys/ChassisFactory.h>
 #include <hw/interfaces/IDragonMotorController.h>
 #include <hw/usages/IDragonMotorControllerMap.h>
@@ -26,7 +27,7 @@ ChassisFactory* ChassisFactory::GetChassisFactory()
     return ChassisFactory::m_chassisFactory;
 }
 
-shared_ptr<IChassis> ChassisFactory::GetIChassis()
+IChassis* ChassisFactory::GetIChassis()
 {
     return m_chassis;
 }
@@ -36,7 +37,7 @@ shared_ptr<IChassis> ChassisFactory::GetIChassis()
 // Description:		Create a chassis from the inputs
 // Returns:         Void
 //=======================================================================================
-shared_ptr<IChassis> ChassisFactory::CreateChassis
+IChassis* ChassisFactory::CreateChassis
 (
     ChassisFactory::CHASSIS_TYPE   	                            type,				// <I> - Chassis Type
     units::length::inch_t										wheelDiameter,		// <I> - Diameter of the wheel
@@ -53,7 +54,15 @@ shared_ptr<IChassis> ChassisFactory::CreateChassis
     {
         case ChassisFactory::CHASSIS_TYPE::TANK_CHASSIS:
         {
-            // todo plug in tank drive
+            auto leftMotor = GetMotorController(motors, MotorControllerUsage::MOTOR_CONTROLLER_USAGE::DIFFERENTIAL_LEFT_MAIN);
+            auto rightMotor = GetMotorController(motors, MotorControllerUsage::MOTOR_CONTROLLER_USAGE::DIFFERENTIAL_RIGHT_MAIN);
+            m_chassis = new DifferentialChassis(*leftMotor.get(),
+                                                *rightMotor.get(),
+                                                track,
+                                                maxVelocity,
+                                                maxAngularSpeed,
+                                                wheelDiameter);
+
         }
         break;
 
