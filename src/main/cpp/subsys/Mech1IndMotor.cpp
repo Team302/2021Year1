@@ -49,6 +49,7 @@ Mech1IndMotor::Mech1IndMotor
 ) : m_type(type),
     m_controlFile(controlFileName),
     m_ntName(networkTableName),
+    m_logging(false),
     m_motor( motorController ),
     m_target( 0.0 )
 {

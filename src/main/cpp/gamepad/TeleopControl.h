@@ -40,6 +40,11 @@ class TeleopControl
             UNKNOWN_FUNCTION,
             ARCADE_THROTTLE,
             ARCADE_STEER,
+            INTAKE,
+            EXPEL,
+            ROTATE_ARM_UP,
+            ROTATE_ARM_DOWN,
+            RELEASE,
             MAX_FUNCTIONS
         };
 

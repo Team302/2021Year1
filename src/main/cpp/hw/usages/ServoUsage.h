@@ -40,7 +40,7 @@ class ServoUsage
         enum SERVO_USAGE
         {
             UNKNOWN_SERVO_USAGE = -1,
-            
+            RELEASE_SERVO, 
             MAX_SERVO_USAGES
         };
 

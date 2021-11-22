@@ -40,7 +40,7 @@ ServoUsage* ServoUsage::GetInstance()
 
 ServoUsage::ServoUsage()
 {
-
+    m_usageMap["RELEASE"]  = SERVO_USAGE::RELEASE_SERVO;
 }
 
 

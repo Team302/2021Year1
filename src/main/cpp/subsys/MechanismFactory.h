@@ -38,6 +38,11 @@
 #include <hw/usages/DigitalInputMap.h>
 #include <hw/usages/ServoMap.h>
 #include <hw/usages/DragonSolenoidMap.h>
+#include <subsys/interfaces/IMech.h>
+#include <subsys/Intake.h>
+#include <subsys/BallTransfer.h>
+#include <subsys/Arm.h>
+#include <subsys/BallRelease.h>
 
 // Third Party Includes
 
@@ -92,9 +97,12 @@ class MechanismFactory
 			const DragonSolenoidMap&                				solenoids,
 			const ServoMap&						    				servos,
 			const DigitalInputMap&									digitalInputs,
-			//const AnalogInputMap&                   				analogInputs,
 			std::shared_ptr<ctre::phoenix::sensors::CANCoder>		canCoder
 		);
+		inline std::shared_ptr<Intake> GetIntake() const { return m_intake;};
+		inline std::shared_ptr<BallTransfer> GetBallTransfer() const { return m_ballTransfer;};
+		inline std::shared_ptr<Arm> GetArm() const { return m_arm;};
+		inline std::shared_ptr<BallRelease> GetBallRelease() const { return m_ballRelease;};
 
 	private:
 		std::shared_ptr<IDragonMotorController> GetMotorController
@@ -131,5 +139,8 @@ class MechanismFactory
 		static MechanismFactory*	m_mechanismFactory;
 
 		std::vector<IMech*> m_mechanisms;
-
+		std::shared_ptr<Intake> 		m_intake;
+		std::shared_ptr<BallTransfer> 	m_ballTransfer;
+		std::shared_ptr<Arm> 			m_arm;
+		std::shared_ptr<BallRelease>	m_ballRelease;
 };
