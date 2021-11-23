@@ -104,12 +104,10 @@ void MechanismFactory::CreateIMechanism
 				auto motor = GetMotorController( motorControllers, MotorControllerUsage::MOTOR_CONTROLLER_USAGE::INTAKE );
 				if ( motor.get() != nullptr )
 				{
-					auto solenoid = GetSolenoid( solenoids, SolenoidUsage::SOLENOID_USAGE::INTAKE );
-					if ( solenoid.get() != nullptr )
-					{
+					
 						m_intake = new Intake(motor);
-					}
 				}
+				
 			}
 			else
 			{
@@ -117,6 +115,19 @@ void MechanismFactory::CreateIMechanism
 			}
 		}
 		break;
+
+		case MechanismTypes::BALL_TRANSFER:
+		{
+			if (m_ballTransfer == nullptr) 
+			{
+				auto motor = GetMotorController(motorControllers, MotorControllerUsage::BALL_TRANSFER);
+				if (motor.get() != nullptr)
+				{
+					m_ballTransfer = new BallTransfer(motor);
+				}
+				
+			}
+		}
 
 		default:
 		{

@@ -1,4 +1,4 @@
-See file:///C:/GitRepos/2021Year1/build/tmp/linkFrcUserProgramDebugExecutable/output.txt for all output for linkFrcUserProgramDebugExecutable.
+See file:///C:/Users/user/Downloads/gitRepos/2021Year1/build/tmp/linkFrcUserProgramDebugExecutable/output.txt for all output for linkFrcUserProgramDebugExecutable.
 linking frcUserProgram successful.
 
-Finished linkFrcUserProgramDebugExecutable, see full log file:///C:/GitRepos/2021Year1/build/tmp/linkFrcUserProgramDebugExecutable/output.txt.
+Finished linkFrcUserProgramDebugExecutable, see full log file:///C:/Users/user/Downloads/gitRepos/2021Year1/build/tmp/linkFrcUserProgramDebugExecutable/output.txt.

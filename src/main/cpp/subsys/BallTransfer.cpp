@@ -18,7 +18,19 @@
 // FRC includes
 
 // Team 302 includes
+#include <subsys/Intake.h>
+#include <subsys/Mech1IndMotor.h>
+#include <hw/interfaces/IDragonMotorController.h>
 
 // Third Party Includes
 
+using namespace std;
 
+
+BallTransfer::BallTransfer
+(
+    shared_ptr<IDragonMotorController> motor1 // motor controller passed in from mech factory
+) : Mech1IndMotor( MechanismTypes::MECHANISM_TYPE::BALL_TRANSFER,  string("ballTransfer.xml"),  string("BallTransferNT"), motor1)
+// ^ creates a 1 motor mechinism of type "ball Transfer" state control data nd network table name
+{
+} 
