@@ -90,7 +90,12 @@ void Robot::TeleopPeriodic()
   {
     auto throttle = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE);
     auto steer = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER);
-
+    
+    frc::ChassisSpeeds speeds;
+    speeds.vx = throttle * m_chassis->GetMaxSpeed();
+    speeds.vy = 0_mps;
+    speeds.omega = steer *m_chassis->GetMaxAngularSpeed();
+    m_chassis->Drive(speeds);
     
   }
 }

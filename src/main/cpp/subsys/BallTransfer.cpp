@@ -14,11 +14,25 @@
 //====================================================================================================================================================
 
 // C++ Includes
+#include <memory>
+#include <string>
 
 // FRC includes
 
 // Team 302 includes
+#include <subsys/BallTransfer.h>
+#include <subsys/Mech1IndMotor.h>
+#include <hw/interfaces/IDragonMotorController.h>
 
 // Third Party Includes
+using namespace std;
+
+BallTransfer::BallTransfer
+(
+    shared_ptr<IDragonMotorController> motor1   //Motor controlled passed in from mech factory
+) : Mech1IndMotor( MechanismTypes::MECHANISM_TYPE::BALL_TRANSFER,  string("balltransfer.xml"),  string("BallTransferNT"), motor1)
+
+{
+}
 
 
