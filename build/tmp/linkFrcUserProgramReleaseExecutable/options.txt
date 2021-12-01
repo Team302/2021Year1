@@ -5,6 +5,7 @@ C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\1huuy4m2tkwi5ii7xsw7ir7n3\\PigeonDefn.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\1s68jbzvq2z7sr00hlo9matwp\\DragonMotorControllerFactory.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\1y9fffj170cichs7gz77obmxf\\ScaledAxis.o
+C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\294u0kf432dfc3snh11jgx8gr\\ArmState.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\2qwrjf0tef5rof8ed7w9g60wl\\DragonPigeon.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\3bg5a77l7vd4edmrxq5jco6ri\\Robot.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\3wvwr1684ynmjf5a92cnyh39f\\MechanismTargetDefn.o
@@ -39,6 +40,7 @@ C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\8h428rmz7we4y0376tgxsdrfa\\Mech1Servo.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\8hils9bepixfa1l6zt73ooheo\\DragonXBox.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\981ota9wkf1hwidxu0fut250o\\DragonServo.o
+C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\9hqdl6v5ja1ynmq3140yxtsss\\BallReleaseState.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\9keir6gwkk4mhhl7epjysbl02\\Mech2MotorState.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\9l73abvx5zgwut486aeldhrfx\\Mech1IndMotor.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\9wlpe4c8y8wl254e9umgv95uh\\StateDataDefn.o
@@ -60,6 +62,7 @@ C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\cgxh5l0b1cq9m848qnztss37o\\ServoDefn.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\cir5o23ikdx2pqblnhyde2j2s\\Mech2IndMotors.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\co5y5w5r3ftj8734xbul0vowf\\DragonTalon.o
+C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\cqthcykl8fu8ra9mcmm70wj3y\\StateMgr.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\csjxy9oxu85jfz46yv5psm2n6\\MechanismTargetData.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\dfywfqigykkc34olb1r5nhkmf\\HardwareIDValidation.o
 C:\\GitRepos\\2021Year1\\build\\objs\\frcUserProgram\\release\\frcUserProgramCpp\\dq5r63afp6itvzowf3oekzvuw\\TeleopControl.o

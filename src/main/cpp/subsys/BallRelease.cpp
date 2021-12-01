@@ -16,10 +16,26 @@
 // C++ Includes
 
 
+// C++ Includes
+#include <memory>
+#include <string>
+
+
 // FRC includes
 
 // Team 302 includes
+#include <subsys/BallRelease.h>
+#include <subsys/Mech1Servo.h>
+#include <hw/DragonServo.h>
 
 // Third Party Includes
 
+using namespace std;
+
+BallRelease::BallRelease
+(
+    shared_ptr<DragonServo> servo 
+) : Mech1Servo(MechanismTypes::MECHANISM_TYPE::BALL_RELEASE,  string("ballrelease.xml"),  string("BallReleaseNT"), servo)
+{
+}
 
