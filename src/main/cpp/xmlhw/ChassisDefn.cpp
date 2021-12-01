@@ -63,7 +63,7 @@ IChassis* ChassisDefn::ParseXML
 	xml_node      chassisNode
 )
 {
-    IChassis* chassis;
+    IChassis* chassis = nullptr;
     // initialize the attributes to the default values
     ChassisFactory::CHASSIS_TYPE type = ChassisFactory::CHASSIS_TYPE::TANK_CHASSIS;
     units::length::inch_t wheelDiameter(0.0);

@@ -54,6 +54,7 @@ class MotorControllerUsage
             TURRET,
             SHOOTER_1,            
             SHOOTER_2,
+            ARM,
             MAX_MOTOR_CONTROLLER_USAGES
         };
 

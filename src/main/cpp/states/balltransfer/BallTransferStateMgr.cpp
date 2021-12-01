@@ -33,6 +33,8 @@
 #include <states/balltransfer/BallTransferState.h>
 #include <subsys/MechanismFactory.h>
 #include <subsys/MechanismTypes.h>
+#include <states/StateMgr.h>
+#include <states/StateStruc.h>
 
 
 // Third Party Includes
@@ -52,144 +54,59 @@ BallTransferStateMgr* BallTransferStateMgr::GetInstance()
 
 
 /// @brief    initialize the state manager, parse the configuration file and create the states.
-BallTransferStateMgr::BallTransferStateMgr() : m_currentState(),
-                                               m_stateVector(),
-                                               m_currentStateEnum(BALL_TRANSFER_STATE::OFF)
+BallTransferStateMgr::BallTransferStateMgr() 
 {
-    // Parse the configuration file 
-    auto stateXML = make_unique<StateDataDefn>();
-    vector<MechanismTargetData*> targetData = stateXML.get()->ParseXML( MechanismTypes::MECHANISM_TYPE::BALL_TRANSFER );
+    map<string, StateStruc> stateMap;
+    StateStruc struc;
 
-    // initialize the xml string to state map
-    map<string, BALL_TRANSFER_STATE> stateMap;
-    stateMap["BALLTRANSFEROFF"] = BALL_TRANSFER_STATE::OFF;
-    stateMap["BALLTRANSFERINTAKE"]  = BALL_TRANSFER_STATE::INTAKE;
-    stateMap["BALLTRANSFEREXPEL"]  = BALL_TRANSFER_STATE::EXPEL;
-    m_stateVector.resize(3);
-    // create the states passing the configuration data
-    for ( auto td: targetData )
-    {
-        auto stateString = td->GetStateString();
-        auto stateStringToEnumItr = stateMap.find( stateString );
-        if ( stateStringToEnumItr != stateMap.end() )
-        {
-            auto stateEnum = stateStringToEnumItr->second;
-            if ( m_stateVector[stateEnum] == nullptr )
-            {
-                auto controlData = td->GetController();
-                auto target = td->GetTarget();
-                switch ( stateEnum )
-                {
-                    case BALL_TRANSFER_STATE::OFF:
-                    {   
-                        auto thisState = new BallTransferState( controlData, target );
-                        m_stateVector[stateEnum] = thisState;
-                        m_currentState = thisState;
-                        m_currentStateEnum = stateEnum;
-                        m_currentState->Init();
-                    }
-                    break;
+    struc.id = BALL_TRANSFER_STATE::OFF;
+    struc.isDefault = true;
+    struc.type = StateType::BALLTRANSER;
+    stateMap["BALLTRANSFEROFF"] = struc;
+    
+    struc.id = BALL_TRANSFER_STATE::INTAKE;
+    struc.isDefault = false;
+    struc.type = StateType::BALLTRANSER;
+    stateMap["BALLTRANSFERINTAKE"] = struc;
+    
+    struc.id = BALL_TRANSFER_STATE::EXPEL;
+    struc.isDefault = false;
+    struc.type = StateType::BALLTRANSER;
+    stateMap["BALLTRANSFEREXPEL"] = struc;
 
-                    case BALL_TRANSFER_STATE::INTAKE:
-                    {   
-                        auto thisState = new BallTransferState( controlData, target );
-                        m_stateVector[stateEnum] = thisState;
-                    }
-                    break;
-                   
-                    case BALL_TRANSFER_STATE::EXPEL:
-                    {   
-                        auto thisState = new BallTransferState( controlData, target );
-                        m_stateVector[stateEnum] = thisState;
-                    }
-                    break;
-                   
-                    default:
-                    {
-                        Logger::GetLogger()->LogError( string("BallTransferStateMgr::BallTransferStateMgr"), string("unknown state"));
-                    }
-                    break;
-                }
-            }
-            else
-            {
-                Logger::GetLogger()->LogError( string("BallTransferStateMgr::BallTransferStateMgr"), string("multiple mechanism state info for state"));
-            }
-        }
-        else
-        {
-            Logger::GetLogger()->LogError( string("BallTransferStateMgr::BallTransferStateMgr"), string("state not found"));
-        }
-    }
+    Init(MechanismFactory::GetMechanismFactory()->GetBallTransfer(), stateMap);
 }
 
 /// @brief  run the current state
 /// @return void
-void BallTransferStateMgr::RunCurrentState()
+void BallTransferStateMgr::CheckForDriveTeamInput()
 {
-    auto nt = nt::NetworkTableInstance::GetDefault().GetTable(string("Ball Transfer State Manager"));
-
     if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer() != nullptr )
     {
         // process teleop/manual interrupts
+        auto currentState = static_cast<BALL_TRANSFER_STATE>(GetCurrentState());
         
         auto controller = TeleopControl::GetInstance();
         if ( controller != nullptr )
         {
             auto intakePressed = controller->IsButtonPressed(TeleopControl::FUNCTION_IDENTIFIER::INTAKE);
             auto expelPressed = controller->IsButtonPressed(TeleopControl::FUNCTION_IDENTIFIER::EXPEL);
-            if (intakePressed  &&  m_currentStateEnum != BALL_TRANSFER_STATE::INTAKE )
+            if (intakePressed  &&  currentState != BALL_TRANSFER_STATE::INTAKE )
             {
                 SetCurrentState( BALL_TRANSFER_STATE::INTAKE, false );
             }
-            else if (expelPressed && m_currentStateEnum != BALL_TRANSFER_STATE::EXPEL )
+            else if (expelPressed && currentState != BALL_TRANSFER_STATE::EXPEL )
             {
                 SetCurrentState( BALL_TRANSFER_STATE::EXPEL, false );
             }           
-            else if ((!intakePressed && !expelPressed) && m_currentStateEnum != BALL_TRANSFER_STATE::OFF )
+            else if ((!intakePressed && !expelPressed) && currentState != BALL_TRANSFER_STATE::OFF )
             {
                 SetCurrentState( BALL_TRANSFER_STATE::OFF, false );
             }
-            else
-            {
-                // continue running the current state
-            }           
-        }
-
-        // run the current state
-        if ( m_currentState != nullptr )
-        {
-            m_currentState->Run();
-        }
-    }
-
-}
-
-/// @brief  set the current state, initialize it and run it
-/// @return void
-void BallTransferStateMgr::SetCurrentState
-(
-    BALL_TRANSFER_STATE     stateEnum,
-    bool                    run
-)
-{
-    if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer() != nullptr )
-    {
-        auto state = m_stateVector[stateEnum];
-        if ( state != nullptr && state != m_currentState)
-        {    
-            m_currentState = state;
-            m_currentStateEnum = stateEnum;       
-            m_currentState->Init();
-            
-            if ( run )
-            {
-                m_currentState->Run();
-            }
-            
         }
     }
 }
+
 
 
 

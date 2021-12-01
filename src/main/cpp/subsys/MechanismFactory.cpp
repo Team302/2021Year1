@@ -131,6 +131,31 @@ void MechanismFactory::CreateIMechanism
 		}
 		break;
 
+		case MechanismTypes::ARM:
+		{
+			if (m_arm == nullptr)
+			{
+				auto motor = GetMotorController(motorControllers, MotorControllerUsage::ARM);
+				if (motor.get() != nullptr)
+				{
+					m_arm = new Arm(motor);
+				}
+			}
+		}
+		break;
+
+		case MechanismTypes::BALL_RELEASE:
+		{
+			if (m_ballRelease == nullptr)
+			{
+				auto servo = GetServo(servos, ServoUsage::RELEASE_SERVO);
+				if (servo.get() != nullptr)
+				{
+					m_ballRelease = new BallRelease(servo);
+				}
+			}
+		}
+		break;
 		default:
 		{
 			string msg = "unknown Mechanism type ";

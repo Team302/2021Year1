@@ -17,57 +17,34 @@
 #pragma once
 
 // C++ Includes
-#include <map>
-#include <vector>
 
 // FRC includes
 
 // Team 302 includes
-#include <states/IState.h>
+#include <states/StateMgr.h>
 
 
 // Third Party Includes
 
-class IntakeStateMgr 
+class IntakeStateMgr : public StateMgr
 {
     public:
         /// @enum the various states of the Intake
-        enum BALL_TRANSFER_STATE
+        enum INTAKE_STATE
         {
             OFF,
             INTAKE,
             EXPEL,
-            MAX_BALL_TRANSFER_STATES
+            MAX_INTAKE_STATES
         };
 
         
 		/// @brief  Find or create the state manmanager
 		/// @return IntakeStateMgr* pointer to the state manager
 		static IntakeStateMgr* GetInstance();
-
-        /// @brief  run the current state
-        /// @return void
-        void RunCurrentState();
-
-        /// @brief  set the current state, initialize it and run it
-        /// @param [in]     BALL_TRANSFER_STATE - state to set
-        /// @param [in]     run - true means run, false just initialize it
-        /// @return void
-        void SetCurrentState
-        (
-            BALL_TRANSFER_STATE     state,
-            bool                    run
-        );
-
-        /// @brief  return the current state
-        /// @return BALL_TRANSFER_STATE - the current state
-        inline BALL_TRANSFER_STATE GetCurrentState() const { return m_currentStateEnum; };
+        void CheckForDriveTeamInput() override;
 
     private:
-
-        IState* m_currentState;
-        std::vector<IState*> m_stateVector;
-        BALL_TRANSFER_STATE m_currentStateEnum;
 
         IntakeStateMgr();
         ~IntakeStateMgr() = default;
