@@ -44,7 +44,7 @@ using namespace std;
 
 IntakeStateMgr* IntakeStateMgr::m_instance = nullptr;
 IntakeStateMgr* IntakeStateMgr::GetInstance()
-{
+{ 
 	if ( IntakeStateMgr::m_instance == nullptr )
 	{
 		IntakeStateMgr::m_instance = new IntakeStateMgr();
@@ -74,7 +74,7 @@ IntakeStateMgr::IntakeStateMgr()
     struc.type = StateType::INTAKE;
     stateMap["INTAKEEXPEL"] = struc;
 
-    Init(MechanismFactory::GetMechanismFactory()->GetBallTransfer(), stateMap);
+    Init(MechanismFactory::GetMechanismFactory()->GetIntake(), stateMap);
 }   
 
 
