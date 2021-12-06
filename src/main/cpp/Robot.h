@@ -19,6 +19,8 @@
 #include <subsys/BallRelease.h>
 #include <subsys/BallTransfer.h>
 #include <subsys/Intake.h>
+#include <auton/CyclePrimitives.h>
+
 
 class Robot : public frc::TimedRobot {
  public:
@@ -47,6 +49,7 @@ class Robot : public frc::TimedRobot {
   BallRelease*          m_ballRelease;
   BallTransfer*         m_ballTransfer;
   Intake*               m_intake;
+  CyclePrimitives*      m_cyclePrims;
 
 
   frc::SendableChooser<std::string> m_chooser;
