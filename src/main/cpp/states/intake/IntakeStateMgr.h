@@ -22,6 +22,8 @@
 
 // Team 302 includes
 #include <states/StateMgr.h>
+#include <states/StateStruc.h>
+
 
 
 // Third Party Includes
@@ -51,7 +53,9 @@ class IntakeStateMgr : public StateMgr
 
 		static IntakeStateMgr*	m_instance;
 
-
+        const StateStruc  m_offState = {INTAKE_STATE::OFF, StateType::INTAKE, true};
+        const StateStruc  m_intakeState = {INTAKE_STATE::INTAKE, StateType::INTAKE, false};
+        const StateStruc  m_expelState = {INTAKE_STATE::EXPEL, StateType::INTAKE, false};
 };
 
 

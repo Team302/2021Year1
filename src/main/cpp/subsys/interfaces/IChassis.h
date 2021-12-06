@@ -58,6 +58,7 @@ class IChassis
 
         virtual void UpdatePose() = 0;
         virtual units::length::inch_t GetWheelDiameter() const = 0;
+        virtual units::length::inch_t GetTrack() const = 0;
         virtual units::velocity::meters_per_second_t GetMaxSpeed() const = 0;
         virtual units::angular_velocity::degrees_per_second_t GetMaxAngularSpeed() const = 0;
         virtual bool IsMoving() const = 0;

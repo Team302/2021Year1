@@ -61,5 +61,73 @@
     </chassis>
 
     <pigeon canId="60"/>
-    
+
+       <!-- 
+       <mechanism type="INTAKE">
+              <motor usage="INTAKE"
+                            canId="11"
+                            pdpID="11"
+                            type="TALONSRX"
+                            inverted="false"
+                            sensorInverted="false"
+                            feedbackDevice="NONE"
+                            countsPerRev="0"
+                            gearRatio="1.0"
+                            brakeMode="false"
+                            peakCurrentDuration="50"
+                            continuousCurrentLimit="30"
+                            peakCurrentLimit="40"
+                            currentLimiting="true" 
+                            forwardlimitswitch="false"
+                            forwardlimitswitchopen="true"
+                            reverselimitswitch="false"
+                            reverselimitswitchopen="true"/>
+       </mechanism>
+      <mechanism type="BALLTRANSFER">
+              <motor usage="BALLTRANSFER"
+                            canId="11"
+                            pdpID="11"
+                            type="TALONSRX"
+                            inverted="false"
+                            sensorInverted="false"
+                            feedbackDevice="NONE"
+                            countsPerRev="0"
+                            gearRatio="1.0"
+                            brakeMode="false"
+                            peakCurrentDuration="50"
+                            continuousCurrentLimit="30"
+                            peakCurrentLimit="40"
+                            currentLimiting="true" 
+                            forwardlimitswitch="false"
+                            forwardlimitswitchopen="true"
+                            reverselimitswitch="false"
+                            reverselimitswitchopen="true"/>
+       </mechanism>
+      <mechanism type="ARM">
+              <motor usage="ARM"
+                            canId="11"
+                            pdpID="11"
+                            type="TALONSRX"
+                            inverted="false"
+                            sensorInverted="false"
+                            feedbackDevice="NONE"
+                            countsPerRev="0"
+                            gearRatio="1.0"
+                            brakeMode="true"
+                            peakCurrentDuration="50"
+                            continuousCurrentLimit="30"
+                            peakCurrentLimit="40"
+                            currentLimiting="true" 
+                            forwardlimitswitch="true"
+                            forwardlimitswitchopen="true"
+                            reverselimitswitch="true"
+                            reverselimitswitchopen="true"/>
+       </mechanism>    
+      <mechanism type="BALLRELEASE">
+              <servo usage="BALLRELEASE"
+                     pwmId="1"
+                     minAngle="0.0"
+                     maxAngle="360.0" />
+       </mechanism>    
+       -->
 </robot>

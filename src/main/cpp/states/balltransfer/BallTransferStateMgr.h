@@ -22,6 +22,7 @@
 
 // Team 302 includes
 #include <states/StateMgr.h>
+#include <states/StateStruc.h>
 
 
 // Third Party Includes
@@ -50,6 +51,10 @@ class BallTransferStateMgr : public StateMgr
         ~BallTransferStateMgr() = default;
 
 		static BallTransferStateMgr*	m_instance;
+
+        const StateStruc  m_offState = {BALL_TRANSFER_STATE::OFF, StateType::BALLTRANSER, true};
+        const StateStruc  m_intakeState = {BALL_TRANSFER_STATE::INTAKE, StateType::BALLTRANSER, false};
+        const StateStruc  m_expelState = {BALL_TRANSFER_STATE::EXPEL, StateType::BALLTRANSER, false};
 };
 
 

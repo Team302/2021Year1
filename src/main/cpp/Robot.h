@@ -11,6 +11,14 @@
 #include <frc/smartdashboard/SendableChooser.h>
 #include <gamepad/TeleopControl.h>
 #include <subsys/interfaces/IChassis.h>
+#include <states/arm/ArmStateMgr.h>
+#include <states/ballrelease/BallReleaseStateMgr.h>
+#include <states/balltransfer/BallTransferStateMgr.h>
+#include <states/intake/IntakeStateMgr.h>
+#include <subsys/Arm.h>
+#include <subsys/BallRelease.h>
+#include <subsys/BallTransfer.h>
+#include <subsys/Intake.h>
 
 class Robot : public frc::TimedRobot {
  public:
@@ -29,6 +37,16 @@ class Robot : public frc::TimedRobot {
   TeleopControl*        m_controller;
   IChassis*             m_chassis;
   frc::Timer*           m_timer;
+
+  ArmStateMgr*          m_armStateMgr;
+  BallReleaseStateMgr*  m_ballReleaseStateMgr;
+  BallTransferStateMgr* m_ballTransferStateMgr;
+  IntakeStateMgr*       m_intakeStateMgr;
+
+  Arm*                  m_arm;
+  BallRelease*          m_ballRelease;
+  BallTransfer*         m_ballTransfer;
+  Intake*               m_intake;
 
 
   frc::SendableChooser<std::string> m_chooser;

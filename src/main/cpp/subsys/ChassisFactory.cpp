@@ -56,8 +56,8 @@ IChassis* ChassisFactory::CreateChassis
         {
             auto leftMotor = GetMotorController(motors, MotorControllerUsage::MOTOR_CONTROLLER_USAGE::DIFFERENTIAL_LEFT_MAIN);
             auto rightMotor = GetMotorController(motors, MotorControllerUsage::MOTOR_CONTROLLER_USAGE::DIFFERENTIAL_RIGHT_MAIN);
-            m_chassis = new DifferentialChassis(*leftMotor.get(),
-                                                *rightMotor.get(),
+            m_chassis = new DifferentialChassis(leftMotor.get(),
+                                                rightMotor.get(),
                                                 track,
                                                 maxVelocity,
                                                 maxAngularSpeed,
