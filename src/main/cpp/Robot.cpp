@@ -17,6 +17,7 @@
 #include <gamepad/TeleopControl.h>
 #include <subsys/interfaces/IChassis.h>
 #include <subsys/MechanismFactory.h>
+#include <auton/CyclePrimitives.h>
 
 void Robot::RobotInit() 
 {
@@ -40,6 +41,7 @@ void Robot::RobotInit()
   m_ballTransfer = mechFactory->GetBallTransfer();
   m_intake = mechFactory->GetIntake();
   
+  m_cyclePrims = new CyclePrimitives();
 
   m_timer = new frc::Timer();
 }
@@ -74,12 +76,20 @@ void Robot::RobotPeriodic()
 void Robot::AutonomousInit() 
 {
   m_timer->Reset();
+  if (m_chassis != nullptr)
+  {
+    m_cyclePrims->Init();
+  }
 }
 
 void Robot::AutonomousPeriodic() 
 {
   if (m_chassis != nullptr)
   {
+    m_cyclePrims->Run();
+
+
+    /**
     frc::ChassisSpeeds speeds;
     speeds.vx = 0_mps;
     speeds.vy = 0_mps;
@@ -89,6 +99,7 @@ void Robot::AutonomousPeriodic()
       speeds.vx = 1_mps;
     }
     m_chassis->Drive(speeds);
+    **/
   }
 }
 
