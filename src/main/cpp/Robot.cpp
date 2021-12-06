@@ -20,6 +20,7 @@
 #include <gamepad/TeleopControl.h>
 #include <subsys/interfaces/IChassis.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 void Robot::RobotInit() 
 {
@@ -29,6 +30,10 @@ void Robot::RobotInit()
 
   //Get local copies of the teleop controller and thee chassis
 =======
+=======
+#include <subsys/MechanismFactory.h>
+#include <auton/CyclePrimitives.h>
+>>>>>>> main
 
 void Robot::RobotInit() 
 {
@@ -43,8 +48,24 @@ void Robot::RobotInit()
   m_chassis = factory->GetIChassis();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+=======
+  m_armStateMgr = ArmStateMgr::GetInstance();
+  m_ballReleaseStateMgr = BallReleaseStateMgr::GetInstance();
+  m_ballTransferStateMgr = BallTransferStateMgr::GetInstance();
+  m_intakeStateMgr = IntakeStateMgr::GetInstance();
+
+  auto mechFactory = MechanismFactory::GetMechanismFactory();
+  m_arm = mechFactory->GetArm();
+  m_ballRelease = mechFactory->GetBallRelease();
+  m_ballTransfer = mechFactory->GetBallTransfer();
+  m_intake = mechFactory->GetIntake();
+  
+  m_cyclePrims = new CyclePrimitives();
+
+>>>>>>> main
   m_timer = new frc::Timer();
 >>>>>>> main
 }
@@ -82,6 +103,13 @@ void Robot::AutonomousInit()
  
 =======
   m_timer->Reset();
+<<<<<<< HEAD
+>>>>>>> main
+=======
+  if (m_chassis != nullptr)
+  {
+    m_cyclePrims->Init();
+  }
 >>>>>>> main
 }
 
@@ -92,6 +120,10 @@ void Robot::AutonomousPeriodic()
 =======
   if (m_chassis != nullptr)
   {
+    m_cyclePrims->Run();
+
+
+    /**
     frc::ChassisSpeeds speeds;
     speeds.vx = 0_mps;
     speeds.vy = 0_mps;
@@ -101,6 +133,7 @@ void Robot::AutonomousPeriodic()
       speeds.vx = 1_mps;
     }
     m_chassis->Drive(speeds);
+    **/
   }
 >>>>>>> main
 }
@@ -130,7 +163,35 @@ void Robot::TeleopPeriodic()
     auto throttle = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE);
     auto steer = m_controller->GetAxisValue(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER);
 
+<<<<<<< HEAD
     
+>>>>>>> main
+=======
+    frc::ChassisSpeeds speeds;
+    speeds.vx = throttle * m_chassis->GetMaxSpeed();
+    speeds.vy = 0_mps; //units::velocity::meters_per_second_t(0)
+    speeds.omega = steer * m_chassis->GetMaxAngularSpeed();
+    m_chassis->Drive(speeds);
+  }
+
+  if (m_intake != nullptr && m_intakeStateMgr != nullptr)
+  {
+    m_intakeStateMgr->RunCurrentState();
+  }
+
+  if (m_ballTransfer != nullptr && m_ballTransferStateMgr != nullptr)
+  {
+    m_ballTransferStateMgr->RunCurrentState();
+  }
+
+  if (m_arm != nullptr && m_armStateMgr != nullptr)
+  {
+    m_armStateMgr->RunCurrentState();
+  }
+
+  if (m_ballRelease != nullptr && m_ballReleaseStateMgr != nullptr )
+  {
+    m_ballReleaseStateMgr->RunCurrentState();
 >>>>>>> main
   }
 }
@@ -141,7 +202,10 @@ void Robot::DisabledPeriodic() {}
 
 void Robot::TestInit() {}
 
-void Robot::TestPeriodic() {}
+void Robot::TestPeriodic() 
+{
+
+}
 
 #ifndef RUNNING_FRC_TESTS
 int main() {

@@ -17,18 +17,17 @@
 #pragma once
 
 // C++ Includes
-#include <map>
-#include <vector>
 
 // FRC includes
 
 // Team 302 includes
-#include <states/IState.h>
+#include <states/StateMgr.h>
+#include <states/StateStruc.h>
 
 
 // Third Party Includes
 
-class BallTransferStateMgr 
+class BallTransferStateMgr : public StateMgr
 {
     public:
         /// @enum the various states of the BallTransfer
@@ -44,37 +43,18 @@ class BallTransferStateMgr
 		/// @brief  Find or create the state manmanager
 		/// @return BallTransferStateMgr* pointer to the state manager
 		static BallTransferStateMgr* GetInstance();
+        void CheckForDriveTeamInput() override;
 
-        /// @brief  run the current state
-        /// @return void
-        void RunCurrentState();
-
-        /// @brief  set the current state, initialize it and run it
-        /// @param [in]     BALL_TRANSFER_STATE - state to set
-        /// @param [in]     run - true means run, false just initialize it
-        /// @return void
-        void SetCurrentState
-        (
-            BALL_TRANSFER_STATE     state,
-            bool                    run
-        );
-
-        /// @brief  return the current state
-        /// @return BALL_TRANSFER_STATE - the current state
-        inline BALL_TRANSFER_STATE GetCurrentState() const { return m_currentStateEnum; };
 
     private:
-
-        IState* m_currentState;
-        std::vector<IState*> m_stateVector;
-        BALL_TRANSFER_STATE m_currentStateEnum;
-
         BallTransferStateMgr();
         ~BallTransferStateMgr() = default;
 
 		static BallTransferStateMgr*	m_instance;
 
-
+        const StateStruc  m_offState = {BALL_TRANSFER_STATE::OFF, StateType::BALLTRANSER, true};
+        const StateStruc  m_intakeState = {BALL_TRANSFER_STATE::INTAKE, StateType::BALLTRANSER, false};
+        const StateStruc  m_expelState = {BALL_TRANSFER_STATE::EXPEL, StateType::BALLTRANSER, false};
 };
 
 

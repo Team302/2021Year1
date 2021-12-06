@@ -14,12 +14,26 @@
 //====================================================================================================================================================
 
 // C++ Includes
-
+#include <memory>
+#include <string>
 
 // FRC includes
 
 // Team 302 includes
+#include <subsys/Arm.h>
+#include <subsys/Mech1IndMotor.h>
+#include <hw/interfaces/IDragonMotorController.h>
 
 // Third Party Includes
+using namespace std;
+
+Arm::Arm
+(
+    shared_ptr<IDragonMotorController> motor1
+) : Mech1IndMotor( MechanismTypes::MECHANISM_TYPE::ARM,  string("arm.xml"),  string("ArmNT"), motor1)
+{
+}
+
+
 
 

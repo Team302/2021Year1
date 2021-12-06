@@ -3,8 +3,8 @@
 #include <frc/kinematics/DifferentialDriveKinematics.h>
 #include <frc/drive/DifferentialDrive.h>
 
-DifferentialChassis::DifferentialChassis(IDragonMotorController& leftMotor, 
-                        IDragonMotorController& rightMotor,
+DifferentialChassis::DifferentialChassis(IDragonMotorController* leftMotor, 
+                        IDragonMotorController* rightMotor,
                         units::meter_t trackWidth,
                         units::velocity::meters_per_second_t maxSpeed,
                         units::angular_velocity::degrees_per_second_t maxAngSpeed,
@@ -13,9 +13,10 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController& leftMotor,
                                                     m_maxSpeed(maxSpeed),
                                                     m_maxAngSpeed(maxAngSpeed),
                                                     m_wheelDiameter(wheelDiameter),
+                                                    m_track(trackWidth),
                                                     m_kinematics(new frc::DifferentialDriveKinematics(trackWidth)),
-                                                    m_differentialDrive(new frc::DifferentialDrive(*leftMotor.GetSpeedController().get(), 
-                                                                                                   *rightMotor.GetSpeedController().get())),
+                                                    //m_differentialDrive(new frc::DifferentialDrive(*leftMotor.GetSpeedController().get(), 
+                                                    //                                               *rightMotor.GetSpeedController().get())),
                                                     m_differentialOdometry(new frc::DifferentialDriveOdometry(frc::Rotation2d(), frc::Pose2d()))
 {
     
@@ -23,11 +24,15 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController& leftMotor,
     //Moves the robot
     void DifferentialChassis::Drive(frc::ChassisSpeeds chassisSpeeds)
     {
-        double xPercent = chassisSpeeds.vx / m_maxSpeed; //calculates forward velocity as a factor
-        double omegaPercent = chassisSpeeds.omega / m_maxAngSpeed;
+        auto wheels = m_kinematics->ToWheelSpeeds(chassisSpeeds);
+        wheels.Normalize(m_maxSpeed);
+        m_leftMotor->Set(wheels.left/m_maxSpeed);
+        m_rightMotor->Set(wheels.right/m_maxSpeed);
+        //double xPercent = chassisSpeeds.vx / m_maxSpeed; //calculates forward velocity as a factor
+        //double omegaPercent = chassisSpeeds.omega / m_maxAngSpeed;
 
         //Drive the motors
-        m_differentialDrive->ArcadeDrive(xPercent, omegaPercent, false);
+        //m_differentialDrive->ArcadeDrive(xPercent, omegaPercent, false);
     }
 
     frc::Pose2d DifferentialChassis::GetPose() const
@@ -59,6 +64,11 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController& leftMotor,
     {
         return units::length::inch_t(4);
     }    
+
+    units::length::inch_t DifferentialChassis::GetTrack() const
+    {
+        return m_track;
+    }
     bool DifferentialChassis::IsMoving() const
     {
         return false;
