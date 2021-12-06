@@ -13,6 +13,7 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController* leftMotor,
                                                     m_maxSpeed(maxSpeed),
                                                     m_maxAngSpeed(maxAngSpeed),
                                                     m_wheelDiameter(wheelDiameter),
+                                                    m_track(trackWidth),
                                                     m_kinematics(new frc::DifferentialDriveKinematics(trackWidth)),
                                                     //m_differentialDrive(new frc::DifferentialDrive(*leftMotor.GetSpeedController().get(), 
                                                     //                                               *rightMotor.GetSpeedController().get())),
@@ -63,6 +64,11 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController* leftMotor,
     {
         return units::length::inch_t(4);
     }    
+
+    units::length::inch_t DifferentialChassis::GetTrack() const
+    {
+        return m_track;
+    }
     bool DifferentialChassis::IsMoving() const
     {
         return false;
