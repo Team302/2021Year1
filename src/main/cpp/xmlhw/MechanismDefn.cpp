@@ -81,12 +81,22 @@ void MechanismDefn::ParseXML
             string typeStr = attr.as_string();
             for_each( typeStr.begin(), typeStr.end(), [](char & c){c = ::toupper(c);});
 
-            /**
             if ( typeStr.compare( "INTAKE") == 0 )
             {
                 type = MechanismTypes::MECHANISM_TYPE::INTAKE;
             }
-
+            else if (typeStr.compare( "BALLTRANSFER") == 0)
+            {
+                type = MechanismTypes::MECHANISM_TYPE::BALL_TRANSFER;
+            }
+            else if (typeStr.compare( "ARM") == 0)
+            {
+                type = MechanismTypes::MECHANISM_TYPE::ARM;
+            }
+            else if (typeStr.compare( "BALLRELEASE") == 0)
+            {
+                type = MechanismTypes::MECHANISM_TYPE::BALL_RELEASE;
+            }
             else
             {
                     string msg = "unknown Mechanism type ";
@@ -94,7 +104,6 @@ void MechanismDefn::ParseXML
                     Logger::GetLogger()->LogError( "MechanismDefn::ParseXML", msg );
                     hasError = true;
             }
-            **/
         }
         else
         {
