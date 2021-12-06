@@ -56,25 +56,12 @@ IntakeStateMgr* IntakeStateMgr::GetInstance()
 /// @brief    initialize the state manager, parse the configuration file and create the states.
 IntakeStateMgr::IntakeStateMgr()
 {
-     map<string, StateStruc> stateMap;
-    StateStruc struc;
+    map<string, StateStruc> stateMap;
+    stateMap["INTAKEOFF"] = m_offState;
+    stateMap["INTAKEON"] = m_intakeState;
+    stateMap["INTAKEEXPEL"] = m_expelState;
 
-    struc.id = INTAKE_STATE::OFF;
-    struc.isDefault = true;
-    struc.type = StateType::INTAKE;
-    stateMap["INTAKEOFF"] = struc;
-    
-    struc.id = INTAKE_STATE::INTAKE;
-    struc.isDefault = false;
-    struc.type = StateType::INTAKE;
-    stateMap["INTAKEINTAKE"] = struc;
-    
-    struc.id = INTAKE_STATE::EXPEL;
-    struc.isDefault = false;
-    struc.type = StateType::INTAKE;
-    stateMap["INTAKEEXPEL"] = struc;
-
-    Init(MechanismFactory::GetMechanismFactory()->GetBallTransfer(), stateMap);
+    Init(MechanismFactory::GetMechanismFactory()->GetIntake(), stateMap);
 }   
 
 

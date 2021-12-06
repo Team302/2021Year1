@@ -9,6 +9,7 @@ enum StateType
     MAX_STATE_TYPES
 };
 
+
 struct StateStruc
 {
     int         id;

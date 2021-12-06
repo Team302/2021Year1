@@ -16,6 +16,7 @@
 #include <subsys/ChassisFactory.h>
 #include <gamepad/TeleopControl.h>
 #include <subsys/interfaces/IChassis.h>
+#include <subsys/MechanismFactory.h>
 
 void Robot::RobotInit() 
 {
@@ -27,6 +28,18 @@ void Robot::RobotInit()
   m_controller = TeleopControl::GetInstance();
   auto factory = ChassisFactory::GetChassisFactory();
   m_chassis = factory->GetIChassis();
+
+  m_armStateMgr = ArmStateMgr::GetInstance();
+  m_ballReleaseStateMgr = BallReleaseStateMgr::GetInstance();
+  m_ballTransferStateMgr = BallTransferStateMgr::GetInstance();
+  m_intakeStateMgr = IntakeStateMgr::GetInstance();
+
+  auto mechFactory = MechanismFactory::GetMechanismFactory();
+  m_arm = mechFactory->GetArm();
+  m_ballRelease = mechFactory->GetBallRelease();
+  m_ballTransfer = mechFactory->GetBallTransfer();
+  m_intake = mechFactory->GetIntake();
+  
 
   m_timer = new frc::Timer();
 }
@@ -97,6 +110,26 @@ void Robot::TeleopPeriodic()
     speeds.omega = steer * m_chassis->GetMaxAngularSpeed();
     m_chassis->Drive(speeds);
   }
+
+  if (m_intake != nullptr && m_intakeStateMgr != nullptr)
+  {
+    m_intakeStateMgr->RunCurrentState();
+  }
+
+  if (m_ballTransfer != nullptr && m_ballTransferStateMgr != nullptr)
+  {
+    m_ballTransferStateMgr->RunCurrentState();
+  }
+
+  if (m_arm != nullptr && m_armStateMgr != nullptr)
+  {
+    m_armStateMgr->RunCurrentState();
+  }
+
+  if (m_ballRelease != nullptr && m_ballReleaseStateMgr != nullptr )
+  {
+    m_ballReleaseStateMgr->RunCurrentState();
+  }
 }
 
 void Robot::DisabledInit() {}
@@ -105,7 +138,10 @@ void Robot::DisabledPeriodic() {}
 
 void Robot::TestInit() {}
 
-void Robot::TestPeriodic() {}
+void Robot::TestPeriodic() 
+{
+
+}
 
 #ifndef RUNNING_FRC_TESTS
 int main() {

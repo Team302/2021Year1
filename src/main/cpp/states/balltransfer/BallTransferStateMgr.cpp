@@ -57,22 +57,9 @@ BallTransferStateMgr* BallTransferStateMgr::GetInstance()
 BallTransferStateMgr::BallTransferStateMgr() 
 {
     map<string, StateStruc> stateMap;
-    StateStruc struc;
-
-    struc.id = BALL_TRANSFER_STATE::OFF;
-    struc.isDefault = true;
-    struc.type = StateType::BALLTRANSER;
-    stateMap["BALLTRANSFEROFF"] = struc;
-    
-    struc.id = BALL_TRANSFER_STATE::INTAKE;
-    struc.isDefault = false;
-    struc.type = StateType::BALLTRANSER;
-    stateMap["BALLTRANSFERINTAKE"] = struc;
-    
-    struc.id = BALL_TRANSFER_STATE::EXPEL;
-    struc.isDefault = false;
-    struc.type = StateType::BALLTRANSER;
-    stateMap["BALLTRANSFEREXPEL"] = struc;
+    stateMap["BALLTRANSFEROFF"] = m_offState;
+    stateMap["BALLTRANSFERINTAKE"] = m_intakeState;
+    stateMap["BALLTRANSFEREXPEL"] = m_expelState;
 
     Init(MechanismFactory::GetMechanismFactory()->GetBallTransfer(), stateMap);
 }
