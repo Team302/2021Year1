@@ -1,5 +1,4 @@
-<!-- temporary leave pigeon here until odometry is plugged in -->
-<!ELEMENT robot (pdp?, pcm?, odometry?, feedback?, chassis?, mechanism*, pigeon?, limelight?, camera* )>
+<!ELEMENT robot (pdp?, pcm?, chassis?, mechanism*, pigeon?, limelight?, camera* )>
 
 <!ELEMENT pigeon EMPTY>
 <!ATTLIST pigeon 
@@ -50,12 +49,6 @@
 		  secondcrosshairx  CDATA #IMPLIED
 		  secondcrosshairy  CDATA #IMPLIED
 >
-
-
-<!-- ========================================================================================================================================== -->
-<!--	driver feedback  				   																										-->
-<!-- ========================================================================================================================================== -->
-<!ELEMENT feedback (camera*, led*, blinkin*)>
 
 <!ELEMENT camera EMPTY>
 <!ATTLIST camera 

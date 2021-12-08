@@ -62,81 +62,93 @@ using namespace std;
 void RobotDefn::ParseXML()
 {
     // set the file to parse
-    const char *filename = "/home/lvuser/config/robot.xml";
+    string filename = string("/home/lvuser/config/robot.xml");
 
-    // load the xml file into memory (parse it)
-    xml_document doc;
-    xml_parse_result result = doc.load_file(filename);
-
-    // if it is good
-    if (result)
+    try
     {
-        unique_ptr<CameraDefn> cameraXML = make_unique<CameraDefn>();
-        unique_ptr<ChassisDefn> chassisXML = make_unique<ChassisDefn>();
-        unique_ptr<MechanismDefn> mechanismXML = make_unique<MechanismDefn>();
-        unique_ptr<PigeonDefn> pigeonXML = make_unique<PigeonDefn>();
-        unique_ptr<LimelightDefn> limelightXML = make_unique<LimelightDefn>();
-
-        // get the root node <robot>
-        xml_node parent = doc.root();
-        for (xml_node node = parent.first_child(); node; node = node.next_sibling())
+       // load the xml file into memory (parse it)
+        xml_document doc;
+        xml_parse_result result = doc.load_file(filename.c_str());
+        if (!result)
         {
-            // loop through the direct children of <robot> and call the appropriate parser
-            for (xml_node child = node.first_child(); child; child = child.next_sibling())
+            filename = string("/home/lvuser/deploy/robot.xml");
+            result = doc.load_file(filename.c_str());
+            Logger::GetLogger()->LogError(string("RobotXML Parsing"), string("using deploy version"));
+        }   
+
+        // if it is good
+        if (result)
+        {
+            unique_ptr<CameraDefn> cameraXML = make_unique<CameraDefn>();
+            unique_ptr<ChassisDefn> chassisXML = make_unique<ChassisDefn>();
+            unique_ptr<MechanismDefn> mechanismXML = make_unique<MechanismDefn>();
+            unique_ptr<PigeonDefn> pigeonXML = make_unique<PigeonDefn>();
+            unique_ptr<LimelightDefn> limelightXML = make_unique<LimelightDefn>();
+
+            // get the root node <robot>
+            xml_node parent = doc.root();
+            for (xml_node node = parent.first_child(); node; node = node.next_sibling())
             {
-                if (strcmp(child.name(), "chassis") == 0)
+                // loop through the direct children of <robot> and call the appropriate parser
+                for (xml_node child = node.first_child(); child; child = child.next_sibling())
                 {
-                    chassisXML.get()->ParseXML(child);
-                }
-                else if (strcmp(child.name(), "mechanism") == 0)
-                {
-                    mechanismXML.get()->ParseXML(child);
-                }
-                else if (strcmp(child.name(), "camera") == 0)
-                {
-                    cameraXML.get()->ParseXML(child);
-                }
-                /**
-                else if (strcmp(child.name(), "pdp") == 0)
-                {
-                    pdpXML.get()->ParseXML(child);
-                }
-                **/
-                else if ( strcmp(child.name(), "pigeon") == 0 )
-                {
-                    pigeonXML.get()->ParseXML( child);
-                }
-                else if ( strcmp(child.name(), "limelight") == 0 )
-                {
-                    ///auto limelight = limelightXML.get()->ParseXML( child);
-                }
-                else
-                {
-                    string msg = "unknown child ";
-                    msg += child.name();
-                    Logger::GetLogger()->LogError( "RobotDefn::ParseXML", msg );
+                    if (strcmp(child.name(), "chassis") == 0)
+                    {
+                        chassisXML.get()->ParseXML(child);
+                    }
+                    else if (strcmp(child.name(), "mechanism") == 0)
+                    {
+                        mechanismXML.get()->ParseXML(child);
+                    }
+                    else if (strcmp(child.name(), "camera") == 0)
+                    {
+                        cameraXML.get()->ParseXML(child);
+                    }
+                    /**
+                    else if (strcmp(child.name(), "pdp") == 0)
+                    {
+                        pdpXML.get()->ParseXML(child);
+                    }
+                    **/
+                    else if ( strcmp(child.name(), "pigeon") == 0 )
+                    {
+                        pigeonXML.get()->ParseXML( child);
+                    }
+                    else if ( strcmp(child.name(), "limelight") == 0 )
+                    {
+                        ///auto limelight = limelightXML.get()->ParseXML( child);
+                    }
+                    else
+                    {
+                        string msg = "unknown child ";
+                        msg += child.name();
+                        Logger::GetLogger()->LogError( "RobotDefn::ParseXML", msg );
+                    }
                 }
             }
         }
+        else
+        {
+            string msg = "XML [";
+            msg += filename;
+            msg += "] parsed with errors, attr value: [";
+            msg += doc.child( "prototype" ).attribute( "attr" ).value();
+            msg += "]";
+            Logger::GetLogger()->LogError( "RobotDefn::ParseXML (1) ", msg );
+
+            msg = "Error description: ";
+            msg += result.description();
+            Logger::GetLogger()->LogError( "RobotDefn::ParseXML (2) ", msg );
+
+            msg = "Error offset: ";
+            msg += result.offset;
+            msg += " error at ...";
+            msg += filename;
+            msg += result.offset;
+            Logger::GetLogger()->LogError( "RobotDefn::ParseXML (3) ", msg );
+        }
     }
-    else
+    catch(const std::exception& e)
     {
-        string msg = "XML [";
-        msg += filename;
-        msg += "] parsed with errors, attr value: [";
-        msg += doc.child( "prototype" ).attribute( "attr" ).value();
-        msg += "]";
-        Logger::GetLogger()->LogError( "RobotDefn::ParseXML (1) ", msg );
-
-        msg = "Error description: ";
-        msg += result.description();
-        Logger::GetLogger()->LogError( "RobotDefn::ParseXML (2) ", msg );
-
-        msg = "Error offset: ";
-        msg += result.offset;
-        msg += " error at ...";
-        msg += filename;
-        msg += result.offset;
-        Logger::GetLogger()->LogError( "RobotDefn::ParseXML (3) ", msg );
-    }
-}
+        Logger::GetLogger()->LogError( string("RobotDefn::ParseXML"), string("Error thrown while parsing robot.xml") );
+    }}

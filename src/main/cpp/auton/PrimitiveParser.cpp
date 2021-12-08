@@ -68,6 +68,12 @@ PrimitiveParamsVector PrimitiveParser::ParseXML
 
     xml_document doc;
     xml_parse_result result = doc.load_file( fulldirfile.c_str() );
+    if (!result)
+    {
+        fulldirfile = string("/home/lvuser/deploy/auton/");
+        xml_parse_result result = doc.load_file( fulldirfile.c_str() );
+    }
+    
     if ( result )
     {
         Logger::GetLogger()->LogError( string("PrimitiveParser::ParseXML"), string("Parse Successful"));

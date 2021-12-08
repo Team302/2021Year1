@@ -67,27 +67,41 @@ vector<MechanismTargetData*> StateDataDefn::ParseXML
     vector<MechanismTargetData*> targetDataVector;
 
     // set the file to parse
-    string filename = "/home/lvuser/config/states/";
-    /**
+    string filename = string("/home/lvuser/config/states/");
+    string mech;
     switch ( mechanism )
     {
+        case MechanismTypes::ARM:
+                mech = string( "arm.xml");
+                break;
+        case MechanismTypes::BALL_RELEASE:
+                mech = string( "ballrelease.xml");
+                break;
+        case MechanismTypes::BALL_TRANSFER:
+                mech = string( "ballrelease.xml");
+                break;
         case MechanismTypes::INTAKE:
-            filename += string( "intake.xml");
+            mech = string( "intake.xml");
             break;
-
-
         default:
             Logger::GetLogger()->LogError( "StateDataDefn::ParseXML", "invalid mechanism" );
             hasError = true;
             break;
     }
-    **/
 
     if ( !hasError )
     {
         // load the xml file into memory (parse it)
+        filename += mech;
         xml_document doc;
         xml_parse_result result = doc.load_file(filename.c_str());
+
+        if (!result)
+        {
+            filename = string("/home/lvuser/deploy/states/");
+            filename += mech;
+            result = doc.load_file(filename.c_str());
+        }
 
         // if it is good
         if (result)

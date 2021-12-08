@@ -1,4 +1,4 @@
-<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE robot SYSTEM "robot.dtd">
 <robot>
 
@@ -56,8 +56,6 @@
                countsPerRev="4096"
                gearRatio="1.0"
                brakeMode="true"/>
-
-        </motor>
     </chassis>
 
     <pigeon canId="60"/>

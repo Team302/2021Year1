@@ -73,7 +73,9 @@ void DrivePath::Init(PrimitiveParams *params)
     Logger::GetLogger()->ToNtTable("DrivePath" + m_pathname, "Initialized", "True"); //Signals that drive path is initialized in the console
 
     GetTrajectory(params->GetPathName());  //Parses path from json file based on path name given in xml
+    
     Logger::GetLogger()->ToNtTable(m_pathname + "Trajectory", "Time", m_trajectory.TotalTime().to<double>());// Debugging
+    
     if (!m_trajectoryStates.empty()) // only go if path name found
     {
         m_desiredState = m_trajectoryStates.front(); //m_desiredState is the first state, or starting position
@@ -127,6 +129,7 @@ void DrivePath::Run()
     {
         // debugging
         m_timesRun++;
+        
         Logger::GetLogger()->ToNtTable("DrivePath" + m_pathname, "Times Ran", m_timesRun);
 
         // calculate where we are and where we want to be
@@ -274,8 +277,10 @@ void DrivePath::GetTrajectory //Parses pathweaver json to create a series of poi
       
 
         Logger::GetLogger()->LogError(string("Deploy path is "), deployDir.c_str()); //Debugging
+        
         m_trajectory = frc::TrajectoryUtil::FromPathweaverJson(deployDir);  //Creates a trajectory or path that can be used in the code, parsed from pathweaver json
         m_trajectoryStates = m_trajectory.States();  //Creates a vector of all the states or "waypoints" the robot needs to get to
+        
         Logger::GetLogger()->LogError(string("DrivePath - Loaded = "), path);
         Logger::GetLogger()->ToNtTable("DrivePathValues", "TrajectoryTotalTime", m_trajectory.TotalTime().to<double>());
     }
