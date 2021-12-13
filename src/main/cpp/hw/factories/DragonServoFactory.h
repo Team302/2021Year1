@@ -56,7 +56,7 @@ class DragonServoFactory
         /// @param [in] double                     maxAngle     Maximum Angle for the servo
         /// @return std::shared_ptr<DragonServo>    - could be nullptr if invalid inputs are supplied
         //=======================================================================================
-        std::shared_ptr<DragonServo> CreateDragonServo
+        DragonServo* CreateDragonServo
         (
             ServoUsage::SERVO_USAGE     deviceUsage,        
             int                         deviceID,           
@@ -70,7 +70,7 @@ class DragonServoFactory
         /// @param [in] DragonServo::SERVO_USAGE   deviceUsage  Usage of the servo
         /// @return std::shared_ptr<DragonServo>    - could be nullptr if invalid inputs are supplied
         //=======================================================================================
-        std::shared_ptr<DragonServo> CreateDragonServo
+        DragonServo* GetDragonServo
         (
             ServoUsage::SERVO_USAGE    deviceUsage        
         );
@@ -83,6 +83,6 @@ class DragonServoFactory
 
         static DragonServoFactory*        m_instance;
 
-        std::map <ServoUsage::SERVO_USAGE, std::shared_ptr<DragonServo>> m_servos;
+        std::map <ServoUsage::SERVO_USAGE, DragonServo*> m_servos;
 
 };

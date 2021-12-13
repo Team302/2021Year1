@@ -27,20 +27,24 @@ void Robot::RobotInit()
 
   // Get local copies of the teleop controller and the chassis
   m_controller = TeleopControl::GetInstance();
+  m_controller->SetAxisProfile(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER, IDragonGamePad::AXIS_PROFILE::CUBED);
+  m_controller->SetDeadBand(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_STEER, IDragonGamePad::AXIS_DEADBAND::APPLY_STANDARD_DEADBAND);
+  m_controller->SetAxisProfile(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE, IDragonGamePad::AXIS_PROFILE::CUBED);
+  m_controller->SetDeadBand(TeleopControl::FUNCTION_IDENTIFIER::ARCADE_THROTTLE, IDragonGamePad::AXIS_DEADBAND::APPLY_STANDARD_DEADBAND);
   auto factory = ChassisFactory::GetChassisFactory();
   m_chassis = factory->GetIChassis();
-
-  m_armStateMgr = ArmStateMgr::GetInstance();
-  m_ballReleaseStateMgr = BallReleaseStateMgr::GetInstance();
-  m_ballTransferStateMgr = BallTransferStateMgr::GetInstance();
-  m_intakeStateMgr = IntakeStateMgr::GetInstance();
-
+  
   auto mechFactory = MechanismFactory::GetMechanismFactory();
   m_arm = mechFactory->GetArm();
   m_ballRelease = mechFactory->GetBallRelease();
   m_ballTransfer = mechFactory->GetBallTransfer();
   m_intake = mechFactory->GetIntake();
-  
+
+  m_armStateMgr = m_arm != nullptr ? ArmStateMgr::GetInstance() : nullptr;
+  m_ballReleaseStateMgr = m_ballRelease != nullptr ? BallReleaseStateMgr::GetInstance() : nullptr;
+  m_ballTransferStateMgr = m_ballTransfer != nullptr ? BallTransferStateMgr::GetInstance() : nullptr;
+  m_intakeStateMgr = m_intake != nullptr ? IntakeStateMgr::GetInstance() : nullptr;
+
   m_cyclePrims = new CyclePrimitives();
 
   m_timer = new frc::Timer();
@@ -75,8 +79,7 @@ void Robot::RobotPeriodic()
  */
 void Robot::AutonomousInit() 
 {
-  m_timer->Reset();
-  if (m_chassis != nullptr)
+  if (m_cyclePrims != nullptr)
   {
     m_cyclePrims->Init();
   }
@@ -84,7 +87,7 @@ void Robot::AutonomousInit()
 
 void Robot::AutonomousPeriodic() 
 {
-  if (m_chassis != nullptr)
+  if (m_cyclePrims != nullptr)
   {
     m_cyclePrims->Run();
 

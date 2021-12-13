@@ -50,10 +50,4 @@ class Robot : public frc::TimedRobot {
   BallTransfer*         m_ballTransfer;
   Intake*               m_intake;
   CyclePrimitives*      m_cyclePrims;
-
-
-  frc::SendableChooser<std::string> m_chooser;
-  const std::string kAutoNameDefault = "Default";
-  const std::string kAutoNameCustom = "My Auto";
-  std::string m_autoSelected;
 };

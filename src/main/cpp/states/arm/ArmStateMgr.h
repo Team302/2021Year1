@@ -45,7 +45,7 @@ class ArmStateMgr : public StateMgr
 		/// @brief  Find or create the state manmanager
 		/// @return ArmStateMgr* pointer to the state manager
 		static ArmStateMgr* GetInstance();
-        void CheckForDriveTeamInput() override;
+        void CheckForStateTransition() override;
 
     private:
 

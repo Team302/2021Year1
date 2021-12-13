@@ -3,8 +3,10 @@
 #include <frc/kinematics/DifferentialDriveKinematics.h>
 #include <frc/drive/DifferentialDrive.h>
 
-DifferentialChassis::DifferentialChassis(IDragonMotorController* leftMotor, 
-                        IDragonMotorController* rightMotor,
+using namespace std;
+
+DifferentialChassis::DifferentialChassis(shared_ptr<IDragonMotorController> leftMotor, 
+                        shared_ptr<IDragonMotorController> rightMotor,
                         units::meter_t trackWidth,
                         units::velocity::meters_per_second_t maxSpeed,
                         units::angular_velocity::degrees_per_second_t maxAngSpeed,
@@ -26,8 +28,14 @@ DifferentialChassis::DifferentialChassis(IDragonMotorController* leftMotor,
     {
         auto wheels = m_kinematics->ToWheelSpeeds(chassisSpeeds);
         wheels.Normalize(m_maxSpeed);
-        m_leftMotor->Set(wheels.left/m_maxSpeed);
-        m_rightMotor->Set(wheels.right/m_maxSpeed);
+        if (m_leftMotor.get() != nullptr)
+        {
+            m_leftMotor.get()->Set(wheels.left/m_maxSpeed);
+        }
+        if (m_rightMotor.get() != nullptr)
+        {
+            m_rightMotor.get()->Set(wheels.right/m_maxSpeed);
+        }
         //double xPercent = chassisSpeeds.vx / m_maxSpeed; //calculates forward velocity as a factor
         //double omegaPercent = chassisSpeeds.omega / m_maxAngSpeed;
 

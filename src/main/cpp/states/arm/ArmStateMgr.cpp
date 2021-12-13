@@ -30,7 +30,7 @@
 #include <controllers/MechanismTargetData.h>
 #include <utils/Logger.h>
 #include <gamepad/TeleopControl.h>
-#include <states/BallRelease/BallReleaseState.h>
+#include <states/arm/ArmState.h>
 #include <subsys/MechanismFactory.h>
 #include <subsys/MechanismTypes.h>
 #include <states/StateMgr.h>
@@ -62,14 +62,14 @@ ArmStateMgr::ArmStateMgr()
     stateMap["ARMHOLDUP"] = m_upPosState;
     stateMap["ARMHOLDDOWN"] = m_downPosState;
     stateMap["ARMHOLDPOSITION"] = m_holdState;
-    Init(MechanismFactory::GetMechanismFactory()->GetBallRelease(), stateMap);
+    Init(MechanismFactory::GetMechanismFactory()->GetArm(), stateMap);
 }
 
 /// @brief  run the current state
 /// @return void
-void ArmStateMgr::CheckForDriveTeamInput()
+void ArmStateMgr::CheckForStateTransition()
 {
-    if ( MechanismFactory::GetMechanismFactory()->GetBallRelease() != nullptr )
+    if ( MechanismFactory::GetMechanismFactory()->GetArm() != nullptr )
     {
         // process teleop/manual interrupts
         auto currentState = static_cast<ARM_STATE>(GetCurrentState());

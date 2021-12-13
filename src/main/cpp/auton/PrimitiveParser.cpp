@@ -24,6 +24,11 @@
 
 #include <frc/SmartDashboard/SmartDashboard.h>
 
+#include <states/arm/ArmStateMgr.h>
+#include <states/ballrelease/BallReleaseStateMgr.h>
+#include <states/balltransfer/BallTransferStateMgr.h>
+#include <states/intake/IntakeStateMgr.h>
+
 #include <auton/PrimitiveParams.h>
 #include <auton/AutonSelector.h>
 #include <auton/PrimitiveEnums.h>
@@ -50,6 +55,11 @@ PrimitiveParamsVector PrimitiveParser::ParseXML
     float                       xloc = 0.0;
     float                       yloc = 0.0;
     std::string                 pathName;
+    
+    IntakeStateMgr::INTAKE_STATE intakeState = IntakeStateMgr::INTAKE_STATE::OFF;
+    BallReleaseStateMgr::BALL_RELEASE_STATE releaseState = BallReleaseStateMgr::BALL_RELEASE_STATE::HOLD;
+    BallTransferStateMgr::BALL_TRANSFER_STATE transferState = BallTransferStateMgr::BALL_TRANSFER_STATE::OFF;
+    ArmStateMgr::ARM_STATE armState = ArmStateMgr::ARM_STATE::HOLD_POSITION;
 
     bool hasError = false;
     string fulldirfile = string("/home/lvuser/auton/");
@@ -136,6 +146,46 @@ PrimitiveParamsVector PrimitiveParser::ParseXML
                         {
                             pathName = attr.value();
                         }
+                        else if ( strcmp( attr.name(), "runIntake") == 0)
+                        {
+                            if (attr.as_bool())
+                            {
+                                intakeState = IntakeStateMgr::INTAKE_STATE::INTAKE;
+                                transferState = BallTransferStateMgr::BALL_TRANSFER_STATE::INTAKE;
+                            }
+                            else
+                            {
+                                intakeState = IntakeStateMgr::INTAKE_STATE::OFF;
+                                transferState = BallTransferStateMgr::BALL_TRANSFER_STATE::OFF;
+                            }
+                        }                        
+                        else if ( strcmp( attr.name(), "armMovement") == 0)
+                        {
+                            if (strcmp(attr.as_string(), "UP") == 0)
+                            {
+                                armState = ArmStateMgr::ARM_STATE::GOING_UP;
+                            }
+                            else if (strcmp(attr.as_string(), "DOWN") == 0)
+                            {
+                                armState = ArmStateMgr::ARM_STATE::GOING_DOWN;
+                            }
+                            else
+                            {
+                                armState = ArmStateMgr::ARM_STATE::HOLD_POSITION;
+                            }
+
+                        }                        
+                        else if ( strcmp( attr.name(), "release") == 0)
+                        {
+                            if (attr.as_bool())
+                            {
+                                releaseState = BallReleaseStateMgr::BALL_RELEASE_STATE::RELEASE;
+                            }
+                            else
+                            {
+                                releaseState = BallReleaseStateMgr::BALL_RELEASE_STATE::HOLD;
+                            }
+                        }                    
                         else
                         {
                             Logger::GetLogger()->LogError( string("PrimitiveParser::ParseXML invalid attribute"), attr.name());
@@ -153,7 +203,11 @@ PrimitiveParamsVector PrimitiveParser::ParseXML
                                                                        heading,
                                                                        startDriveSpeed,
                                                                        endDriveSpeed,
-                                                                       pathName ) );
+                                                                       pathName,
+                                                                       intakeState,
+                                                                       transferState,
+                                                                       armState,
+                                                                       releaseState ) );
                     }
                     else 
                     {

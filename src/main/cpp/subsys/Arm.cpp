@@ -35,5 +35,15 @@ Arm::Arm
 }
 
 
+bool Arm::IsAtBottom() const
+{
+    //auto motor = GetMotor();
+    //auto speedCtl = motor.get()->GetSpeedController();
+    return false;
+}
 
+bool Arm::IsAtTop() const
+{
+    return false;
+}
 

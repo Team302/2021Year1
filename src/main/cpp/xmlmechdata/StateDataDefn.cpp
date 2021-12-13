@@ -78,7 +78,7 @@ vector<MechanismTargetData*> StateDataDefn::ParseXML
                 mech = string( "ballrelease.xml");
                 break;
         case MechanismTypes::BALL_TRANSFER:
-                mech = string( "ballrelease.xml");
+                mech = string( "balltransfer.xml");
                 break;
         case MechanismTypes::INTAKE:
             mech = string( "intake.xml");

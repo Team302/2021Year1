@@ -17,14 +17,12 @@ DragonServo::DragonServo
 	double						maxAngle			// <I> - Maximum desired angle
 
 ) : m_usage( deviceUsage ),
-    m_servo(),
+    m_servo(new frc::Servo(deviceID)),
 	m_minAngle( minAngle ),
 	m_maxAngle( maxAngle )
 {
     
 }
-
-
 
 void DragonServo::Set(double value)
 {
@@ -32,11 +30,6 @@ void DragonServo::Set(double value)
     {
         m_servo->Set( value );
     }
-    else
-    {
-//        printf( "==>> servo not initialize \n ");
-    }
-
 }
 void DragonServo::SetOffline()
 {
@@ -44,11 +37,6 @@ void DragonServo::SetOffline()
     {
         m_servo->SetOffline();
     }
-    else
-    {
-//        printf( "==>> servo not initialize \n ");
-    }
-
 }
 double DragonServo::Get() const
 {
@@ -57,22 +45,13 @@ double DragonServo::Get() const
     {
         value = m_servo->Get();
     }
-    else
-    {
- //       printf( "==>> servo not initialize \n ");
-    }
     return value;
 }
 void DragonServo::SetAngle(double angle)
 {
-    printf( "==>> moving to angle %g \n", angle );
     if ( m_servo != nullptr )
     {
         m_servo->SetAngle( angle );
-    }
-    else
-    {
-//        printf( "==>> servo not initialize \n ");
     }
 }
 double DragonServo::GetAngle() const
@@ -81,10 +60,6 @@ double DragonServo::GetAngle() const
     if ( m_servo != nullptr )
     {
         angle = m_servo->GetAngle();
-    }
-    else
-    {
-//        printf( "==>> servo not initialize \n ");
     }
     return angle;
 }

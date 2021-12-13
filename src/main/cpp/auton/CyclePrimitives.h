@@ -30,12 +30,15 @@
 
 #include <vector>
 #include <states/IState.h>
+#include <states/arm/ArmStateMgr.h>
+#include <states/ballrelease/BallReleaseStateMgr.h>
+#include <states/balltransfer/BallTransferStateMgr.h>
+#include <states/intake/IntakeStateMgr.h>
 
 class AutonSelector;
 class IPrimitive;
 class PrimitiveFactory;
 class PrimitiveParams;
-class TurretStateMgr;
 
 
 class CyclePrimitives : public IState
@@ -55,7 +58,6 @@ class CyclePrimitives : public IState
 
 	private:
 		std::vector<PrimitiveParams*> 	m_primParams;
-		TurretStateMgr* 				m_turretStateManager;
 		int 							m_currentPrimSlot;
 		IPrimitive*						m_currentPrim;
 		PrimitiveFactory* 				m_primFactory;
@@ -64,5 +66,13 @@ class CyclePrimitives : public IState
 		std::unique_ptr<frc::Timer>     m_timer;
 		double                          m_maxTime;
 		bool							m_isDone;
+		IntakeStateMgr*					m_intake;
+		BallTransferStateMgr*			m_transfer;
+		ArmStateMgr*					m_arm;
+		BallReleaseStateMgr*			m_release;
+		IntakeStateMgr::INTAKE_STATE	m_currIntakeState;
+		BallTransferStateMgr::BALL_TRANSFER_STATE m_currTransferState;
+		ArmStateMgr::ARM_STATE			m_currArmState;
+		BallReleaseStateMgr::BALL_RELEASE_STATE m_currReleaseState;
 };
 

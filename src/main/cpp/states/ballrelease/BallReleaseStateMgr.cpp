@@ -65,7 +65,7 @@ BallReleaseStateMgr::BallReleaseStateMgr()
 
 /// @brief  run the current state
 /// @return void
-void BallReleaseStateMgr::CheckForDriveTeamInput()
+void BallReleaseStateMgr::CheckForStateTransition()
 {
     if ( MechanismFactory::GetMechanismFactory()->GetBallRelease() != nullptr )
     {
@@ -79,6 +79,10 @@ void BallReleaseStateMgr::CheckForDriveTeamInput()
             if (releasePressed  &&  currentState != BALL_RELEASE_STATE::RELEASE )
             {
                 SetCurrentState( BALL_RELEASE_STATE::RELEASE, false );
+            }
+            else if (!releasePressed && currentState != BALL_RELEASE_STATE::HOLD)
+            {
+                SetCurrentState(BALL_RELEASE_STATE::HOLD, false);
             }
         }
     }

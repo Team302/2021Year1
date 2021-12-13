@@ -66,7 +66,7 @@ BallTransferStateMgr::BallTransferStateMgr()
 
 /// @brief  run the current state
 /// @return void
-void BallTransferStateMgr::CheckForDriveTeamInput()
+void BallTransferStateMgr::CheckForStateTransition()
 {
     if ( MechanismFactory::GetMechanismFactory()->GetBallTransfer() != nullptr )
     {

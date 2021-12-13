@@ -28,12 +28,12 @@ using namespace std;
     //
     // Returns:     void        
     //-----------------------------------------------------------------------
-    shared_ptr<DragonServo> ServoDefn::ParseXML
+    DragonServo* ServoDefn::ParseXML
     (
         pugi::xml_node      ServoNode
     )
     {
-        shared_ptr<DragonServo> servo = nullptr; 
+        DragonServo* servo = nullptr; 
 
         // initialize attributes to default values
         int pwmID = 0;
@@ -73,7 +73,7 @@ using namespace std;
         // create the object
         if ( !hasError )
         {
-            servo = DragonServoFactory::GetInstance()->CreateDragonServo( usage, pwmID, minAngle, maxAngle );
+            servo = DragonServoFactory::GetInstance()->CreateDragonServo( usage, pwmID, minAngle, maxAngle);
         }
         return servo;
     }

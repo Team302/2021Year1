@@ -67,7 +67,7 @@ IntakeStateMgr::IntakeStateMgr()
 
 /// @brief  run the current state
 /// @return void
-void IntakeStateMgr::CheckForDriveTeamInput()
+void IntakeStateMgr::CheckForStateTransition()
 {
     if ( MechanismFactory::GetMechanismFactory()->GetIntake() != nullptr )
     {

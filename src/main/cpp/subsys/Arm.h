@@ -38,6 +38,9 @@ class Arm : public Mech1IndMotor
 
         Arm() = delete;
         virtual ~Arm() = default;
+
+        bool IsAtTop() const;
+        bool IsAtBottom() const;
 };
 
 

@@ -95,7 +95,7 @@
               forwardlimitswitchopen="true"
               reverselimitswitch="true"
               reverselimitswitchopen="true"/>
-    </mechanism>   
+    </mechanism>    
     <mechanism type="BALLRELEASE">
        <servo usage="BALLRELEASE"
               pwmId="0"

@@ -149,7 +149,7 @@ void MechanismFactory::CreateIMechanism
 			if (m_ballRelease == nullptr)
 			{
 				auto servo = GetServo(servos, ServoUsage::RELEASE_SERVO);
-				if (servo.get() != nullptr)
+				if (servo != nullptr)
 				{
 					m_ballRelease = new BallRelease(servo);
 				}
@@ -221,13 +221,13 @@ shared_ptr<DragonSolenoid> MechanismFactory::GetSolenoid
 	}
 	return solenoid;
 }
-shared_ptr<DragonServo> MechanismFactory::GetServo
+DragonServo* MechanismFactory::GetServo
 (
 	const ServoMap&									servos,
 	ServoUsage::SERVO_USAGE							usage
 )
 {
-	shared_ptr<DragonServo> servo;
+	DragonServo* servo;
 	auto it = servos.find( usage );
 	if ( it != servos.end() )  // found it
 	{
@@ -240,7 +240,7 @@ shared_ptr<DragonServo> MechanismFactory::GetServo
 		Logger::GetLogger()->LogError( string( "MechanismFactory::GetServo" ), msg );
 	}
 	
-	if ( servo.get() == nullptr )
+	if ( servo == nullptr )
 	{
 		string msg = "servo is nullptr; usage = ";
 		msg += to_string( usage );

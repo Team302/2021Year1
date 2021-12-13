@@ -61,7 +61,7 @@ class StateMgr
         inline int GetCurrentState() const { return m_currentStateID; };
 
     protected:
-        virtual void CheckForDriveTeamInput();
+        virtual void CheckForStateTransition();
 
     private:
 

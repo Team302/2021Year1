@@ -33,7 +33,7 @@ class BallRelease : public Mech1Servo
 
         BallRelease
         (
-            std::shared_ptr<DragonServo> servo
+            DragonServo* servo
         );
 
         BallRelease() = delete;

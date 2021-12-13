@@ -24,6 +24,10 @@
 
 // Team 302 includes
 #include <auton/PrimitiveEnums.h>
+#include <states/arm/ArmStateMgr.h>
+#include <states/ballrelease/BallReleaseStateMgr.h>
+#include <states/balltransfer/BallTransferStateMgr.h>
+#include <states/intake/IntakeStateMgr.h>
 
 // Third Party Includes
 
@@ -42,7 +46,11 @@ class PrimitiveParams
                 float                                               heading,
                 float                                               startDriveSpeed,
                 float                                               endDriveSpeed,
-                std::string                                         pathName
+                std::string                                         pathName,
+                IntakeStateMgr::INTAKE_STATE                        intakeState,
+                BallTransferStateMgr::BALL_TRANSFER_STATE           transferState,
+                ArmStateMgr::ARM_STATE                              armState,
+                BallReleaseStateMgr::BALL_RELEASE_STATE             releaseState
         );//Constructor. Takes in all parameters
 
         PrimitiveParams() = delete;
@@ -59,6 +67,11 @@ class PrimitiveParams
         float GetDriveSpeed() const;
         float GetEndDriveSpeed() const;
         std::string GetPathName() const;
+        IntakeStateMgr::INTAKE_STATE GetIntakeState() const;
+        BallTransferStateMgr::BALL_TRANSFER_STATE GetTransferState() const;
+        ArmStateMgr::ARM_STATE GetArmState() const;
+        BallReleaseStateMgr::BALL_RELEASE_STATE GetReleaseState() const;
+
 
         //Setters
         void SetDistance(float distance);
@@ -74,6 +87,11 @@ class PrimitiveParams
         float                                               m_startDriveSpeed;
         float                                               m_endDriveSpeed;
         std::string                                         m_pathName;
+        IntakeStateMgr::INTAKE_STATE                        m_intakeState;
+        BallTransferStateMgr::BALL_TRANSFER_STATE           m_transferState;
+        ArmStateMgr::ARM_STATE                              m_armState;
+        BallReleaseStateMgr::BALL_RELEASE_STATE             m_releaseState;
+
 };
 
 typedef std::vector<PrimitiveParams*> PrimitiveParamsVector;

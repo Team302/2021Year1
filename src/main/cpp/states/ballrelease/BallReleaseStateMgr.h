@@ -42,7 +42,7 @@ class BallReleaseStateMgr : public StateMgr
 		/// @brief  Find or create the state manmanager
 		/// @return BallReleaseStateMgr* pointer to the state manager
 		static BallReleaseStateMgr* GetInstance();
-        void CheckForDriveTeamInput() override;
+        void CheckForStateTransition() override;
 
 
     private:

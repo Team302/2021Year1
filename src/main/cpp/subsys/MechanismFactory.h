@@ -102,7 +102,7 @@ class MechanismFactory
 			const DragonSolenoidMap&						solenoids,
 			SolenoidUsage::SOLENOID_USAGE					usage
 		);
-		std::shared_ptr<DragonServo> GetServo
+		DragonServo* GetServo
 		(
 			const ServoMap&									servos,
 			ServoUsage::SERVO_USAGE							usage

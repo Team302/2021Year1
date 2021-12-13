@@ -15,8 +15,8 @@ class DifferentialChassis : public IChassis {
         DifferentialChassis() = delete;
         virtual ~DifferentialChassis() = default;
 
-        DifferentialChassis(IDragonMotorController* leftMotor, 
-                        IDragonMotorController* rightMotor,
+        DifferentialChassis(std::shared_ptr<IDragonMotorController> leftMotor, 
+                        std::shared_ptr<IDragonMotorController> rightMotor,
                         units::meter_t trackWidth,
                         units::velocity::meters_per_second_t maxSpeed,
                         units::angular_velocity::degrees_per_second_t maxAngSpeed,
@@ -36,8 +36,8 @@ class DifferentialChassis : public IChassis {
         bool IsMoving() const override;
 
     private:
-        IDragonMotorController* m_leftMotor;
-        IDragonMotorController* m_rightMotor;
+        std::shared_ptr<IDragonMotorController> m_leftMotor;
+        std::shared_ptr<IDragonMotorController> m_rightMotor;
         
         units::velocity::meters_per_second_t m_maxSpeed;
         units::angular_velocity::degrees_per_second_t m_maxAngSpeed;

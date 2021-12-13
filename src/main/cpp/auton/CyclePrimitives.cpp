@@ -34,6 +34,10 @@
 #include <auton/PrimitiveParams.h>
 #include <subsys/MechanismFactory.h>
 #include <utils/Logger.h>
+#include <states/arm/ArmStateMgr.h>
+#include <states/ballrelease/BallReleaseStateMgr.h>
+#include <states/balltransfer/BallTransferStateMgr.h>
+#include <states/intake/IntakeStateMgr.h>
 
 // Third Party Includes
 
@@ -49,7 +53,15 @@ CyclePrimitives::CyclePrimitives() : m_primParams(),
 									 m_autonSelector( new AutonSelector()) ,
 									 m_timer( make_unique<Timer>()),
 									 m_maxTime( 0.0 ),
-									 m_isDone( false )
+									 m_isDone( false ),
+									 m_intake(IntakeStateMgr::GetInstance()),
+									 m_transfer(BallTransferStateMgr::GetInstance()),
+									 m_arm(ArmStateMgr::GetInstance()),
+									 m_release(BallReleaseStateMgr::GetInstance()),
+									 m_currIntakeState(IntakeStateMgr::INTAKE_STATE::OFF),
+									 m_currTransferState(BallTransferStateMgr::BALL_TRANSFER_STATE::OFF),
+									 m_currArmState(ArmStateMgr::ARM_STATE::HOLD_POSITION),
+									 m_currReleaseState(BallReleaseStateMgr::BALL_RELEASE_STATE::HOLD)
 {
 }
 
@@ -70,6 +82,22 @@ void CyclePrimitives::Run()
 	if (m_currentPrim != nullptr)
 	{
 		m_currentPrim->Run();
+		if(m_intake != nullptr)
+		{
+			m_intake->SetCurrentState(m_currIntakeState, true);
+		}
+		if(m_transfer != nullptr)
+		{
+			m_transfer->SetCurrentState(m_currTransferState, true);
+		}
+		if(m_arm != nullptr)
+		{
+			m_arm->SetCurrentState(m_currArmState, true);
+		}
+		if(m_release != nullptr)
+		{
+			m_release->SetCurrentState(m_currReleaseState, true);
+		}
 	}
 	else
 	{
@@ -97,6 +125,10 @@ void CyclePrimitives::GetNextPrim()
 		m_maxTime = currentPrimParam->GetTime();
 		m_timer->Reset();
 		m_timer->Start();
+		m_currIntakeState = currentPrimParam->GetIntakeState();
+		m_currTransferState = currentPrimParam->GetTransferState();
+		m_currArmState = currentPrimParam->GetArmState();
+		m_currReleaseState = currentPrimParam->GetReleaseState();
 	}
 
 	m_currentPrimSlot++;
@@ -115,7 +147,11 @@ void CyclePrimitives::RunDoNothing()
 		                                   0.0,                 // heading
 		                                   0.0,                 // start drive speed
 		                                   0.0,					// end drive speed
-										  std::string() );             
+										  std::string(),
+										  IntakeStateMgr::INTAKE_STATE::OFF,
+										  BallTransferStateMgr::BALL_TRANSFER_STATE::OFF,
+										  ArmStateMgr::ARM_STATE::HOLD_POSITION,
+										  BallReleaseStateMgr::BALL_RELEASE_STATE::HOLD );             
 		m_doNothing = m_primFactory->GetIPrimitive(params);
 		m_doNothing->Init(params);
 	}

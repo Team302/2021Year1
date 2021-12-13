@@ -160,9 +160,9 @@ void MechanismDefn::ParseXML
         else if ( strcmp( child.name(), "servo") == 0 )
         {
             auto servo = servoXML->ParseXML(child);
-            if ( servo.get() != nullptr )
+            if ( servo != nullptr )
             {
-                servos[servo.get()->GetUsage()] = servo;
+                servos[servo->GetUsage()] = servo;
             }
         }
         else if ( strcmp( child.name(), "solenoid" ) == 0 )

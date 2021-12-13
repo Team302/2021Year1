@@ -56,6 +56,8 @@ void StateMgr::Init
     const map<string,StateStruc>&           stateMap
 ) 
 {
+    m_mech = mech;
+    
     // Parse the configuration file 
     auto stateXML = make_unique<StateDataDefn>();
     vector<MechanismTargetData*> targetData = stateXML.get()->ParseXML(mech->GetType());
@@ -126,7 +128,7 @@ void StateMgr::RunCurrentState()
 {
     if ( m_mech != nullptr )
     {
-        CheckForDriveTeamInput();
+        CheckForStateTransition();
 
         // run the current state
         if ( m_currentState != nullptr )
@@ -137,7 +139,7 @@ void StateMgr::RunCurrentState()
 
 }
 
-void StateMgr::CheckForDriveTeamInput()
+void StateMgr::CheckForStateTransition()
 {
     // override this method if joystick inputs could change states;  Format 
     // would look something like:

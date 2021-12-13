@@ -34,7 +34,7 @@ using namespace std;
 
 BallRelease::BallRelease
 (
-    shared_ptr<DragonServo> servo 
+    DragonServo* servo 
 ) : Mech1Servo(MechanismTypes::MECHANISM_TYPE::BALL_RELEASE,  string("ballrelease.xml"),  string("BallReleaseNT"), servo)
 {
 }

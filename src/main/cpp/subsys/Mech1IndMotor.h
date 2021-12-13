@@ -99,6 +99,7 @@ class Mech1IndMotor : public IMech1IndMotor
 
     protected:
         double GetTarget() const { return m_target; }
+        std::shared_ptr<IDragonMotorController> GetMotor() const {return m_motor;}
 
     private:
         MechanismTypes::MECHANISM_TYPE              m_type;

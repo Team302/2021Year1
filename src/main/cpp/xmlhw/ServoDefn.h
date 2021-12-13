@@ -37,7 +37,7 @@ class ServoDefn
 
         /// @brief Parse a servo XML element and create a DragonServo from its definition.
         /// @return std::shared_ptr<DragonServo> servo
-        std::shared_ptr<DragonServo> ParseXML
+        DragonServo* ParseXML
         (
             pugi::xml_node      ServoNode
         );

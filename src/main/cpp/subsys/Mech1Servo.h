@@ -41,7 +41,7 @@ class Mech1Servo : public IMech1Servo
             MechanismTypes::MECHANISM_TYPE              type,
             std::string                                 controlFileName,
             std::string                                 networkTableName,
-            std::shared_ptr<DragonServo>                servo
+            DragonServo*                                servo
         );
 	    Mech1Servo() = delete;
 	    virtual ~Mech1Servo() = default;
@@ -72,7 +72,7 @@ class Mech1Servo : public IMech1Servo
 
 
     private:
-        std::shared_ptr<DragonServo>                m_servo;
+        DragonServo*                                m_servo;
         MechanismTypes::MECHANISM_TYPE              m_type;
         std::string                                 m_controlFile;
         std::string                                 m_ntName;

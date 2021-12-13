@@ -7,6 +7,10 @@
 
 #include <auton/PrimitiveEnums.h>
 #include <auton/PrimitiveParams.h>
+#include <states/arm/ArmStateMgr.h>
+#include <states/ballrelease/BallReleaseStateMgr.h>
+#include <states/balltransfer/BallTransferStateMgr.h>
+#include <states/intake/IntakeStateMgr.h>
 
 PrimitiveParams::PrimitiveParams
 (
@@ -18,7 +22,11 @@ PrimitiveParams::PrimitiveParams
     float                       						heading,
     float                       						startDriveSpeed,
     float                       						endDriveSpeed,
-	std::string											pathName
+	std::string											pathName,
+	IntakeStateMgr::INTAKE_STATE                        intakeState,
+	BallTransferStateMgr::BALL_TRANSFER_STATE           transferState,
+	ArmStateMgr::ARM_STATE                              armState,
+	BallReleaseStateMgr::BALL_RELEASE_STATE             releaseState
 ):	//Pass over parameters to class variables
 		m_id(id), //Primitive ID
 		m_time(time),
@@ -28,7 +36,11 @@ PrimitiveParams::PrimitiveParams
 		m_heading(heading),
 		m_startDriveSpeed( startDriveSpeed ),
 		m_endDriveSpeed( endDriveSpeed ),
-		m_pathName ( pathName)
+		m_pathName ( pathName),
+		m_intakeState(intakeState),
+		m_transferState(transferState),
+		m_armState(armState),
+		m_releaseState(releaseState)
 {
 }
 
@@ -81,5 +93,22 @@ std::string PrimitiveParams::GetPathName() const
 void PrimitiveParams::SetDistance(float distance)
 {
 	m_distance = distance;
+}
+
+IntakeStateMgr::INTAKE_STATE PrimitiveParams::GetIntakeState() const
+{
+	return m_intakeState;
+}
+BallTransferStateMgr::BALL_TRANSFER_STATE PrimitiveParams::GetTransferState() const
+{
+	return m_transferState;
+}
+ArmStateMgr::ARM_STATE PrimitiveParams::GetArmState() const
+{
+	return m_armState;
+}
+BallReleaseStateMgr::BALL_RELEASE_STATE PrimitiveParams::GetReleaseState() const
+{
+	return m_releaseState;
 }
 

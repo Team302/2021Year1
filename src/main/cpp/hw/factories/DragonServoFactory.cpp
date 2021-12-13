@@ -65,7 +65,7 @@ DragonServoFactory* DragonServoFactory::GetInstance()
 /// @param [in] double                     maxAngle     Maximum Angle for the servo
 /// @return std::shared_ptr<DragonServo>    - could be nullptr if invalid inputs are supplied
 //=======================================================================================
-shared_ptr<DragonServo> DragonServoFactory::CreateDragonServo
+DragonServo* DragonServoFactory::CreateDragonServo
 (
     ServoUsage::SERVO_USAGE     deviceUsage,        
     int                         deviceID,           
@@ -73,25 +73,17 @@ shared_ptr<DragonServo> DragonServoFactory::CreateDragonServo
     double                      maxAngle            
 )
 {
-    shared_ptr<DragonServo> servo = nullptr;
-    if ( deviceUsage > ServoUsage::SERVO_USAGE::UNKNOWN_SERVO_USAGE && deviceUsage < ServoUsage::SERVO_USAGE::MAX_SERVO_USAGES )
+    DragonServo* servo = nullptr;
+    switch ( deviceUsage )
     {
-        servo = m_servos.find(deviceUsage)->second;
-        if ( servo != nullptr )
-        {
-            string msg = "servo with usage already exists " + to_string( deviceUsage );
+        case ServoUsage::SERVO_USAGE::RELEASE_SERVO:
+            servo = new DragonServo(deviceUsage, deviceID, minAngle, maxAngle);
+            m_servos[ServoUsage::SERVO_USAGE::RELEASE_SERVO] = servo;
+            break;
+        default:
+            string msg = "Unknown Servo Usage " + to_string( deviceUsage );
             Logger::GetLogger()->LogError( "DragonServoFactory::CreateDragonServo", msg );
-        }
-        else
-        {       
-            switch ( deviceUsage )
-            {
-                default:
-                    string msg = "Unknown Servo Usage " + to_string( deviceUsage );
-                    Logger::GetLogger()->LogError( "DragonServoFactory::CreateDragonServo", msg );
-                    break;
-            }
-        }
+            break;
     }
     return servo;
 }
@@ -104,7 +96,7 @@ shared_ptr<DragonServo> DragonServoFactory::CreateDragonServo
 /// @param [in] DragonServo::SERVO_USAGE   deviceUsage  Usage of the servo
 /// @return std::shared_ptr<DragonServo>    - could be nullptr if invalid inputs are supplied
 //=======================================================================================
-shared_ptr<DragonServo> DragonServoFactory::CreateDragonServo
+DragonServo* DragonServoFactory::GetDragonServo
 (
     ServoUsage::SERVO_USAGE    deviceUsage        
 )

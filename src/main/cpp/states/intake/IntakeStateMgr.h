@@ -44,7 +44,7 @@ class IntakeStateMgr : public StateMgr
 		/// @brief  Find or create the state manmanager
 		/// @return IntakeStateMgr* pointer to the state manager
 		static IntakeStateMgr* GetInstance();
-        void CheckForDriveTeamInput() override;
+        void CheckForStateTransition() override;
 
     private:
 

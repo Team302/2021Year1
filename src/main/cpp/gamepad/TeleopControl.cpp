@@ -90,10 +90,23 @@ TeleopControl::TeleopControl() : m_axisIDs(),
     auto ctrlNo = 0;
     if ( m_controllers[ctrlNo] != nullptr && DriverStation::GetJoystickIsXbox(ctrlNo) )
     {
-		m_controllerIndex[ARCADE_THROTTLE]			= ctrlNo;
-		m_axisIDs[ ARCADE_THROTTLE]					= IDragonGamePad::LEFT_JOYSTICK_Y;
-		m_controllerIndex[ARCADE_STEER]				= ctrlNo;
-		m_axisIDs[ARCADE_STEER]						= IDragonGamePad::RIGHT_JOYSTICK_X;
+		m_controllerIndex[ARCADE_THROTTLE]  = ctrlNo;
+		m_axisIDs[ ARCADE_THROTTLE]         = IDragonGamePad::LEFT_JOYSTICK_Y;
+		m_controllerIndex[ARCADE_STEER]     = ctrlNo;
+		m_axisIDs[ARCADE_STEER]             = IDragonGamePad::RIGHT_JOYSTICK_X;
+
+		m_controllerIndex[INTAKE]           = ctrlNo;
+		m_buttonIDs[INTAKE]                 = IDragonGamePad::RIGHT_BUMPER;
+		m_controllerIndex[EXPEL]            = ctrlNo;
+		m_buttonIDs[EXPEL]                  = IDragonGamePad::LEFT_BUMPER;
+
+		m_controllerIndex[ROTATE_ARM_UP]    = ctrlNo;
+		m_buttonIDs[ROTATE_ARM_UP]          = IDragonGamePad::Y_BUTTON;
+		m_controllerIndex[ROTATE_ARM_DOWN]  = ctrlNo;
+		m_buttonIDs[ROTATE_ARM_DOWN]        = IDragonGamePad::A_BUTTON;
+
+		m_controllerIndex[RELEASE]          = ctrlNo;
+		m_buttonIDs[RELEASE]                = IDragonGamePad::B_BUTTON;
     }
     else
     {

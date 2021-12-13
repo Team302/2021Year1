@@ -38,7 +38,7 @@ Mech1Servo::Mech1Servo
     MechanismTypes::MECHANISM_TYPE              type,
     std::string                                 controlFileName,
     std::string                                 networkTableName,
-    std::shared_ptr<DragonServo>                servo
+    DragonServo*                                servo
 ) : IMech1Servo(),
     m_servo(servo),
     m_type(type),
@@ -46,7 +46,7 @@ Mech1Servo::Mech1Servo
     m_ntName(networkTableName),
     m_logging(false) 
 {
-    if (m_servo.get() == nullptr )
+    if (m_servo == nullptr )
     {
         Logger::GetLogger()->LogError( Logger::LOGGER_LEVEL::ERROR_ONCE, string( "Mech1Servo constructor" ), string( "servo is nullptr" ) );
     }
@@ -87,9 +87,9 @@ void Mech1Servo::SetAngle
     double angle       
 ) 
 {
-    if ( m_servo.get() != nullptr )
+    if ( m_servo != nullptr )
     {
-        m_servo.get()->SetAngle( angle );
+        m_servo->SetAngle( angle );
     }
 }
 
