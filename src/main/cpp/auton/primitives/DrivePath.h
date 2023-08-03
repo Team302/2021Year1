@@ -24,7 +24,7 @@
 //FRC,WPI Includes
 
 #include <wpi/SmallString.h>
-#include <wpi/math>
+#include <wpi/numbers>
 
 #include <frc/geometry/Pose2d.h>
 #include <frc/Filesystem.h>

@@ -21,7 +21,7 @@
 //#include <cmath>
 
 // FRC includes
-#include <wpi/math>
+#include <wpi/numbers>
 
 // Team 302 includes
 

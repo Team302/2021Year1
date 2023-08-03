@@ -5,7 +5,7 @@
  *      Author: jonah
  */
 
-#include <auton/PrimitiveFactory.h>
+#include <auton/primitives/PrimitiveFactory.h>
 #include <frc/SmartDashboard/SmartDashboard.h>
 //Team 302 includes
 #include <auton/primitives/DriveDistance.h>

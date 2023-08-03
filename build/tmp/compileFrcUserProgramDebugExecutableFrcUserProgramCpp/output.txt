@@ -1,16 +1,595 @@
-See file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
-compiling DragonVision.cpp successful.
+See file:///C:/Users/Team302/Documents/GitHub/2021Year1-imported/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling PrimitiveFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\PrimitiveFactory.cpp:8:10: fatal error: auton/primitives/PrimitiveFactory.h: No such file or directory
+    8 | #include <auton/primitives/PrimitiveFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
 
-compiling Robot.cpp successful.
+compiling PrimitiveParams.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\PrimitiveParams.cpp:8:10: fatal error: auton/primitives/PrimitiveEnums.h: No such file or directory
+    8 | #include <auton/primitives/PrimitiveEnums.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
 
-compiling ResetPosition.cpp successful.
+compiling FieldDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\FieldDefn.cpp:13:10: fatal error: auton/FieldMeasurement.h: No such file or directory
+   13 | #include <auton/FieldMeasurement.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
 
-compiling PrimitiveFactory.cpp successful.
-In file included from C:\GitRepos\2021Year1\src\main\cpp/auton/primitives/DrivePath.h:27:0,
-                 from C:\GitRepos\2021Year1\src\main\cpp\auton\PrimitiveFactory.cpp:22:
-C:\Users\joewi\.gradle\caches\transforms-3\e84d4ba9010202ffdd365d97ffced717\transformed\wpiutil-cpp-2022.1.1-beta-1-headers/wpi/math:13:2: warning: #warning is a GCC extension
- #warning "Use <wpi/numbers> and wpi::numbers instead to reflect C++20 <numbers> and std::numbers"
-  ^~~~~~~
-C:\Users\joewi\.gradle\caches\transforms-3\e84d4ba9010202ffdd365d97ffced717\transformed\wpiutil-cpp-2022.1.1-beta-1-headers/wpi/math:13:2: warning: #warning "Use <wpi/numbers> and wpi::numbers instead to reflect C++20 <numbers> and std::numbers" [-Wcpp]
+compiling FieldMeasurement.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\FieldMeasurement.cpp:9:10: fatal error: auton/FieldMeasurement.h: No such file or directory
+    9 | #include <auton/FieldMeasurement.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
 
-Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/GitRepos/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
+compiling AutonSelector.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\AutonSelector.cpp:26:10: fatal error: auton/AutonSelector.h: No such file or directory
+   26 | #include <auton/AutonSelector.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling CyclePrimitives.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\CyclePrimitives.cpp:27:10: fatal error: auton/primitives/IPrimitive.h: No such file or directory
+   27 | #include <auton/primitives/IPrimitive.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DriveDistance.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveDistance.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
+   25 | #include <auton/primitives/DoNothing.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DriveTime.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveTime.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
+   25 | #include <auton/primitives/DoNothing.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DriveToTarget.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveToTarget.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
+   25 | #include <auton/primitives/DoNothing.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DrivePath.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DrivePath.cpp:26:10: fatal error: auton/primitives/DrivePath.h: No such file or directory
+   26 | #include <auton/primitives/DrivePath.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DriveToWall.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveToWall.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
+   25 | #include <auton/primitives/DoNothing.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ResetPosition.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\ResetPosition.cpp:21:10: fatal error: auton/primitives/ResetPosition.h: No such file or directory
+   21 | #include <auton/primitives/ResetPosition.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling HoldPosition.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\HoldPosition.cpp:24:10: fatal error: auton/PrimitiveFactory.h: No such file or directory
+   24 | #include <auton/PrimitiveFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ControlData.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\controllers\ControlData.cpp:20:10: fatal error: controllers/ControlData.h: No such file or directory
+   20 | #include <controllers/ControlData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling SuperDrive.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\SuperDrive.cpp:26:10: fatal error: auton/PrimitiveParams.h: No such file or directory
+   26 | #include <auton/PrimitiveParams.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling TurnAngle.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\TurnAngle.cpp:28:10: fatal error: auton/primitives/TurnAngle.h: No such file or directory
+   28 | #include <auton/primitives/TurnAngle.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling MechanismTargetData.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\controllers\MechanismTargetData.cpp:19:10: fatal error: controllers/MechanismTargetData.h: No such file or directory
+   19 | #include <controllers/MechanismTargetData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling CubedProfile.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\CubedProfile.cpp:29:10: fatal error: gamepad/axis/CubedProfile.h: No such file or directory
+   29 | #include <gamepad/axis/CubedProfile.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DeadbandValue.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\DeadbandValue.cpp:17:10: fatal error: gamepad/axis/DeadbandValue.h: No such file or directory
+   17 | #include <gamepad/axis/DeadbandValue.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling FlippedAxis.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\FlippedAxis.cpp:25:10: fatal error: gamepad/axis/FlippedAxis.h: No such file or directory
+   25 | #include <gamepad/axis/FlippedAxis.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling LinearProfile.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\LinearProfile.cpp:17:10: fatal error: gamepad/axis/IProfile.h: No such file or directory
+   17 | #include <gamepad/axis/IProfile.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling NoDeadbandValue.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\NoDeadbandValue.cpp:17:10: fatal error: gamepad/axis/NoDeadbandValue.h: No such file or directory
+   17 | #include <gamepad/axis/NoDeadbandValue.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ScaledAxis.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\ScaledAxis.cpp:25:10: fatal error: gamepad/axis/ScaledAxis.h: No such file or directory
+   25 | #include <gamepad/axis/ScaledAxis.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ScaledDeadbandValue.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\ScaledDeadbandValue.cpp:17:10: fatal error: gamepad/axis/ScaledDeadbandValue.h: No such file or directory
+   17 | #include <gamepad/axis/ScaledDeadbandValue.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling SquaredProfile.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\SquaredProfile.cpp:25:10: fatal error: gamepad/axis/IProfile.h: No such file or directory
+   25 | #include <gamepad/axis/IProfile.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling AnalogButton.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\AnalogButton.cpp:17:10: fatal error: gamepad/axis/AnalogAxis.h: No such file or directory
+   17 | #include <gamepad/axis/AnalogAxis.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ButtonDecorator.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\ButtonDecorator.cpp:25:10: fatal error: gamepad/button/ButtonDecorator.h: No such file or directory
+   25 | #include <gamepad/button/ButtonDecorator.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling PiecewiseLinearProfile.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\PiecewiseLinearProfile.cpp:29:10: fatal error: gamepad/axis/PiecewiseLinearProfile.h: No such file or directory
+   29 | #include <gamepad/axis/PiecewiseLinearProfile.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DebouncedButton.cpp successful.
+
+compiling AnalogAxis.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\AnalogAxis.cpp:31:10: fatal error: gamepad/axis/AnalogAxis.h: No such file or directory
+   31 | #include <gamepad/axis/AnalogAxis.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ToggleButton.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\ToggleButton.cpp:17:10: fatal error: gamepad/button/ToggleButton.h: No such file or directory
+   17 | #include <gamepad/button/ToggleButton.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonGamepad.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\DragonGamepad.cpp:17:10: fatal error: gamepad/DragonGamepad.h: No such file or directory
+   17 | #include <gamepad/DragonGamepad.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonXBox.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\DragonXBox.cpp:17:10: fatal error: gamepad/DragonXBox.h: No such file or directory
+   17 | #include <gamepad/DragonXBox.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling FunctionMap.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\FunctionMap.cpp:23:10: fatal error: gamepad/IDragonGamePad.h: No such file or directory
+   23 | #include <gamepad/IDragonGamePad.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling POVButton.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\POVButton.cpp:19:10: fatal error: gamepad/button/POVButton.h: No such file or directory
+   19 | #include <gamepad/button/POVButton.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DigitalButton.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\DigitalButton.cpp:28:10: fatal error: gamepad/button/DigitalButton.h: No such file or directory
+   28 | #include <gamepad/button/DigitalButton.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonPigeon.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonPigeon.cpp:17:10: fatal error: ctre/phoenix/Sensors/PigeonIMU.h: No such file or directory
+   17 | #include <ctre/phoenix/Sensors/PigeonIMU.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling TeleopControl.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\TeleopControl.cpp:27:10: fatal error: gamepad/IDragonGamePad.h: No such file or directory
+   27 | #include <gamepad/IDragonGamePad.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonServo.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonServo.cpp:5:10: fatal error: hw/DragonServo.h: No such file or directory
+    5 | #include <hw/DragonServo.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonDigitalInput.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonDigitalInput.cpp:7:10: fatal error: hw/DragonDigitalInput.h: No such file or directory
+    7 | #include <hw/DragonDigitalInput.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonVision.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonVision.cpp:8:11: fatal error: hw/DragonVision.h: No such file or directory
+    8 |  #include <hw/DragonVision.h>
+      |           ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonPDP.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonPDP.cpp:7:10: fatal error: hw/DragonPDP.h: No such file or directory
+    7 | #include <hw/DragonPDP.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonFalcon.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonFalcon.cpp:29:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
+   29 | #include <hw/interfaces/IDragonMotorController.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonLimelight.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonLimelight.cpp:31:10: fatal error: hw/DragonLimelight.h: No such file or directory
+   31 | #include <hw/DragonLimelight.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonMotorControllerFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\DragonMotorControllerFactory.cpp:5:10: fatal error: hw/factories/DragonMotorControllerFactory.h: No such file or directory
+    5 | #include <hw/factories/DragonMotorControllerFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DigitalInputFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\DigitalInputFactory.cpp:32:10: fatal error: hw/factories/DigitalInputFactory.h: No such file or directory
+   32 | #include <hw/factories/DigitalInputFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling LimelightFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\LimelightFactory.cpp:10:10: fatal error: hw/factories/LimelightFactory.h: No such file or directory
+   10 | #include "hw/factories/LimelightFactory.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonSolenoid.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonSolenoid.cpp:7:10: fatal error: hw/DragonSolenoid.h: No such file or directory
+    7 | #include <hw/DragonSolenoid.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonServoFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\DragonServoFactory.cpp:30:10: fatal error: hw/factories/DragonServoFactory.h: No such file or directory
+   30 | #include <hw/factories/DragonServoFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DragonTalon.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonTalon.cpp:29:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
+   29 | #include <hw/interfaces/IDragonMotorController.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling PigeonFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\PigeonFactory.cpp:32:10: fatal error: hw/factories/PigeonFactory.h: No such file or directory
+   32 | #include <hw/factories/PigeonFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ArmState.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\arm\ArmState.cpp:22:10: fatal error: controllers/ControlData.h: No such file or directory
+   22 | #include <controllers/ControlData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DigitalInputUsage.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\DigitalInputUsage.cpp:25:10: fatal error: hw/usages/DigitalInputUsage.h: No such file or directory
+   25 | #include <hw/usages/DigitalInputUsage.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling MotorControllerUsage.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\MotorControllerUsage.cpp:25:10: fatal error: hw/usages/MotorControllerUsage.h: No such file or directory
+   25 | #include <hw/usages/MotorControllerUsage.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ServoUsage.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\ServoUsage.cpp:25:10: fatal error: hw/usages/ServoUsage.h: No such file or directory
+   25 | #include <hw/usages/ServoUsage.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling BallReleaseState.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\ballrelease\BallReleaseState.cpp:22:10: fatal error: states/ballrelease/BallReleaseState.h: No such file or directory
+   22 | #include <states/ballrelease/BallReleaseState.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling BallTransferState.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\balltransfer\BallTransferState.cpp:22:10: fatal error: controllers/ControlData.h: No such file or directory
+   22 | #include <controllers/ControlData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling SolenoidUsage.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\SolenoidUsage.cpp:25:10: fatal error: hw/usages/SolenoidUsage.h: No such file or directory
+   25 | #include <hw/usages/SolenoidUsage.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling IntakeState.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\intake\IntakeState.cpp:22:10: fatal error: controllers/ControlData.h: No such file or directory
+   22 | #include <controllers/ControlData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Robot.cpp failed.
+In file included from C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\Robot.cpp:5:
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\Robot.h:12:10: fatal error: gamepad/TeleopControl.h: No such file or directory
+   12 | #include <gamepad/TeleopControl.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ArmStateMgr.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\arm\ArmStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
+   27 | #include <states/IState.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling BallReleaseStateMgr.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\ballrelease\BallReleaseStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
+   27 | #include <states/IState.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling BallTransferStateMgr.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\balltransfer\BallTransferStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
+   27 | #include <states/IState.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Mech1MotorState.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\Mech1MotorState.cpp:23:10: fatal error: states/IState.h: No such file or directory
+   23 | #include <states/IState.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling IntakeStateMgr.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\intake\IntakeStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
+   27 | #include <states/IState.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Mech2MotorState.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\Mech2MotorState.cpp:23:10: fatal error: states/IState.h: No such file or directory
+   23 | #include <states/IState.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DifferentialChassis.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\DifferentialChassis.cpp:1:10: fatal error: subsys/DifferentialChassis.h: No such file or directory
+    1 | #include <subsys/DifferentialChassis.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Arm.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Arm.cpp:23:10: fatal error: subsys/Arm.h: No such file or directory
+   23 | #include <subsys/Arm.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+
+compiling BallRelease.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\BallRelease.cpp:27:10: fatal error: subsys/BallRelease.h: No such file or directory
+   27 | #include <subsys/BallRelease.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling StateMgr.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\StateMgr.cpp:27:10: fatal error: controllers/MechanismTargetData.h: No such file or directory
+   27 | #include <controllers/MechanismTargetData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling BallTransfer.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\BallTransfer.cpp:24:10: fatal error: subsys/BallTransfer.h: No such file or directory
+   24 | #include <subsys/BallTransfer.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ChassisFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\ChassisFactory.cpp:10:10: fatal error: subsys/interfaces/IChassis.h: No such file or directory
+   10 | #include <subsys/interfaces/IChassis.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Intake.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Intake.cpp:23:10: fatal error: subsys/Intake.h: No such file or directory
+   23 | #include <subsys/Intake.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Mech1Servo.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech1Servo.cpp:25:10: fatal error: hw/DragonServo.h: No such file or directory
+   25 | #include <hw/DragonServo.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling HardwareIDValidation.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\utils\HardwareIDValidation.cpp:31:10: fatal error: utils/HardwareIDValidation.h: No such file or directory
+   31 | #include <utils/HardwareIDValidation.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling MechanismFactory.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\MechanismFactory.cpp:33:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
+   33 | #include <hw/interfaces/IDragonMotorController.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Mech1IndMotor.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech1IndMotor.cpp:26:10: fatal error: controllers/ControlData.h: No such file or directory
+   26 | #include <controllers/ControlData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Mech.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech.cpp:24:10: fatal error: subsys/Mech.h: No such file or directory
+   24 | #include <subsys/Mech.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Mech2IndMotors.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech2IndMotors.cpp:28:10: fatal error: subsys/Mech1IndMotor.h: No such file or directory
+   28 | #include <subsys/Mech1IndMotor.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling Logger.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\utils\Logger.cpp:40:10: fatal error: utils/Logger.h: No such file or directory
+   40 | #include <utils/Logger.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling UsageValidation.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\utils\UsageValidation.cpp:32:10: fatal error: utils/UsageValidation.h: No such file or directory
+   32 | #include <utils/UsageValidation.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling CanCoderDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\CanCoderDefn.cpp:24:10: fatal error: xmlhw/CanCoderDefn.h: No such file or directory
+   24 | #include <xmlhw/CanCoderDefn.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling LimelightDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\LimelightDefn.cpp:8:10: fatal error: xmlhw/LimelightDefn.h: No such file or directory
+    8 | #include "xmlhw/LimelightDefn.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DigitalInputDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\DigitalInputDefn.cpp:23:10: fatal error: hw/usages/DigitalInputUsage.h: No such file or directory
+   23 | #include <hw/usages/DigitalInputUsage.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling CameraDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\CameraDefn.cpp:33:10: fatal error: utils/Logger.h: No such file or directory
+   33 | #include <utils/Logger.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ChassisDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\ChassisDefn.cpp:38:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
+   38 | #include <hw/interfaces/IDragonMotorController.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling MotorDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\MotorDefn.cpp:31:10: fatal error: hw/DragonTalon.h: No such file or directory
+   31 | #include <hw/DragonTalon.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling PCMDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\PCMDefn.cpp:28:10: fatal error: utils/HardwareIDValidation.h: No such file or directory
+   28 | #include <utils/HardwareIDValidation.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling MechanismDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\MechanismDefn.cpp:32:10: fatal error: subsys/MechanismFactory.h: No such file or directory
+   32 | #include <subsys/MechanismFactory.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling PigeonDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\PigeonDefn.cpp:15:10: fatal error: xmlhw/PigeonDefn.h: No such file or directory
+   15 | #include <xmlhw/PigeonDefn.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ServoDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\ServoDefn.cpp:12:10: fatal error: hw/DragonServo.h: No such file or directory
+   12 | #include <hw/DragonServo.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling RobotDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\RobotDefn.cpp:40:10: fatal error: xmlhw/CameraDefn.h: No such file or directory
+   40 | #include <xmlhw/CameraDefn.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling MechanismTargetDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlmechdata\MechanismTargetDefn.cpp:24:10: fatal error: controllers/MechanismTargetData.h: No such file or directory
+   24 | #include <controllers/MechanismTargetData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ControlDataDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlmechdata\ControlDataDefn.cpp:26:10: fatal error: controllers/ControlData.h: No such file or directory
+   26 | #include <controllers/ControlData.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling ThroughBoreEncoderDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\ThroughBoreEncoderDefn.cpp:2:10: fatal error: utils/Logger.h: No such file or directory
+    2 | #include <utils/Logger.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling SolenoidDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\SolenoidDefn.cpp:29:10: fatal error: xmlhw/SolenoidDefn.h: No such file or directory
+   29 | #include <xmlhw/SolenoidDefn.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling StateDataDefn.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlmechdata\StateDataDefn.cpp:42:10: fatal error: xmlmechdata/StateDataDefn.h: No such file or directory
+   42 | #include <xmlmechdata/StateDataDefn.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling PrimitiveParser.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\PrimitiveParser.cpp:21:10: fatal error: auton/PrimitiveParser.h: No such file or directory
+   21 | #include <auton/PrimitiveParser.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling DoNothing.cpp failed.
+C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DoNothing.cpp:27:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
+   27 | #include <auton/primitives/DoNothing.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+compiling pugixml.cpp successful.
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/Team302/Documents/GitHub/2021Year1-imported/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
