@@ -1,595 +1,420 @@
-See file:///C:/Users/Team302/Documents/GitHub/2021Year1-imported/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
-compiling PrimitiveFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\PrimitiveFactory.cpp:8:10: fatal error: auton/primitives/PrimitiveFactory.h: No such file or directory
-    8 | #include <auton/primitives/PrimitiveFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+See file:///C:/Users/Team302/Documents/GitHub/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling FieldMeasurement.cpp successful.
 
-compiling PrimitiveParams.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\PrimitiveParams.cpp:8:10: fatal error: auton/primitives/PrimitiveEnums.h: No such file or directory
-    8 | #include <auton/primitives/PrimitiveEnums.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PrimitiveParams.cpp successful.
 
-compiling FieldDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\FieldDefn.cpp:13:10: fatal error: auton/FieldMeasurement.h: No such file or directory
-   13 | #include <auton/FieldMeasurement.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling FieldDefn.cpp successful.
 
-compiling FieldMeasurement.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\FieldMeasurement.cpp:9:10: fatal error: auton/FieldMeasurement.h: No such file or directory
-    9 | #include <auton/FieldMeasurement.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling AutonSelector.cpp successful.
 
-compiling AutonSelector.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\AutonSelector.cpp:26:10: fatal error: auton/AutonSelector.h: No such file or directory
-   26 | #include <auton/AutonSelector.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling CyclePrimitives.cpp successful.
 
-compiling CyclePrimitives.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\CyclePrimitives.cpp:27:10: fatal error: auton/primitives/IPrimitive.h: No such file or directory
-   27 | #include <auton/primitives/IPrimitive.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DriveDistance.cpp successful.
 
-compiling DriveDistance.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveDistance.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
-   25 | #include <auton/primitives/DoNothing.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DriveTime.cpp successful.
 
-compiling DriveTime.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveTime.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
-   25 | #include <auton/primitives/DoNothing.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DriveToTarget.cpp successful.
 
-compiling DriveToTarget.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveToTarget.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
-   25 | #include <auton/primitives/DoNothing.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DriveToWall.cpp successful.
 
-compiling DrivePath.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DrivePath.cpp:26:10: fatal error: auton/primitives/DrivePath.h: No such file or directory
-   26 | #include <auton/primitives/DrivePath.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling HoldPosition.cpp successful.
 
-compiling DriveToWall.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DriveToWall.cpp:25:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
-   25 | #include <auton/primitives/DoNothing.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ControlData.cpp successful.
 
-compiling ResetPosition.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\ResetPosition.cpp:21:10: fatal error: auton/primitives/ResetPosition.h: No such file or directory
-   21 | #include <auton/primitives/ResetPosition.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling MechanismTargetData.cpp successful.
 
-compiling HoldPosition.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\HoldPosition.cpp:24:10: fatal error: auton/PrimitiveFactory.h: No such file or directory
-   24 | #include <auton/PrimitiveFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling CubedProfile.cpp successful.
 
-compiling ControlData.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\controllers\ControlData.cpp:20:10: fatal error: controllers/ControlData.h: No such file or directory
-   20 | #include <controllers/ControlData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PrimitiveFactory.cpp successful.
 
-compiling SuperDrive.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\SuperDrive.cpp:26:10: fatal error: auton/PrimitiveParams.h: No such file or directory
-   26 | #include <auton/PrimitiveParams.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DeadbandValue.cpp successful.
 
-compiling TurnAngle.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\TurnAngle.cpp:28:10: fatal error: auton/primitives/TurnAngle.h: No such file or directory
-   28 | #include <auton/primitives/TurnAngle.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling SuperDrive.cpp successful.
 
-compiling MechanismTargetData.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\controllers\MechanismTargetData.cpp:19:10: fatal error: controllers/MechanismTargetData.h: No such file or directory
-   19 | #include <controllers/MechanismTargetData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling LinearProfile.cpp successful.
 
-compiling CubedProfile.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\CubedProfile.cpp:29:10: fatal error: gamepad/axis/CubedProfile.h: No such file or directory
-   29 | #include <gamepad/axis/CubedProfile.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling FlippedAxis.cpp successful.
 
-compiling DeadbandValue.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\DeadbandValue.cpp:17:10: fatal error: gamepad/axis/DeadbandValue.h: No such file or directory
-   17 | #include <gamepad/axis/DeadbandValue.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling NoDeadbandValue.cpp successful.
 
-compiling FlippedAxis.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\FlippedAxis.cpp:25:10: fatal error: gamepad/axis/FlippedAxis.h: No such file or directory
-   25 | #include <gamepad/axis/FlippedAxis.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PiecewiseLinearProfile.cpp successful.
 
-compiling LinearProfile.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\LinearProfile.cpp:17:10: fatal error: gamepad/axis/IProfile.h: No such file or directory
-   17 | #include <gamepad/axis/IProfile.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling SquaredProfile.cpp successful.
 
-compiling NoDeadbandValue.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\NoDeadbandValue.cpp:17:10: fatal error: gamepad/axis/NoDeadbandValue.h: No such file or directory
-   17 | #include <gamepad/axis/NoDeadbandValue.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling TurnAngle.cpp successful.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\auton\primitives\TurnAngle.cpp: In member function 'virtual void TurnAngle::Run()':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\auton\primitives\TurnAngle.cpp:113:16: warning: unused variable 'leftSpeed' [-Wunused-variable]
+  113 |         double leftSpeed;
+      |                ^~~~~~~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\auton\primitives\TurnAngle.cpp:114:16: warning: unused variable 'rightSpeed' [-Wunused-variable]
+  114 |         double rightSpeed;
+      |                ^~~~~~~~~~
 
-compiling ScaledAxis.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\ScaledAxis.cpp:25:10: fatal error: gamepad/axis/ScaledAxis.h: No such file or directory
-   25 | #include <gamepad/axis/ScaledAxis.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ButtonDecorator.cpp successful.
 
-compiling ScaledDeadbandValue.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\ScaledDeadbandValue.cpp:17:10: fatal error: gamepad/axis/ScaledDeadbandValue.h: No such file or directory
-   17 | #include <gamepad/axis/ScaledDeadbandValue.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling SquaredProfile.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\SquaredProfile.cpp:25:10: fatal error: gamepad/axis/IProfile.h: No such file or directory
-   25 | #include <gamepad/axis/IProfile.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling AnalogButton.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\AnalogButton.cpp:17:10: fatal error: gamepad/axis/AnalogAxis.h: No such file or directory
-   17 | #include <gamepad/axis/AnalogAxis.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling ButtonDecorator.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\ButtonDecorator.cpp:25:10: fatal error: gamepad/button/ButtonDecorator.h: No such file or directory
-   25 | #include <gamepad/button/ButtonDecorator.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling PiecewiseLinearProfile.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\PiecewiseLinearProfile.cpp:29:10: fatal error: gamepad/axis/PiecewiseLinearProfile.h: No such file or directory
-   29 | #include <gamepad/axis/PiecewiseLinearProfile.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ScaledDeadbandValue.cpp successful.
 
 compiling DebouncedButton.cpp successful.
 
-compiling AnalogAxis.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\axis\AnalogAxis.cpp:31:10: fatal error: gamepad/axis/AnalogAxis.h: No such file or directory
-   31 | #include <gamepad/axis/AnalogAxis.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ScaledAxis.cpp successful.
 
-compiling ToggleButton.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\ToggleButton.cpp:17:10: fatal error: gamepad/button/ToggleButton.h: No such file or directory
-   17 | #include <gamepad/button/ToggleButton.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling AnalogAxis.cpp successful.
 
-compiling DragonGamepad.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\DragonGamepad.cpp:17:10: fatal error: gamepad/DragonGamepad.h: No such file or directory
-   17 | #include <gamepad/DragonGamepad.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ToggleButton.cpp successful.
 
-compiling DragonXBox.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\DragonXBox.cpp:17:10: fatal error: gamepad/DragonXBox.h: No such file or directory
-   17 | #include <gamepad/DragonXBox.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling POVButton.cpp successful.
 
-compiling FunctionMap.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\FunctionMap.cpp:23:10: fatal error: gamepad/IDragonGamePad.h: No such file or directory
-   23 | #include <gamepad/IDragonGamePad.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonXBox.cpp successful.
 
-compiling POVButton.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\POVButton.cpp:19:10: fatal error: gamepad/button/POVButton.h: No such file or directory
-   19 | #include <gamepad/button/POVButton.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DrivePath.cpp successful.
 
-compiling DigitalButton.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\button\DigitalButton.cpp:28:10: fatal error: gamepad/button/DigitalButton.h: No such file or directory
-   28 | #include <gamepad/button/DigitalButton.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling AnalogButton.cpp successful.
 
-compiling DragonPigeon.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonPigeon.cpp:17:10: fatal error: ctre/phoenix/Sensors/PigeonIMU.h: No such file or directory
-   17 | #include <ctre/phoenix/Sensors/PigeonIMU.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DigitalButton.cpp successful.
 
-compiling TeleopControl.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\gamepad\TeleopControl.cpp:27:10: fatal error: gamepad/IDragonGamePad.h: No such file or directory
-   27 | #include <gamepad/IDragonGamePad.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling FunctionMap.cpp successful.
 
-compiling DragonServo.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonServo.cpp:5:10: fatal error: hw/DragonServo.h: No such file or directory
-    5 | #include <hw/DragonServo.h>
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonDigitalInput.cpp successful.
 
-compiling DragonDigitalInput.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonDigitalInput.cpp:7:10: fatal error: hw/DragonDigitalInput.h: No such file or directory
-    7 | #include <hw/DragonDigitalInput.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonGamepad.cpp successful.
 
-compiling DragonVision.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonVision.cpp:8:11: fatal error: hw/DragonVision.h: No such file or directory
-    8 |  #include <hw/DragonVision.h>
-      |           ^~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonPigeon.cpp successful.
 
-compiling DragonPDP.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonPDP.cpp:7:10: fatal error: hw/DragonPDP.h: No such file or directory
-    7 | #include <hw/DragonPDP.h>
-      |          ^~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonPDP.cpp successful.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\hw\DragonPDP.cpp: In constructor 'DragonPDP::DragonPDP()':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\hw\DragonPDP.cpp:26:25: warning: '*this.DragonPDP::m_pdp' is used uninitialized [-Wuninitialized]
+   26 |         if ( DragonPDP::m_pdp == nullptr )
+      |              ~~~~~~~~~~~^~~~~
 
-compiling DragonFalcon.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonFalcon.cpp:29:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
-   29 | #include <hw/interfaces/IDragonMotorController.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ResetPosition.cpp successful.
 
-compiling DragonLimelight.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonLimelight.cpp:31:10: fatal error: hw/DragonLimelight.h: No such file or directory
-   31 | #include <hw/DragonLimelight.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonServo.cpp successful.
 
-compiling DragonMotorControllerFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\DragonMotorControllerFactory.cpp:5:10: fatal error: hw/factories/DragonMotorControllerFactory.h: No such file or directory
-    5 | #include <hw/factories/DragonMotorControllerFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling TeleopControl.cpp successful.
 
-compiling DigitalInputFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\DigitalInputFactory.cpp:32:10: fatal error: hw/factories/DigitalInputFactory.h: No such file or directory
-   32 | #include <hw/factories/DigitalInputFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonLimelight.cpp successful.
 
-compiling LimelightFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\LimelightFactory.cpp:10:10: fatal error: hw/factories/LimelightFactory.h: No such file or directory
-   10 | #include "hw/factories/LimelightFactory.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DigitalInputFactory.cpp successful.
 
-compiling DragonSolenoid.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonSolenoid.cpp:7:10: fatal error: hw/DragonSolenoid.h: No such file or directory
-    7 | #include <hw/DragonSolenoid.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonFalcon.cpp successful.
 
-compiling DragonServoFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\DragonServoFactory.cpp:30:10: fatal error: hw/factories/DragonServoFactory.h: No such file or directory
-   30 | #include <hw/factories/DragonServoFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonVision.cpp successful.
+In file included from C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.hpp:3773,
+                 from C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core.hpp:58,
+                 from C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/highgui.hpp:46,
+                 from C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/highgui/highgui.hpp:48,
+                 from C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp/hw/DragonVision.h:10,
+                 from C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\hw\DragonVision.cpp:8:
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const cv::Mat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:103:57: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  103 | inline _InputArray::_InputArray(const Mat& m) { init(MAT+ACCESS_READ, &m); }
+      |                                                      ~~~^~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const std::vector<cv::Mat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:104:83: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  104 | inline _InputArray::_InputArray(const std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_READ, &vec); }
+      |                                                                     ~~~~~~~~~~~~~~^~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const cv::UMat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:105:59: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  105 | inline _InputArray::_InputArray(const UMat& m) { init(UMAT+ACCESS_READ, &m); }
+      |                                                       ~~~~^~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const std::vector<cv::UMat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:106:85: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  106 | inline _InputArray::_InputArray(const std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_READ, &vec); }
+      |                                                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const std::array<cv::Mat, _Nm>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:118:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  118 | { init(STD_ARRAY_MAT + ACCESS_READ, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const cv::cuda::GpuMat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:148:21: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  148 | { init(CUDA_GPU_MAT + ACCESS_READ, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const std::vector<cv::cuda::GpuMat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:151:38: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  151 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_READ, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const cv::ogl::Buffer&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:154:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  154 | { init(OPENGL_BUFFER + ACCESS_READ, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputArray::_InputArray(const cv::cuda::HostMem&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:157:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  157 | { init(CUDA_HOST_MEM + ACCESS_READ, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray()':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:200:49: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  200 | inline _OutputArray::_OutputArray() { init(NONE + ACCESS_WRITE, 0); }
+      |                                            ~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(cv::Mat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:202:53: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  202 | inline _OutputArray::_OutputArray(Mat& m) { init(MAT+ACCESS_WRITE, &m); }
+      |                                                  ~~~^~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(std::vector<cv::Mat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:203:80: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  203 | inline _OutputArray::_OutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT + ACCESS_WRITE, &vec); }
+      |                                                                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(cv::UMat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:204:56: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  204 | inline _OutputArray::_OutputArray(UMat& m) { init(UMAT + ACCESS_WRITE, &m); }
+      |                                                   ~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(std::vector<cv::UMat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:205:82: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  205 | inline _OutputArray::_OutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT + ACCESS_WRITE, &vec); }
+      |                                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(std::array<cv::Mat, _Nm>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:217:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  217 | { init(STD_ARRAY_MAT + ACCESS_WRITE, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(cv::cuda::GpuMat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:272:21: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  272 | { init(CUDA_GPU_MAT + ACCESS_WRITE, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(std::vector<cv::cuda::GpuMat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:275:38: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  275 | {       init(STD_VECTOR_CUDA_GPU_MAT + ACCESS_WRITE, &d_mat);}
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(cv::ogl::Buffer&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:278:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  278 | { init(OPENGL_BUFFER + ACCESS_WRITE, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_OutputArray::_OutputArray(cv::cuda::HostMem&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:281:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  281 | { init(CUDA_HOST_MEM + ACCESS_WRITE, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(cv::Mat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:328:63: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  328 | inline _InputOutputArray::_InputOutputArray(Mat& m) { init(MAT+ACCESS_RW, &m); }
+      |                                                            ~~~^~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(std::vector<cv::Mat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:329:89: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  329 | inline _InputOutputArray::_InputOutputArray(std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_RW, &vec); }
+      |                                                                           ~~~~~~~~~~~~~~^~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(cv::UMat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:330:65: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  330 | inline _InputOutputArray::_InputOutputArray(UMat& m) { init(UMAT+ACCESS_RW, &m); }
+      |                                                             ~~~~^~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(std::vector<cv::UMat>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:331:91: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  331 | inline _InputOutputArray::_InputOutputArray(std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_RW, &vec); }
+      |                                                                            ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(std::array<cv::Mat, _Nm>&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:343:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  343 | { init(STD_ARRAY_MAT + ACCESS_RW, arr.data(), Size(1, _Nm)); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(cv::cuda::GpuMat&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:398:21: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  398 | { init(CUDA_GPU_MAT + ACCESS_RW, &d_mat); }
+      |        ~~~~~~~~~~~~~^~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(cv::ogl::Buffer&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:401:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  401 | { init(OPENGL_BUFFER + ACCESS_RW, &buf); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In constructor 'cv::_InputOutputArray::_InputOutputArray(cv::cuda::HostMem&)':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:404:22: warning: arithmetic between different enumeration types 'cv::_InputArray::KindFlag' and 'cv::AccessFlag' is deprecated [-Wdeprecated-enum-enum-conversion]
+  404 | { init(CUDA_HOST_MEM + ACCESS_RW, &cuda_mem); }
+      |        ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/highgui.hpp:51:
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp: At global scope:
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:306:80: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  306 | enum { CAP_OPENNI_IMAGE_GENERATOR_PRESENT         = CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:307:80: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  307 |        CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE     = CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_OUTPUT_MODE,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:308:80: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  308 |        CAP_OPENNI_DEPTH_GENERATOR_PRESENT         = CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:309:80: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  309 |        CAP_OPENNI_DEPTH_GENERATOR_BASELINE        = CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_BASELINE,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:310:80: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  310 |        CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH    = CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_FOCAL_LENGTH,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:311:80: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  311 |        CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION    = CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_REGISTRATION,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/videoio.hpp:313:77: warning: arithmetic between different enumeration types 'cv::<unnamed enum>' and 'cv::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  313 |        CAP_OPENNI_IR_GENERATOR_PRESENT            = CAP_OPENNI_IR_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp: In instantiation of 'cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool) [with _Tp = double; int m = 2; int n = 3]':
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/imgproc.hpp:2529:64:   required from here
+C:\Users\Team302\.gradle\caches\transforms-3\dc383ad5f184b05c6495bc58c05aacae\transformed\opencv-cpp-4.6.0-4-headers/opencv2/core/mat.inl.hpp:533:23: warning: arithmetic between different enumeration types 'cv::Mat::<unnamed enum>' and 'cv::traits::Type<double>::<unnamed enum>' is deprecated [-Wdeprecated-enum-enum-conversion]
+  533 |     : flags(MAGIC_VAL + traits::Type<_Tp>::value + CV_MAT_CONT_FLAG), dims(2), rows(m), cols(n), data(0),
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
 
-compiling DragonTalon.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\DragonTalon.cpp:29:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
-   29 | #include <hw/interfaces/IDragonMotorController.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonSolenoid.cpp successful.
 
-compiling PigeonFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\factories\PigeonFactory.cpp:32:10: fatal error: hw/factories/PigeonFactory.h: No such file or directory
-   32 | #include <hw/factories/PigeonFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonTalon.cpp successful.
 
-compiling ArmState.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\arm\ArmState.cpp:22:10: fatal error: controllers/ControlData.h: No such file or directory
-   22 | #include <controllers/ControlData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DigitalInputUsage.cpp successful.
 
-compiling DigitalInputUsage.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\DigitalInputUsage.cpp:25:10: fatal error: hw/usages/DigitalInputUsage.h: No such file or directory
-   25 | #include <hw/usages/DigitalInputUsage.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonMotorControllerFactory.cpp successful.
 
-compiling MotorControllerUsage.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\MotorControllerUsage.cpp:25:10: fatal error: hw/usages/MotorControllerUsage.h: No such file or directory
-   25 | #include <hw/usages/MotorControllerUsage.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DragonServoFactory.cpp successful.
 
-compiling ServoUsage.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\ServoUsage.cpp:25:10: fatal error: hw/usages/ServoUsage.h: No such file or directory
-   25 | #include <hw/usages/ServoUsage.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PigeonFactory.cpp successful.
 
-compiling BallReleaseState.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\ballrelease\BallReleaseState.cpp:22:10: fatal error: states/ballrelease/BallReleaseState.h: No such file or directory
-   22 | #include <states/ballrelease/BallReleaseState.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling MotorControllerUsage.cpp successful.
 
-compiling BallTransferState.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\balltransfer\BallTransferState.cpp:22:10: fatal error: controllers/ControlData.h: No such file or directory
-   22 | #include <controllers/ControlData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ServoUsage.cpp successful.
 
-compiling SolenoidUsage.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\hw\usages\SolenoidUsage.cpp:25:10: fatal error: hw/usages/SolenoidUsage.h: No such file or directory
-   25 | #include <hw/usages/SolenoidUsage.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling LimelightFactory.cpp successful.
 
-compiling IntakeState.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\intake\IntakeState.cpp:22:10: fatal error: controllers/ControlData.h: No such file or directory
-   22 | #include <controllers/ControlData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling SolenoidUsage.cpp successful.
 
-compiling Robot.cpp failed.
-In file included from C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\Robot.cpp:5:
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\Robot.h:12:10: fatal error: gamepad/TeleopControl.h: No such file or directory
-   12 | #include <gamepad/TeleopControl.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ArmState.cpp successful.
 
-compiling ArmStateMgr.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\arm\ArmStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
-   27 | #include <states/IState.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling BallReleaseState.cpp successful.
+In file included from C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\states\ballrelease\BallReleaseState.cpp:22:
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp/states/ballrelease/BallReleaseState.h: In constructor 'BallReleaseState::BallReleaseState(double)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp/states/ballrelease/BallReleaseState.h:43:37: warning: 'BallReleaseState::m_servo' will be initialized after [-Wreorder]
+   43 |         IMech1Servo*                m_servo;
+      |                                     ^~~~~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp/states/ballrelease/BallReleaseState.h:42:37: warning:   'double BallReleaseState::m_target' [-Wreorder]
+   42 |         double                      m_target;
+      |                                     ^~~~~~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\states\ballrelease\BallReleaseState.cpp:28:1: warning:   when initialized here [-Wreorder]
+   28 | BallReleaseState::BallReleaseState
+      | ^~~~~~~~~~~~~~~~
 
-compiling BallReleaseStateMgr.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\ballrelease\BallReleaseStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
-   27 | #include <states/IState.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling BallTransferState.cpp successful.
 
-compiling BallTransferStateMgr.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\balltransfer\BallTransferStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
-   27 | #include <states/IState.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ArmStateMgr.cpp successful.
 
-compiling Mech1MotorState.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\Mech1MotorState.cpp:23:10: fatal error: states/IState.h: No such file or directory
-   23 | #include <states/IState.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling Robot.cpp successful.
 
-compiling IntakeStateMgr.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\intake\IntakeStateMgr.cpp:27:10: fatal error: states/IState.h: No such file or directory
-   27 | #include <states/IState.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling BallReleaseStateMgr.cpp successful.
 
-compiling Mech2MotorState.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\Mech2MotorState.cpp:23:10: fatal error: states/IState.h: No such file or directory
-   23 | #include <states/IState.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling BallTransferStateMgr.cpp successful.
+
+compiling IntakeState.cpp successful.
+
+compiling BallRelease.cpp successful.
+
+compiling Mech1MotorState.cpp successful.
+
+compiling Mech2MotorState.cpp successful.
+
+compiling Arm.cpp successful.
+
+compiling StateMgr.cpp successful.
+
+compiling IntakeStateMgr.cpp successful.
+
+compiling BallTransfer.cpp successful.
 
 compiling DifferentialChassis.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\DifferentialChassis.cpp:1:10: fatal error: subsys/DifferentialChassis.h: No such file or directory
-    1 | #include <subsys/DifferentialChassis.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\DifferentialChassis.cpp: In constructor 'DifferentialChassis::DifferentialChassis(std::shared_ptr<IDragonMotorController>, std::shared_ptr<IDragonMotorController>, units::length::meter_t, units::velocity::meters_per_second_t, units::angular_velocity::degrees_per_second_t, units::length::inch_t)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\DifferentialChassis.cpp:23:143: error: no matching function for call to 'frc::DifferentialDriveOdometry::DifferentialDriveOdometry(frc::Rotation2d, frc::Pose2d)'
+   23 |                                                     m_differentialOdometry(new frc::DifferentialDriveOdometry(frc::Rotation2d(), frc::Pose2d()))
+      |                                                                                                                                               ^
+In file included from C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp/subsys/DifferentialChassis.h:9,
+                 from C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\DifferentialChassis.cpp:1:
+C:\Users\Team302\.gradle\caches\transforms-3\e0afbf4dfe6d860237162244c636262c\transformed\wpimath-cpp-2023.1.1-headers/frc/kinematics/DifferentialDriveOdometry.h:38:12: note: candidate: 'frc::DifferentialDriveOdometry::DifferentialDriveOdometry(const frc::Rotation2d&, units::length::meter_t, units::length::meter_t, const frc::Pose2d&)'
+   38 |   explicit DifferentialDriveOdometry(const Rotation2d& gyroAngle,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\e0afbf4dfe6d860237162244c636262c\transformed\wpimath-cpp-2023.1.1-headers/frc/kinematics/DifferentialDriveOdometry.h:38:12: note:   candidate expects 4 arguments, 2 provided
+C:\Users\Team302\.gradle\caches\transforms-3\e0afbf4dfe6d860237162244c636262c\transformed\wpimath-cpp-2023.1.1-headers/frc/kinematics/DifferentialDriveOdometry.h:25:24: note: candidate: 'constexpr frc::DifferentialDriveOdometry::DifferentialDriveOdometry(const frc::DifferentialDriveOdometry&)'
+   25 | class WPILIB_DLLEXPORT DifferentialDriveOdometry {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Team302\.gradle\caches\transforms-3\e0afbf4dfe6d860237162244c636262c\transformed\wpimath-cpp-2023.1.1-headers/frc/kinematics/DifferentialDriveOdometry.h:25:24: note:   candidate expects 1 argument, 2 provided
+C:\Users\Team302\.gradle\caches\transforms-3\e0afbf4dfe6d860237162244c636262c\transformed\wpimath-cpp-2023.1.1-headers/frc/kinematics/DifferentialDriveOdometry.h:25:24: note: candidate: 'constexpr frc::DifferentialDriveOdometry::DifferentialDriveOdometry(frc::DifferentialDriveOdometry&&)'
+C:\Users\Team302\.gradle\caches\transforms-3\e0afbf4dfe6d860237162244c636262c\transformed\wpimath-cpp-2023.1.1-headers/frc/kinematics/DifferentialDriveOdometry.h:25:24: note:   candidate expects 1 argument, 2 provided
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\DifferentialChassis.cpp: In member function 'virtual void DifferentialChassis::Drive(frc::ChassisSpeeds)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\DifferentialChassis.cpp:32:16: error: 'struct frc::DifferentialDriveWheelSpeeds' has no member named 'Normalize'
+   32 |         wheels.Normalize(m_maxSpeed);
+      |                ^~~~~~~~~
 
-compiling Arm.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Arm.cpp:23:10: fatal error: subsys/Arm.h: No such file or directory
-   23 | #include <subsys/Arm.h>
-      |          ^~~~~~~~~~~~~~
-compilation terminated.
+compiling Intake.cpp successful.
 
-compiling BallRelease.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\BallRelease.cpp:27:10: fatal error: subsys/BallRelease.h: No such file or directory
-   27 | #include <subsys/BallRelease.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ChassisFactory.cpp successful.
 
-compiling StateMgr.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\states\StateMgr.cpp:27:10: fatal error: controllers/MechanismTargetData.h: No such file or directory
-   27 | #include <controllers/MechanismTargetData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling Mech1IndMotor.cpp successful.
 
-compiling BallTransfer.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\BallTransfer.cpp:24:10: fatal error: subsys/BallTransfer.h: No such file or directory
-   24 | #include <subsys/BallTransfer.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling Mech1Servo.cpp successful.
 
-compiling ChassisFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\ChassisFactory.cpp:10:10: fatal error: subsys/interfaces/IChassis.h: No such file or directory
-   10 | #include <subsys/interfaces/IChassis.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling Mech.cpp successful.
 
-compiling Intake.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Intake.cpp:23:10: fatal error: subsys/Intake.h: No such file or directory
-   23 | #include <subsys/Intake.h>
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling Mech2IndMotors.cpp successful.
 
-compiling Mech1Servo.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech1Servo.cpp:25:10: fatal error: hw/DragonServo.h: No such file or directory
-   25 | #include <hw/DragonServo.h>
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling HardwareIDValidation.cpp successful.
 
-compiling HardwareIDValidation.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\utils\HardwareIDValidation.cpp:31:10: fatal error: utils/HardwareIDValidation.h: No such file or directory
-   31 | #include <utils/HardwareIDValidation.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling Logger.cpp successful.
 
-compiling MechanismFactory.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\MechanismFactory.cpp:33:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
-   33 | #include <hw/interfaces/IDragonMotorController.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling UsageValidation.cpp successful.
 
-compiling Mech1IndMotor.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech1IndMotor.cpp:26:10: fatal error: controllers/ControlData.h: No such file or directory
-   26 | #include <controllers/ControlData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling CameraDefn.cpp successful.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp: In member function 'cs::UsbCamera CameraDefn::ParseXML(pugi::xml_node)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp:61:36: warning: variable 'type' set but not used [-Wunused-but-set-variable]
+   61 |         cs::VideoMode::PixelFormat type = cs::VideoMode::kUnknown;
+      |                                    ^~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp:62:54: warning: variable 'id' set but not used [-Wunused-but-set-variable]
+   62 |         int                                          id = 0;
+      |                                                      ^~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp:63:51: warning: variable 'width' set but not used [-Wunused-but-set-variable]
+   63 |         int                                       width = 640;
+      |                                                   ^~~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp:64:46: warning: variable 'height' set but not used [-Wunused-but-set-variable]
+   64 |         int                                  height = 480;
+      |                                              ^~~~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp:65:49: warning: variable 'fps' set but not used [-Wunused-but-set-variable]
+   65 |         int                                     fps = 30;
+      |                                                 ^~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\CameraDefn.cpp:151:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  151 | }
+      | ^
 
-compiling Mech.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech.cpp:24:10: fatal error: subsys/Mech.h: No such file or directory
-   24 | #include <subsys/Mech.h>
-      |          ^~~~~~~~~~~~~~~
-compilation terminated.
+compiling CanCoderDefn.cpp successful.
 
-compiling Mech2IndMotors.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\subsys\Mech2IndMotors.cpp:28:10: fatal error: subsys/Mech1IndMotor.h: No such file or directory
-   28 | #include <subsys/Mech1IndMotor.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling MechanismFactory.cpp successful.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\MechanismFactory.cpp: In member function 'DragonServo* MechanismFactory::GetServo(const ServoMap&, ServoUsage::SERVO_USAGE)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\MechanismFactory.cpp:249:16: warning: 'servo' may be used uninitialized [-Wmaybe-uninitialized]
+  249 |         return servo;
+      |                ^~~~~
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\subsys\MechanismFactory.cpp:230:22: note: 'servo' was declared here
+  230 |         DragonServo* servo;
+      |                      ^~~~~
 
-compiling Logger.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\utils\Logger.cpp:40:10: fatal error: utils/Logger.h: No such file or directory
-   40 | #include <utils/Logger.h>
-      |          ^~~~~~~~~~~~~~~~
-compilation terminated.
+compiling DigitalInputDefn.cpp successful.
 
-compiling UsageValidation.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\utils\UsageValidation.cpp:32:10: fatal error: utils/UsageValidation.h: No such file or directory
-   32 | #include <utils/UsageValidation.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ChassisDefn.cpp successful.
 
-compiling CanCoderDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\CanCoderDefn.cpp:24:10: fatal error: xmlhw/CanCoderDefn.h: No such file or directory
-   24 | #include <xmlhw/CanCoderDefn.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling LimelightDefn.cpp successful.
 
-compiling LimelightDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\LimelightDefn.cpp:8:10: fatal error: xmlhw/LimelightDefn.h: No such file or directory
-    8 | #include "xmlhw/LimelightDefn.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PigeonDefn.cpp successful.
 
-compiling DigitalInputDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\DigitalInputDefn.cpp:23:10: fatal error: hw/usages/DigitalInputUsage.h: No such file or directory
-   23 | #include <hw/usages/DigitalInputUsage.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling MotorDefn.cpp successful.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\MotorDefn.cpp: In member function 'std::shared_ptr<IDragonMotorController> MotorDefn::ParseXML(pugi::xml_node)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\xmlhw\MotorDefn.cpp:68:9: warning: variable 'continuousCurrentLimit' set but not used [-Wunused-but-set-variable]
+   68 |     int continuousCurrentLimit = 0;
+      |         ^~~~~~~~~~~~~~~~~~~~~~
 
-compiling CameraDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\CameraDefn.cpp:33:10: fatal error: utils/Logger.h: No such file or directory
-   33 | #include <utils/Logger.h>
-      |          ^~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PCMDefn.cpp successful.
 
-compiling ChassisDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\ChassisDefn.cpp:38:10: fatal error: hw/interfaces/IDragonMotorController.h: No such file or directory
-   38 | #include <hw/interfaces/IDragonMotorController.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling MechanismDefn.cpp successful.
 
-compiling MotorDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\MotorDefn.cpp:31:10: fatal error: hw/DragonTalon.h: No such file or directory
-   31 | #include <hw/DragonTalon.h>
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ControlDataDefn.cpp successful.
 
-compiling PCMDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\PCMDefn.cpp:28:10: fatal error: utils/HardwareIDValidation.h: No such file or directory
-   28 | #include <utils/HardwareIDValidation.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ServoDefn.cpp successful.
 
-compiling MechanismDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\MechanismDefn.cpp:32:10: fatal error: subsys/MechanismFactory.h: No such file or directory
-   32 | #include <subsys/MechanismFactory.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling RobotDefn.cpp successful.
 
-compiling PigeonDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\PigeonDefn.cpp:15:10: fatal error: xmlhw/PigeonDefn.h: No such file or directory
-   15 | #include <xmlhw/PigeonDefn.h>
-      |          ^~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling ThroughBoreEncoderDefn.cpp successful.
 
-compiling ServoDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\ServoDefn.cpp:12:10: fatal error: hw/DragonServo.h: No such file or directory
-   12 | #include <hw/DragonServo.h>
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling MechanismTargetDefn.cpp successful.
 
-compiling RobotDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\RobotDefn.cpp:40:10: fatal error: xmlhw/CameraDefn.h: No such file or directory
-   40 | #include <xmlhw/CameraDefn.h>
-      |          ^~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling SolenoidDefn.cpp successful.
 
-compiling MechanismTargetDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlmechdata\MechanismTargetDefn.cpp:24:10: fatal error: controllers/MechanismTargetData.h: No such file or directory
-   24 | #include <controllers/MechanismTargetData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling StateDataDefn.cpp successful.
 
-compiling ControlDataDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlmechdata\ControlDataDefn.cpp:26:10: fatal error: controllers/ControlData.h: No such file or directory
-   26 | #include <controllers/ControlData.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling ThroughBoreEncoderDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\ThroughBoreEncoderDefn.cpp:2:10: fatal error: utils/Logger.h: No such file or directory
-    2 | #include <utils/Logger.h>
-      |          ^~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling SolenoidDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlhw\SolenoidDefn.cpp:29:10: fatal error: xmlhw/SolenoidDefn.h: No such file or directory
-   29 | #include <xmlhw/SolenoidDefn.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling StateDataDefn.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\xmlmechdata\StateDataDefn.cpp:42:10: fatal error: xmlmechdata/StateDataDefn.h: No such file or directory
-   42 | #include <xmlmechdata/StateDataDefn.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling PrimitiveParser.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\PrimitiveParser.cpp:21:10: fatal error: auton/PrimitiveParser.h: No such file or directory
-   21 | #include <auton/PrimitiveParser.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-
-compiling DoNothing.cpp failed.
-C:\Users\Team302\Documents\GitHub\2021Year1-imported\src\main\cpp\auton\primitives\DoNothing.cpp:27:10: fatal error: auton/primitives/DoNothing.h: No such file or directory
-   27 | #include <auton/primitives/DoNothing.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+compiling PrimitiveParser.cpp successful.
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\auton\PrimitiveParser.cpp: In static member function 'static PrimitiveParamsVector PrimitiveParser::ParseXML(std::string)':
+C:\Users\Team302\Documents\GitHub\2021Year1\src\main\cpp\auton\PrimitiveParser.cpp:84:26: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+   84 |         xml_parse_result result = doc.load_file( fulldirfile.c_str() );
+      |                          ^~~~~~
 
 compiling pugixml.cpp successful.
 
-Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/Team302/Documents/GitHub/2021Year1-imported/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
+compiling DoNothing.cpp successful.
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/Team302/Documents/GitHub/2021Year1/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

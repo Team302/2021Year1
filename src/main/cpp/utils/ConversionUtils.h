@@ -21,15 +21,15 @@
 //#include <cmath>
 
 // FRC includes
-#include <wpi/numbers>
+#include <units/base.h>
 
 // Team 302 includes
 
 // Third Party Includes
 
-using namespace wpi::math;
+using namespace units::math;
 
-//constexpr double PI = 3.14159265358979323846;
+constexpr double pi = 3.14159265358979323846;
 
 ///	 @class ConversionUtils
 ///  @brief	Collection to convert a number between different units

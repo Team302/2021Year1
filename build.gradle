@@ -61,7 +61,9 @@ model {
                     include '**/*.cpp','**/*.cxx', '**/*.cc', '**/*.c'
                 }
                 exportedHeaders {
-                    srcDir 'src/main/include'
+                    srcDir 'src/main/cpp'
+                    srcDir 'src/main/thirdparty'
+                    include '**/*.hpp', '**/*.hxx', '**/*.h'
                 }
             }
 

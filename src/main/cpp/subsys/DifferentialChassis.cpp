@@ -2,6 +2,7 @@
 #include <frc/kinematics/ChassisSpeeds.h>
 #include <frc/kinematics/DifferentialDriveKinematics.h>
 #include <frc/drive/DifferentialDrive.h>
+#include <frc/kinematics/DifferentialDriveOdometry.h>
 
 using namespace std;
 
@@ -20,9 +21,9 @@ DifferentialChassis::DifferentialChassis(shared_ptr<IDragonMotorController> left
                                                     //m_differentialDrive(new frc::DifferentialDrive(*leftMotor.GetSpeedController().get(), 
                                                     //                                               *rightMotor.GetSpeedController().get())),
                                                     m_differentialOdometry(new frc::DifferentialDriveOdometry(frc::Rotation2d(), frc::Pose2d()))
-{
-    
-}
+                                                    // TODO: add left and right encoder trvael
+
+    {}
     //Moves the robot
     void DifferentialChassis::Drive(frc::ChassisSpeeds chassisSpeeds)
     {

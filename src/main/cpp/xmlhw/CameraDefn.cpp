@@ -130,10 +130,10 @@ cs::UsbCamera CameraDefn::ParseXML
 		}
 
 	}
-
+/*
 	if (!hasError)
 	{
-		CameraServer* server = CameraServer::GetInstance();
+		CameraServer* server = cs::VideoSink GetServer();
 		if ( server != nullptr )
 		{
 		    camera = server->StartAutomaticCapture( id );
@@ -147,5 +147,6 @@ cs::UsbCamera CameraDefn::ParseXML
 		}
 	}
 	return camera;
+	*/
 }
 

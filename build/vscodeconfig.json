@@ -15,6 +15,9 @@
     "systemCArgs": [],
     "allLibFiles": [
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e057fa417edcba90bca777aa11c60edb\\transformed\\wpilibNewCommands-cpp-2023.1.1-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e2771fe9cae385d5c19fb38e7355a4f4\\transformed\\wpiapi-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2847d8966f603c073ead70aa774aa75d\\transformed\\api-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\782d3fb3eb0be8cce1214052abd766c1\\transformed\\cci-5.20.0-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2248a5f0cdaa42c1391739edb89c05c3\\transformed\\wpilibc-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\51fed8e3845b98fc49b8382d27827158\\transformed\\ntcore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b8a0d9abbf52da917acf6610e082f081\\transformed\\hal-cpp-2023.1.1-headers\\",
@@ -28,7 +31,8 @@
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b6eca111f95f5d4815f40df890e9b01b\\transformed\\cscore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\cf5bdc6b18a276fa43ed6e7d6be8c11a\\transformed\\apriltag-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\dc383ad5f184b05c6495bc58c05aacae\\transformed\\opencv-cpp-4.6.0-4-headers\\",
-      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\",
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\",
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2792161d65f26315f168c9f600165d88\\transformed\\wpilibNewCommands-cpp-2023.1.1-sources\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\ee940a8e7abdfc966f74df4967d4e724\\transformed\\wpilibc-cpp-2023.1.1-sources\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\248ed7bd730118032eefbbe78a45fc33\\transformed\\ntcore-cpp-2023.1.1-sources\\",
@@ -56,6 +60,9 @@
     ],
     "allLibHeaders": [
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e057fa417edcba90bca777aa11c60edb\\transformed\\wpilibNewCommands-cpp-2023.1.1-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e2771fe9cae385d5c19fb38e7355a4f4\\transformed\\wpiapi-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2847d8966f603c073ead70aa774aa75d\\transformed\\api-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\782d3fb3eb0be8cce1214052abd766c1\\transformed\\cci-5.20.0-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2248a5f0cdaa42c1391739edb89c05c3\\transformed\\wpilibc-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\51fed8e3845b98fc49b8382d27827158\\transformed\\ntcore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b8a0d9abbf52da917acf6610e082f081\\transformed\\hal-cpp-2023.1.1-headers\\",
@@ -69,7 +76,8 @@
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b6eca111f95f5d4815f40df890e9b01b\\transformed\\cscore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\cf5bdc6b18a276fa43ed6e7d6be8c11a\\transformed\\apriltag-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\dc383ad5f184b05c6495bc58c05aacae\\transformed\\opencv-cpp-4.6.0-4-headers\\",
-      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\",
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\"
     ],
     "binaries": [
       {
@@ -78,8 +86,8 @@
           {
             "source": {
               "srcDirs": [
-                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\thirdparty\\",
-                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\cpp\\"
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -91,9 +99,14 @@
             },
             "exportedHeaders": {
               "srcDirs": [
-                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
               ],
-              "includes": [],
+              "includes": [
+                "**/*.hpp",
+                "**/*.hxx",
+                "**/*.h"
+              ],
               "excludes": []
             },
             "cpp": true,
@@ -117,6 +130,9 @@
         ],
         "libHeaders": [
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e057fa417edcba90bca777aa11c60edb\\transformed\\wpilibNewCommands-cpp-2023.1.1-headers\\",
+          "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e2771fe9cae385d5c19fb38e7355a4f4\\transformed\\wpiapi-cpp-5.20.0-headers\\",
+          "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2847d8966f603c073ead70aa774aa75d\\transformed\\api-cpp-5.20.0-headers\\",
+          "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\782d3fb3eb0be8cce1214052abd766c1\\transformed\\cci-5.20.0-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2248a5f0cdaa42c1391739edb89c05c3\\transformed\\wpilibc-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\51fed8e3845b98fc49b8382d27827158\\transformed\\ntcore-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b8a0d9abbf52da917acf6610e082f081\\transformed\\hal-cpp-2023.1.1-headers\\",
@@ -130,7 +146,8 @@
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b6eca111f95f5d4815f40df890e9b01b\\transformed\\cscore-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\cf5bdc6b18a276fa43ed6e7d6be8c11a\\transformed\\apriltag-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\dc383ad5f184b05c6495bc58c05aacae\\transformed\\opencv-cpp-4.6.0-4-headers\\",
-          "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+          "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\",
+          "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\"
         ],
         "sharedLibrary": false,
         "executable": true
@@ -140,8 +157,8 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\thirdparty\\",
-            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\cpp\\"
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
           ],
           "includes": [
             "**/*.cpp",
@@ -175,9 +192,14 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
           ],
-          "includes": [],
+          "includes": [
+            "**/*.hpp",
+            "**/*.hxx",
+            "**/*.h"
+          ],
           "excludes": []
         },
         "componentName": "frcUserProgram",
@@ -222,6 +244,9 @@
     "systemCArgs": [],
     "allLibFiles": [
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e057fa417edcba90bca777aa11c60edb\\transformed\\wpilibNewCommands-cpp-2023.1.1-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e2771fe9cae385d5c19fb38e7355a4f4\\transformed\\wpiapi-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2847d8966f603c073ead70aa774aa75d\\transformed\\api-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\782d3fb3eb0be8cce1214052abd766c1\\transformed\\cci-5.20.0-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2248a5f0cdaa42c1391739edb89c05c3\\transformed\\wpilibc-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\51fed8e3845b98fc49b8382d27827158\\transformed\\ntcore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b8a0d9abbf52da917acf6610e082f081\\transformed\\hal-cpp-2023.1.1-headers\\",
@@ -235,7 +260,8 @@
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b6eca111f95f5d4815f40df890e9b01b\\transformed\\cscore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\cf5bdc6b18a276fa43ed6e7d6be8c11a\\transformed\\apriltag-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\dc383ad5f184b05c6495bc58c05aacae\\transformed\\opencv-cpp-4.6.0-4-headers\\",
-      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\",
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\",
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2792161d65f26315f168c9f600165d88\\transformed\\wpilibNewCommands-cpp-2023.1.1-sources\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\ee940a8e7abdfc966f74df4967d4e724\\transformed\\wpilibc-cpp-2023.1.1-sources\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\248ed7bd730118032eefbbe78a45fc33\\transformed\\ntcore-cpp-2023.1.1-sources\\",
@@ -263,6 +289,9 @@
     ],
     "allLibHeaders": [
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e057fa417edcba90bca777aa11c60edb\\transformed\\wpilibNewCommands-cpp-2023.1.1-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e2771fe9cae385d5c19fb38e7355a4f4\\transformed\\wpiapi-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2847d8966f603c073ead70aa774aa75d\\transformed\\api-cpp-5.20.0-headers\\",
+      "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\782d3fb3eb0be8cce1214052abd766c1\\transformed\\cci-5.20.0-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2248a5f0cdaa42c1391739edb89c05c3\\transformed\\wpilibc-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\51fed8e3845b98fc49b8382d27827158\\transformed\\ntcore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b8a0d9abbf52da917acf6610e082f081\\transformed\\hal-cpp-2023.1.1-headers\\",
@@ -276,7 +305,8 @@
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b6eca111f95f5d4815f40df890e9b01b\\transformed\\cscore-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\cf5bdc6b18a276fa43ed6e7d6be8c11a\\transformed\\apriltag-cpp-2023.1.1-headers\\",
       "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\dc383ad5f184b05c6495bc58c05aacae\\transformed\\opencv-cpp-4.6.0-4-headers\\",
-      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\",
+      "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\"
     ],
     "binaries": [
       {
@@ -285,8 +315,8 @@
           {
             "source": {
               "srcDirs": [
-                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\thirdparty\\",
-                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\cpp\\"
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -298,9 +328,14 @@
             },
             "exportedHeaders": {
               "srcDirs": [
-                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+                "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
               ],
-              "includes": [],
+              "includes": [
+                "**/*.hpp",
+                "**/*.hxx",
+                "**/*.h"
+              ],
               "excludes": []
             },
             "cpp": true,
@@ -323,6 +358,9 @@
         ],
         "libHeaders": [
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e057fa417edcba90bca777aa11c60edb\\transformed\\wpilibNewCommands-cpp-2023.1.1-headers\\",
+          "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\e2771fe9cae385d5c19fb38e7355a4f4\\transformed\\wpiapi-cpp-5.20.0-headers\\",
+          "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2847d8966f603c073ead70aa774aa75d\\transformed\\api-cpp-5.20.0-headers\\",
+          "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\782d3fb3eb0be8cce1214052abd766c1\\transformed\\cci-5.20.0-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\2248a5f0cdaa42c1391739edb89c05c3\\transformed\\wpilibc-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\51fed8e3845b98fc49b8382d27827158\\transformed\\ntcore-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b8a0d9abbf52da917acf6610e082f081\\transformed\\hal-cpp-2023.1.1-headers\\",
@@ -336,7 +374,8 @@
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\b6eca111f95f5d4815f40df890e9b01b\\transformed\\cscore-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\cf5bdc6b18a276fa43ed6e7d6be8c11a\\transformed\\apriltag-cpp-2023.1.1-headers\\",
           "C:\\Users\\Team302\\.gradle\\caches\\transforms-3\\dc383ad5f184b05c6495bc58c05aacae\\transformed\\opencv-cpp-4.6.0-4-headers\\",
-          "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+          "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\",
+          "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\"
         ],
         "sharedLibrary": false,
         "executable": true
@@ -346,8 +385,8 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\thirdparty\\",
-            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\cpp\\"
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
           ],
           "includes": [
             "**/*.cpp",
@@ -380,9 +419,14 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1-imported\\src\\main\\include\\"
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\thirdparty\\",
+            "C:\\Users\\Team302\\Documents\\GitHub\\2021Year1\\src\\main\\cpp\\"
           ],
-          "includes": [],
+          "includes": [
+            "**/*.hpp",
+            "**/*.hxx",
+            "**/*.h"
+          ],
           "excludes": []
         },
         "componentName": "frcUserProgram",

@@ -5,8 +5,8 @@
  *      Author: Jonah Shader
  */
 
-#include <auton/primitives/PrimitiveEnums.h>
-#include <auton/primitives/PrimitiveParams.h>
+#include <auton/PrimitiveEnums.h>
+#include <auton/PrimitiveParams.h>
 #include <states/arm/ArmStateMgr.h>
 #include <states/ballrelease/BallReleaseStateMgr.h>
 #include <states/balltransfer/BallTransferStateMgr.h>
