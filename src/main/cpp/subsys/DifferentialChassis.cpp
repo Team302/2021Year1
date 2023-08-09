@@ -17,10 +17,10 @@ DifferentialChassis::DifferentialChassis(shared_ptr<IDragonMotorController> left
                                                     m_maxAngSpeed(maxAngSpeed),
                                                     m_wheelDiameter(wheelDiameter),
                                                     m_track(trackWidth),
-                                                    m_kinematics(new frc::DifferentialDriveKinematics(trackWidth)),
+                                                    m_kinematics(new frc::DifferentialDriveKinematics(trackWidth))
                                                     //m_differentialDrive(new frc::DifferentialDrive(*leftMotor.GetSpeedController().get(), 
                                                     //                                               *rightMotor.GetSpeedController().get())),
-                                                    m_differentialOdometry(new frc::DifferentialDriveOdometry(frc::Rotation2d(), frc::Pose2d()))
+                                                    //m_differentialOdometry(new frc::DifferentialDriveOdometry(frc::Rotation2d(), frc::Pose2d()))
                                                     // TODO: add left and right encoder trvael
 
     {}
@@ -28,7 +28,7 @@ DifferentialChassis::DifferentialChassis(shared_ptr<IDragonMotorController> left
     void DifferentialChassis::Drive(frc::ChassisSpeeds chassisSpeeds)
     {
         auto wheels = m_kinematics->ToWheelSpeeds(chassisSpeeds);
-        wheels.Normalize(m_maxSpeed);
+        wheels.Desaturate(m_maxSpeed);
         if (m_leftMotor.get() != nullptr)
         {
             m_leftMotor.get()->Set(wheels.left/m_maxSpeed);
