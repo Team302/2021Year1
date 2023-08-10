@@ -110,8 +110,8 @@ void TurnAngle::Run() //best method ever. Does nothing, and should do nothing...
 	float deltaAngle = m_targetAngle - m_heading;
 
 	bool sign = deltaAngle > 0;
-	double leftSpeed;
-	double rightSpeed;
+	//double leftSpeed;
+	//double rightSpeed;
 
 	ChassisSpeeds speeds;
 	speeds.vx = 0_mps;
